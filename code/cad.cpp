@@ -15,7 +15,9 @@ Projectname - CAD
 #include "stdlib.h"
 #include "string.h"
 #include  <bits/stdc++.h>
+#include "keys.h"
 #include "cube.h"
+
 using namespace std;
 
 SDL_Window *screen;
@@ -24,12 +26,12 @@ SDL_Window *screen;
 void Drawscene()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
+	cube();
 }
 void Drawscene2()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
+	cube();
 }
 void Drawscene3()
 {
@@ -55,6 +57,7 @@ void initGL3(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height);
 void establishMatrix4(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height);
 void initGL4(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height);
 
+const Uint8 *keys = NULL;
 
 // main
 int main(int argc, char ** argv)
@@ -97,8 +100,13 @@ int main(int argc, char ** argv)
 				cout <<"quiting was here";
 				done =1 ;
 			}
+
+			keys = SDL_GetKeyboardState(NULL);
 		}
 		SDL_GL_SwapWindow(screen);
+
+		if(checkKeys(keys))
+			done = 1 ;
 	}
 	SDL_DestroyWindow(screen);
 	SDL_Quit();
