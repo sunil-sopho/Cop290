@@ -1,0 +1,125 @@
+\hypertarget{datatype_8h}{}\section{datatype.\+h File Reference}
+\label{datatype_8h}\index{datatype.\+h@{datatype.\+h}}
+
+
+A Header File for representing \hyperlink{class_projection}{Projection} plane, 3d Model and Orthographic Views.  
+
+
+{\ttfamily \#include $<$Point.\+h$>$}\newline
+{\ttfamily \#include $<$Edge.\+h$>$}\newline
+{\ttfamily \#include $<$Plane.\+h$>$}\newline
+{\ttfamily \#include $<$Point2\+D.\+h$>$}\newline
+{\ttfamily \#include $<$Edge2\+D.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_projection}{Projection}
+\begin{DoxyCompactList}\small\item\em Represents 2d projection of a given 3d model on a given 2d plane. \end{DoxyCompactList}\item 
+class \hyperlink{class_model__3d}{Model\+\_\+3d}
+\begin{DoxyCompactList}\small\item\em Represents a 3d model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{datatype_8h_adc507db05ffa02ad98d1154ab6f569a7}{add\+Edge} (\hyperlink{class_edge2_d}{Edge2D} \hyperlink{datatype_8h_abf81b71fa3ccd10c32c01ef96105cfd7}{edge})
+\item 
+void \hyperlink{datatype_8h_ae6ea5bb9b815bc9f90059ddee0369919}{add\+Vertex} (\hyperlink{class_point2_d}{Point2D} point)
+\item 
+bool \hyperlink{datatype_8h_ac6a9106f638ad1a711b1ae11e7bcf9f9}{check\+Valid} (\hyperlink{class_projection}{Projection} proj)
+\item 
+void \hyperlink{datatype_8h_a1e5b20fed15743656bb6d2e6a6ea6269}{display} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_point2_d}{Point2D} \hyperlink{datatype_8h_a88ab37811b6a14c8eb51ae5d84e56f18}{nodes} \mbox{[}$\,$\mbox{]}
+\item 
+\hyperlink{class_edge2_d}{Edge2D} \hyperlink{datatype_8h_abf81b71fa3ccd10c32c01ef96105cfd7}{edge} \mbox{[}$\,$\mbox{]}
+\item 
+\hyperlink{class_plane}{Plane} \hyperlink{datatype_8h_a12249fda592109b9d9ce5c71ab20bacf}{plane}
+\item 
+\hyperlink{datatype_8h_a98a966e63fd54f885070e9afe18fd302}{top\+View}
+\item 
+\hyperlink{datatype_8h_a1ffa322319eeae90196bfadf77be20f9}{front\+View}
+\item 
+\hyperlink{datatype_8h_a7cbde01b77059f93840938775121dfe6}{side\+View}
+\item 
+bool \hyperlink{datatype_8h_a6941eacfb4201a3a93b86ffa39cb0b24}{is\+Left\+View}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Header File for representing \hyperlink{class_projection}{Projection} plane, 3d Model and Orthographic Views. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{datatype_8h_adc507db05ffa02ad98d1154ab6f569a7}\label{datatype_8h_adc507db05ffa02ad98d1154ab6f569a7}} 
+\index{datatype.\+h@{datatype.\+h}!add\+Edge@{add\+Edge}}
+\index{add\+Edge@{add\+Edge}!datatype.\+h@{datatype.\+h}}
+\subsubsection{\texorpdfstring{add\+Edge()}{addEdge()}}
+{\footnotesize\ttfamily void Orthographic\+View\+::add\+Edge (\begin{DoxyParamCaption}\item[{\hyperlink{class_edge2_d}{Edge2D}}]{edge }\end{DoxyParamCaption})}
+
+Function for adding a edge between two 2d points. \mbox{\Hypertarget{datatype_8h_ae6ea5bb9b815bc9f90059ddee0369919}\label{datatype_8h_ae6ea5bb9b815bc9f90059ddee0369919}} 
+\index{datatype.\+h@{datatype.\+h}!add\+Vertex@{add\+Vertex}}
+\index{add\+Vertex@{add\+Vertex}!datatype.\+h@{datatype.\+h}}
+\subsubsection{\texorpdfstring{add\+Vertex()}{addVertex()}}
+{\footnotesize\ttfamily void Orthographic\+View\+::add\+Vertex (\begin{DoxyParamCaption}\item[{\hyperlink{class_point2_d}{Point2D}}]{point }\end{DoxyParamCaption})}
+
+Function for adding a vertex. \mbox{\Hypertarget{datatype_8h_ac6a9106f638ad1a711b1ae11e7bcf9f9}\label{datatype_8h_ac6a9106f638ad1a711b1ae11e7bcf9f9}} 
+\index{datatype.\+h@{datatype.\+h}!check\+Valid@{check\+Valid}}
+\index{check\+Valid@{check\+Valid}!datatype.\+h@{datatype.\+h}}
+\subsubsection{\texorpdfstring{check\+Valid()}{checkValid()}}
+{\footnotesize\ttfamily bool Orthographic\+View\+::check\+Valid (\begin{DoxyParamCaption}\item[{\hyperlink{class_projection}{Projection}}]{proj }\end{DoxyParamCaption})}
+
+Takes the correct projection as input and checks if the current (generated) projection is valid. \mbox{\Hypertarget{datatype_8h_a1e5b20fed15743656bb6d2e6a6ea6269}\label{datatype_8h_a1e5b20fed15743656bb6d2e6a6ea6269}} 
+\index{datatype.\+h@{datatype.\+h}!display@{display}}
+\index{display@{display}!datatype.\+h@{datatype.\+h}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Output the orthographic views on the screen. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{datatype_8h_abf81b71fa3ccd10c32c01ef96105cfd7}\label{datatype_8h_abf81b71fa3ccd10c32c01ef96105cfd7}} 
+\index{datatype.\+h@{datatype.\+h}!edge@{edge}}
+\index{edge@{edge}!datatype.\+h@{datatype.\+h}}
+\subsubsection{\texorpdfstring{edge}{edge}}
+{\footnotesize\ttfamily \hyperlink{class_edge2_d}{Edge2D} edge\mbox{[}$\,$\mbox{]}}
+
+Array of 2d edges denoting all the edges of the projection of 3d model. \mbox{\Hypertarget{datatype_8h_a1ffa322319eeae90196bfadf77be20f9}\label{datatype_8h_a1ffa322319eeae90196bfadf77be20f9}} 
+\index{datatype.\+h@{datatype.\+h}!front\+View@{front\+View}}
+\index{front\+View@{front\+View}!datatype.\+h@{datatype.\+h}}
+\subsubsection{\texorpdfstring{front\+View}{frontView}}
+{\footnotesize\ttfamily   front\+View}
+
+Front view of model \mbox{\Hypertarget{datatype_8h_a6941eacfb4201a3a93b86ffa39cb0b24}\label{datatype_8h_a6941eacfb4201a3a93b86ffa39cb0b24}} 
+\index{datatype.\+h@{datatype.\+h}!is\+Left\+View@{is\+Left\+View}}
+\index{is\+Left\+View@{is\+Left\+View}!datatype.\+h@{datatype.\+h}}
+\subsubsection{\texorpdfstring{is\+Left\+View}{isLeftView}}
+{\footnotesize\ttfamily bool is\+Left\+View}
+
+Checks if the side view is left view. \mbox{\Hypertarget{datatype_8h_a88ab37811b6a14c8eb51ae5d84e56f18}\label{datatype_8h_a88ab37811b6a14c8eb51ae5d84e56f18}} 
+\index{datatype.\+h@{datatype.\+h}!nodes@{nodes}}
+\index{nodes@{nodes}!datatype.\+h@{datatype.\+h}}
+\subsubsection{\texorpdfstring{nodes}{nodes}}
+{\footnotesize\ttfamily \hyperlink{class_point2_d}{Point2D} nodes\mbox{[}$\,$\mbox{]}}
+
+Array of 2d points denoting projection of all the vertices of the 3d model on the given projection plane \mbox{\Hypertarget{datatype_8h_a12249fda592109b9d9ce5c71ab20bacf}\label{datatype_8h_a12249fda592109b9d9ce5c71ab20bacf}} 
+\index{datatype.\+h@{datatype.\+h}!plane@{plane}}
+\index{plane@{plane}!datatype.\+h@{datatype.\+h}}
+\subsubsection{\texorpdfstring{plane}{plane}}
+{\footnotesize\ttfamily \hyperlink{class_plane}{Plane} plane}
+
+projection plane \mbox{\Hypertarget{datatype_8h_a7cbde01b77059f93840938775121dfe6}\label{datatype_8h_a7cbde01b77059f93840938775121dfe6}} 
+\index{datatype.\+h@{datatype.\+h}!side\+View@{side\+View}}
+\index{side\+View@{side\+View}!datatype.\+h@{datatype.\+h}}
+\subsubsection{\texorpdfstring{side\+View}{sideView}}
+{\footnotesize\ttfamily   side\+View}
+
+Side view of 3d model \mbox{\Hypertarget{datatype_8h_a98a966e63fd54f885070e9afe18fd302}\label{datatype_8h_a98a966e63fd54f885070e9afe18fd302}} 
+\index{datatype.\+h@{datatype.\+h}!top\+View@{top\+View}}
+\index{top\+View@{top\+View}!datatype.\+h@{datatype.\+h}}
+\subsubsection{\texorpdfstring{top\+View}{topView}}
+{\footnotesize\ttfamily   top\+View}
+
+Top view of 3d model 

@@ -1,0 +1,62 @@
+\hypertarget{class_model__3d}{}\section{Model\+\_\+3d Class Reference}
+\label{class_model__3d}\index{Model\+\_\+3d@{Model\+\_\+3d}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_model__3d}{Model\+\_\+3d} \hyperlink{class_model__3d_a94058b3f100e52c53b44a5b76308115e}{rotate} (\hyperlink{class_plane}{Plane} p)
+\item 
+\hyperlink{class_orthographic_view}{Orthographic\+View} \hyperlink{class_model__3d_ac19b2e10ea54b9e9772d5a4062cc2b9a}{Get\+Orthographic} (\hyperlink{class_model__3d}{Model\+\_\+3d} m)
+\item 
+void \hyperlink{class_model__3d_ab4a30d52c27ec1c56f8d1928c4db5e88}{display} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_point}{Point} \hyperlink{class_model__3d_a9872f3156fbcdd16fff4124fdcf60a06}{nodes} \mbox{[}$\,$\mbox{]}
+\item 
+\hyperlink{class_edge}{Edge} \hyperlink{class_model__3d_ab171a592efc8e90124f65404b46051cc}{edges}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wrapper class for representing a 3d model in the form of a graph. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_model__3d_ab4a30d52c27ec1c56f8d1928c4db5e88}\label{class_model__3d_ab4a30d52c27ec1c56f8d1928c4db5e88}} 
+\index{Model\+\_\+3d@{Model\+\_\+3d}!display@{display}}
+\index{display@{display}!Model\+\_\+3d@{Model\+\_\+3d}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Model\+\_\+3d\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Output the 3d model on the screen. \mbox{\Hypertarget{class_model__3d_ac19b2e10ea54b9e9772d5a4062cc2b9a}\label{class_model__3d_ac19b2e10ea54b9e9772d5a4062cc2b9a}} 
+\index{Model\+\_\+3d@{Model\+\_\+3d}!Get\+Orthographic@{Get\+Orthographic}}
+\index{Get\+Orthographic@{Get\+Orthographic}!Model\+\_\+3d@{Model\+\_\+3d}}
+\subsubsection{\texorpdfstring{Get\+Orthographic()}{GetOrthographic()}}
+{\footnotesize\ttfamily \hyperlink{class_orthographic_view}{Orthographic\+View} Model\+\_\+3d\+::\+Get\+Orthographic (\begin{DoxyParamCaption}\item[{\hyperlink{class_model__3d}{Model\+\_\+3d}}]{m }\end{DoxyParamCaption})}
+
+Gives the orthogarphic projection of a 3d model. \mbox{\Hypertarget{class_model__3d_a94058b3f100e52c53b44a5b76308115e}\label{class_model__3d_a94058b3f100e52c53b44a5b76308115e}} 
+\index{Model\+\_\+3d@{Model\+\_\+3d}!rotate@{rotate}}
+\index{rotate@{rotate}!Model\+\_\+3d@{Model\+\_\+3d}}
+\subsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily \hyperlink{class_model__3d}{Model\+\_\+3d} Model\+\_\+3d\+::rotate (\begin{DoxyParamCaption}\item[{\hyperlink{class_plane}{Plane}}]{p }\end{DoxyParamCaption})}
+
+Rotates the given 3d model around the auxiliary plane. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_model__3d_ab171a592efc8e90124f65404b46051cc}\label{class_model__3d_ab171a592efc8e90124f65404b46051cc}} 
+\index{Model\+\_\+3d@{Model\+\_\+3d}!edges@{edges}}
+\index{edges@{edges}!Model\+\_\+3d@{Model\+\_\+3d}}
+\subsubsection{\texorpdfstring{edges}{edges}}
+{\footnotesize\ttfamily \hyperlink{class_edge}{Edge} Model\+\_\+3d\+::edges}
+
+Array of 3d edges for storing all the edges of the 3d model. \mbox{\Hypertarget{class_model__3d_a9872f3156fbcdd16fff4124fdcf60a06}\label{class_model__3d_a9872f3156fbcdd16fff4124fdcf60a06}} 
+\index{Model\+\_\+3d@{Model\+\_\+3d}!nodes@{nodes}}
+\index{nodes@{nodes}!Model\+\_\+3d@{Model\+\_\+3d}}
+\subsubsection{\texorpdfstring{nodes}{nodes}}
+{\footnotesize\ttfamily \hyperlink{class_point}{Point} Model\+\_\+3d\+::nodes\mbox{[}$\,$\mbox{]}}
+
+Array of 3d points for storing of all the vertices of the 3d model. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_model__3d_8cpp}{Model\+\_\+3d.\+cpp}\end{DoxyCompactItemize}

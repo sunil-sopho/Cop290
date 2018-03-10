@@ -1,0 +1,12 @@
+digraph "OrthographicView"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="OrthographicView",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" frontView\ntopView\nsideView" ,fontname="Helvetica"];
+  Node2 [label="Projection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_projection.html",tooltip="Represents 2d projection of a given 3d model on a given 2d plane. "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" plane" ,fontname="Helvetica"];
+  Node3 [label="Plane",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_plane.html",tooltip="Represents a auxiliary plane in 3d space. "];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" edge" ,fontname="Helvetica"];
+  Node4 [label="Edge2D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_edge2_d.html",tooltip="Class for denoting a edge between two points in 2d plane. "];
+}

@@ -1,0 +1,69 @@
+\hypertarget{datatype_8h}{}\section{datatype.\+h File Reference}
+\label{datatype_8h}\index{datatype.\+h@{datatype.\+h}}
+
+
+A Header File for representing \hyperlink{class_projection}{Projection} plane, 3d Model and Orthographic Views.  
+
+
+{\ttfamily \#include $<$Point.\+h$>$}\newline
+{\ttfamily \#include $<$Edge.\+h$>$}\newline
+{\ttfamily \#include $<$Plane.\+h$>$}\newline
+{\ttfamily \#include $<$Point2\+D.\+h$>$}\newline
+{\ttfamily \#include $<$Edge2\+D.\+h$>$}\newline
+Include dependency graph for datatype.\+h\+:
+% FIG 0
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_projection}{Projection}
+\begin{DoxyCompactList}\small\item\em Represents 2d projection of a given 3d model on a given 2d plane. \end{DoxyCompactList}\item 
+class \hyperlink{class_orthographic_view}{Orthographic\+View}
+\begin{DoxyCompactList}\small\item\em Represents orthographic projection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Model\+\_\+3d \hyperlink{datatype_8h_aef6bb3bb8bf5ebc39027de20384507e7}{rotate} (\hyperlink{class_plane}{Plane} p)
+\item 
+\mbox{\Hypertarget{datatype_8h_aabc64640367671c65c43ff35b0b37358}\label{datatype_8h_aabc64640367671c65c43ff35b0b37358}} 
+\hyperlink{class_orthographic_view}{Orthographic\+View} {\bfseries Get\+Orthographic} (Model\+\_\+3d m)
+\item 
+void \hyperlink{datatype_8h_a1e5b20fed15743656bb6d2e6a6ea6269}{display} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{datatype_8h_aad63f4a9e8ff047f88a3a4e928a6e798}\label{datatype_8h_aad63f4a9e8ff047f88a3a4e928a6e798}} 
+class \hyperlink{class_projection}{Projection} \hyperlink{datatype_8h_aad63f4a9e8ff047f88a3a4e928a6e798}{nodes} \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em Represents a 3d model. \end{DoxyCompactList}\item 
+Edge \hyperlink{datatype_8h_a1e335ffb7ceeffa25f3fad9488062ea1}{edges}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Header File for representing \hyperlink{class_projection}{Projection} plane, 3d Model and Orthographic Views. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{datatype_8h_a1e5b20fed15743656bb6d2e6a6ea6269}\label{datatype_8h_a1e5b20fed15743656bb6d2e6a6ea6269}} 
+\index{datatype.\+h@{datatype.\+h}!display@{display}}
+\index{display@{display}!datatype.\+h@{datatype.\+h}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gives the 2d projection of 3d model on given projection plane. \mbox{\Hypertarget{datatype_8h_aef6bb3bb8bf5ebc39027de20384507e7}\label{datatype_8h_aef6bb3bb8bf5ebc39027de20384507e7}} 
+\index{datatype.\+h@{datatype.\+h}!rotate@{rotate}}
+\index{rotate@{rotate}!datatype.\+h@{datatype.\+h}}
+\subsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily Model\+\_\+3d rotate (\begin{DoxyParamCaption}\item[{\hyperlink{class_plane}{Plane}}]{p }\end{DoxyParamCaption})}
+
+Array of 3d edges denoting all the edges of the 3d model. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{datatype_8h_a1e335ffb7ceeffa25f3fad9488062ea1}\label{datatype_8h_a1e335ffb7ceeffa25f3fad9488062ea1}} 
+\index{datatype.\+h@{datatype.\+h}!edges@{edges}}
+\index{edges@{edges}!datatype.\+h@{datatype.\+h}}
+\subsubsection{\texorpdfstring{edges}{edges}}
+{\footnotesize\ttfamily Edge edges}
+
+Array of 3d points denoting projection of all the vertices of the 3d model. 

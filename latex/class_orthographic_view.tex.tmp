@@ -1,0 +1,26 @@
+\hypertarget{class_orthographic_view}{}\section{Orthographic\+View Class Reference}
+\label{class_orthographic_view}\index{Orthographic\+View@{Orthographic\+View}}
+
+
+Collaboration diagram for Orthographic\+View\+:
+% FIG 0
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_orthographic_view_a0107ef76f715dd00984ce9b30e80d9bd}\label{class_orthographic_view_a0107ef76f715dd00984ce9b30e80d9bd}} 
+\hyperlink{class_projection}{Projection} {\bfseries top\+View}
+\item 
+\mbox{\Hypertarget{class_orthographic_view_a6aef56f8180e166aba95c0de7f3715ec}\label{class_orthographic_view_a6aef56f8180e166aba95c0de7f3715ec}} 
+\hyperlink{class_projection}{Projection} {\bfseries front\+View}
+\item 
+\mbox{\Hypertarget{class_orthographic_view_a61767cc96527753531533d7ed581bab1}\label{class_orthographic_view_a61767cc96527753531533d7ed581bab1}} 
+\hyperlink{class_projection}{Projection} {\bfseries side\+View}
+\item 
+\mbox{\Hypertarget{class_orthographic_view_a333b0e859bd7260086de7616b367cb42}\label{class_orthographic_view_a333b0e859bd7260086de7616b367cb42}} 
+bool {\bfseries is\+Left\+View}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+datatype.\+h\end{DoxyCompactItemize}
