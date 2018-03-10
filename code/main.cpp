@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
-#include <glut.h>
+//#include "include/glut.h"
+#include <GL/gl.h>
+#include <GL/glu.h>
+#include <GL/glut.h>
 
 void Draw() {
 	glClear(GL_COLOR_BUFFER_BIT);
