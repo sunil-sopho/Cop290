@@ -1,0 +1,70 @@
+\hypertarget{class_projection}{}\section{Projection Class Reference}
+\label{class_projection}\index{Projection@{Projection}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_projection_addbe2dfdf6f53f9d1b7c0fb5a1d9f8e6}{add\+Edge} (\hyperlink{class_edge2_d}{Edge2D} \hyperlink{class_projection_aca9e310187f814f0afcacb1c97bfae45}{edge})
+\item 
+void \hyperlink{class_projection_afd8f16005bfb9bd16052f579e7c5c422}{add\+Vertex} (\hyperlink{class_point2_d}{Point2D} point)
+\item 
+bool \hyperlink{class_projection_a4936003f3ffbd4feeca8c5c08c018ffe}{check\+Valid} (\hyperlink{class_projection}{Projection} proj)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_point2_d}{Point2D} \hyperlink{class_projection_aac3edf709f45c785e7f5ad7d7f5f42b9}{nodes} \mbox{[}$\,$\mbox{]}
+\item 
+\hyperlink{class_edge2_d}{Edge2D} \hyperlink{class_projection_aca9e310187f814f0afcacb1c97bfae45}{edge} \mbox{[}$\,$\mbox{]}
+\item 
+\hyperlink{class_plane}{Plane} \hyperlink{class_projection_a5c028a3e5b75d952d5c1a2283409a610}{plane}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wrapper Class for representing a 2d projection of a given 3d model in a 2d graph format. Also provides funcions for adding edge and vertex and checking correctness of projections 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_projection_addbe2dfdf6f53f9d1b7c0fb5a1d9f8e6}\label{class_projection_addbe2dfdf6f53f9d1b7c0fb5a1d9f8e6}} 
+\index{Projection@{Projection}!add\+Edge@{add\+Edge}}
+\index{add\+Edge@{add\+Edge}!Projection@{Projection}}
+\subsubsection{\texorpdfstring{add\+Edge()}{addEdge()}}
+{\footnotesize\ttfamily void Projection\+::add\+Edge (\begin{DoxyParamCaption}\item[{\hyperlink{class_edge2_d}{Edge2D}}]{edge }\end{DoxyParamCaption})}
+
+Function for adding a edge between two 2d points. \mbox{\Hypertarget{class_projection_afd8f16005bfb9bd16052f579e7c5c422}\label{class_projection_afd8f16005bfb9bd16052f579e7c5c422}} 
+\index{Projection@{Projection}!add\+Vertex@{add\+Vertex}}
+\index{add\+Vertex@{add\+Vertex}!Projection@{Projection}}
+\subsubsection{\texorpdfstring{add\+Vertex()}{addVertex()}}
+{\footnotesize\ttfamily void Projection\+::add\+Vertex (\begin{DoxyParamCaption}\item[{\hyperlink{class_point2_d}{Point2D}}]{point }\end{DoxyParamCaption})}
+
+Function for adding a vertex. \mbox{\Hypertarget{class_projection_a4936003f3ffbd4feeca8c5c08c018ffe}\label{class_projection_a4936003f3ffbd4feeca8c5c08c018ffe}} 
+\index{Projection@{Projection}!check\+Valid@{check\+Valid}}
+\index{check\+Valid@{check\+Valid}!Projection@{Projection}}
+\subsubsection{\texorpdfstring{check\+Valid()}{checkValid()}}
+{\footnotesize\ttfamily bool Projection\+::check\+Valid (\begin{DoxyParamCaption}\item[{\hyperlink{class_projection}{Projection}}]{proj }\end{DoxyParamCaption})}
+
+Takes the correct projection as input and checks if the current (generated) projection is valid. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_projection_aca9e310187f814f0afcacb1c97bfae45}\label{class_projection_aca9e310187f814f0afcacb1c97bfae45}} 
+\index{Projection@{Projection}!edge@{edge}}
+\index{edge@{edge}!Projection@{Projection}}
+\subsubsection{\texorpdfstring{edge}{edge}}
+{\footnotesize\ttfamily \hyperlink{class_edge2_d}{Edge2D} Projection\+::edge\mbox{[}$\,$\mbox{]}}
+
+Array of 2d edges denoting all the edges of the projection of 3d model. \mbox{\Hypertarget{class_projection_aac3edf709f45c785e7f5ad7d7f5f42b9}\label{class_projection_aac3edf709f45c785e7f5ad7d7f5f42b9}} 
+\index{Projection@{Projection}!nodes@{nodes}}
+\index{nodes@{nodes}!Projection@{Projection}}
+\subsubsection{\texorpdfstring{nodes}{nodes}}
+{\footnotesize\ttfamily \hyperlink{class_point2_d}{Point2D} Projection\+::nodes\mbox{[}$\,$\mbox{]}}
+
+Array of 2d points denoting projection of all the vertices of the 3d model on the given projection plane \mbox{\Hypertarget{class_projection_a5c028a3e5b75d952d5c1a2283409a610}\label{class_projection_a5c028a3e5b75d952d5c1a2283409a610}} 
+\index{Projection@{Projection}!plane@{plane}}
+\index{plane@{plane}!Projection@{Projection}}
+\subsubsection{\texorpdfstring{plane}{plane}}
+{\footnotesize\ttfamily \hyperlink{class_plane}{Plane} Projection\+::plane}
+
+projection plane 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_projection_8cpp}{Projection.\+cpp}\end{DoxyCompactItemize}
