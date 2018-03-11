@@ -26,7 +26,7 @@ using namespace std;
 
 	SDL_Window *screen;
 	SDL_Rect rect1,rect2;
-	SDL_Renderer *rend;
+	SDL_Renderer *rend1;
 	SDL_Texture *text1, *text2;
 	char *font_path = "FreeSans.ttf"; ;
 	TTF_Font *font;
@@ -66,7 +66,7 @@ int main(int argc, char ** argv)
 
 	// strcpy(font_path ,"FreeSans.ttf".c_str());
 
-	SDL_CreateWindowAndRenderer(1024, 610, 0, &screen, &rend);
+	SDL_CreateWindowAndRenderer(1024, 610, 0, &screen, &rend1);
     TTF_Init();
     font = TTF_OpenFont(font_path, 24);
    
@@ -134,12 +134,12 @@ int main(int argc, char ** argv)
 			}
 			keys = SDL_GetKeyboardState(NULL);
 
-			SDL_SetRenderDrawColor(rend, 0, 0, 0, 0);
-	        SDL_RenderClear(rend);
+			SDL_SetRenderDrawColor(rend1, 0, 0, 0, 0);
+	        SDL_RenderClear(rend1);
 	        /* Use TTF textures. */
-	        SDL_RenderCopy(rend, text1, NULL, &rect1);
-	        SDL_RenderCopy(rend, text2, NULL, &rect2);
-	        SDL_RenderPresent(rend);
+	        SDL_RenderCopy(rend1, text1, NULL, &rect1);
+	        SDL_RenderCopy(rend1, text2, NULL, &rect2);
+	        SDL_RenderPresent(rend1);
 		}
 		SDL_GL_SwapWindow(screen);
 

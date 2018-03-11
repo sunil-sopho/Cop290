@@ -68,6 +68,43 @@ int Drawscene4()
 	glEnd();
 	glPopMatrix();
 
-	// glPushMatrix();
+	glPushMatrix();
+	glTranslatef(0.8f,2.8f,-10.0f);
 
+	// glBindTexture(GL_TEXTURE_2D, minusm);
+	// glEnable(GL_TEXTURE_2D);
+
+	glBegin(GL_QUADS);
+
+	glColor3f(100.0f,100.0f,100.0f);
+	glTexCoord2d(0,0);
+	glVertex3f(0.3f,0.3f,0.3f);
+	glTexCoord2d(1,0);
+	glVertex3f(-0.3f,0.3f,0.3f);
+	glTexCoord2d(1,1);
+	glVertex3f(-0.3f,-0.3f,0.3f);
+	glTexCoord2d(0,1);
+	glVertex3f(0.3f,-0.3f,0.3f);
+	glEnd();
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslatef(1.8f,3.8f,-15.0f);
+
+	// glBindTexture(GL_TEXTURE_2D, minusm);
+	// glEnable(GL_TEXTURE_2D);
+
+	glBegin(GL_QUADS);
+
+	glColor3f(100.0f,100.0f,100.0f);
+	glTexCoord2d(0,0);
+	glVertex3f(0.45f,0.45f,0.45f);
+	glTexCoord2d(1,0);
+	glVertex3f(-0.45f,0.45f,0.45f);
+	glTexCoord2d(1,1);
+	glVertex3f(-0.45f,-0.45f,0.45f);
+	glTexCoord2d(0,1);
+	glVertex3f(0.45f,-0.45f,0.45f);
+	glEnd();
+	glPopMatrix();
 }
