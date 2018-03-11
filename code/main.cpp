@@ -23,11 +23,11 @@ void Initialize() {
 
 int main(int iArgc, char** cppArgv) {
 	glutInit(&iArgc, cppArgv);
-	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
-	glutInitWindowSize(250, 250);
-	glutInitWindowPosition(200, 200);
-	glutCreateWindow("CAD");
-	Initialize();
+		glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+			glutInitWindowSize(250, 250);
+			glutInitWindowPosition(200, 200);
+			glutCreateWindow("CAD");
+			Initialize();
 	glutDisplayFunc(Draw);
 	glutMainLoop();
 	return 0;

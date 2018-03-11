@@ -67,7 +67,6 @@ int Drawscene4()
 	glVertex3f(0.15f,-0.15f,0.15f);
 	glEnd();
 	glPopMatrix();
-
 	// glPushMatrix();
 
 }

@@ -67,8 +67,8 @@ int main(int argc, char ** argv)
 	// strcpy(font_path ,"FreeSans.ttf".c_str());
 
 	SDL_CreateWindowAndRenderer(1024, 610, 0, &screen, &rend);
-    TTF_Init();
-    font = TTF_OpenFont(font_path, 24);
+ //    TTF_Init();
+ //    font = TTF_OpenFont(font_path, 24);
    
 	// screen = SDL_CreateWindow("CAD", 200,200,1024,610,SDL_WINDOW_OPENGL);
 	
