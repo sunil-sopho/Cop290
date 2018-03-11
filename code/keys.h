@@ -54,7 +54,7 @@ GLboolean checkKeys(const Uint8* keys){
  	}
  	if(keys[SDL_SCANCODE_Z])
  	{
- 		cubeRotateZ = 0.0f;
+ 		// cubeRotateZ = 0.0f;
  	}
  	return false;
 
