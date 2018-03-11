@@ -40,6 +40,22 @@ GLboolean checkKeys(const Uint8* keys){
  	if(keys[SDL_SCANCODE_J]){
  		save = true;
  	}
+
+//=======================================================================
+//========== specialised functions ======================================
+//=======================================================================
+ 	if(keys[SDL_SCANCODE_X])
+ 	{
+ 		cubeRotateX = 0.0f;
+ 	}
+ 	if(keys[SDL_SCANCODE_Y])
+ 	{
+ 		cubeRotateY = 0.0f;
+ 	}
+ 	if(keys[SDL_SCANCODE_Z])
+ 	{
+ 		cubeRotateZ = 0.0f;
+ 	}
  	return false;
 
 }

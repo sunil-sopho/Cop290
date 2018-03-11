@@ -16,9 +16,11 @@ Projectname - CAD
 #include "stdlib.h"
 #include "string.h"
 #include  <bits/stdc++.h>
+
 #include "keys.h"
-#include "cube.h"
+// #include "cube.h"
 #include "printtxt.h"
+#include "draw.h"
 
 using namespace std;
 
@@ -28,73 +30,12 @@ using namespace std;
 	SDL_Texture *text1, *text2;
 	char *font_path = "FreeSans.ttf"; ;
 	TTF_Font *font;
-// Draw scene for all viewports
-void Drawscene()
-{
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	// cube();
-	glMatrixMode(GL_MODELVIEW);
-	glLoadIdentity();
-	glPushMatrix();
-	glTranslatef(0,0,-10.0f);
 
-	cube();
-	glPopMatrix();
-	glFlush();
-}
-void Drawscene2()
-{
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	// cube();
-	glMatrixMode(GL_MODELVIEW);
-	glLoadIdentity();
-	cube();
-	glFlush();
-}
-void Drawscene3()
-{
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	glMatrixMode(GL_MODELVIEW);
-	glLoadIdentity();
-	glPushMatrix();
-	glTranslatef(0,0,-10.0f);
 
-	cube();
-	glPopMatrix();
-	glFlush();
-}
-
-GLuint Drawscene4()
-{
-	glEnable(GL_COLOR_MATERIAL);
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-	glMatrixMode(GL_MODELVIEW);
-	glLoadIdentity();
-
-	glPushMatrix();
-	glTranslatef(0.4f,1.8f,-5.0f);
- // printo(rend, 0, 0, "hello", font, &text1, &rect1);
-	// glBindTexture(GL_TEXTURE_2D, minusX)
-	// glEnable(GL_TEXTURE_2D);
-
-	glBegin(GL_QUADS);
-
-	glColor3f(100.0f,100.0f,100.0f);
-	glTexCoord2d(0,0);
-	glVertex3f(0.15f,0.15f,0.15f);
-	glTexCoord2d(1,0);
-	glVertex3f(-0.15f,0.15f,0.15f);
-	glTexCoord2d(1,1);
-	glVertex3f(-0.15f,-0.15f,0.15f);
-	glTexCoord2d(0,1);
-	glVertex3f(0.15f,-0.15f,0.15f);
-	glEnd();
-	glPopMatrix();
-
-	// glPushMatrix();
-
-}
+// void Drawscene();
+// void Drawscene2();
+// void Drawscene3();
+// void Drawscene4();
 
 void establishMatrix(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height);
 void initGL(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height);
@@ -114,8 +55,11 @@ const Uint8 *keys = NULL;
 // main
 int main(int argc, char ** argv)
 {
-	SDL_Init(SDL_INIT_EVERYTHING);
-
+	if(SDL_Init(SDL_INIT_EVERYTHING)==-1)
+		{
+			cout <<"error\n"	;
+		}
+		///cout <<"1\n";
 	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
 	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 8);
 
@@ -133,7 +77,7 @@ int main(int argc, char ** argv)
 	int done = 0;
 	while(!done)\
 	{
-		done++;
+		
 		// main viewport for 2D
 		initGL(320,0,340,300);
 		Drawscene();
@@ -148,7 +92,7 @@ int main(int argc, char ** argv)
 		// sidebar 
 		initGL4(20,0,280,610);
 		Drawscene4();
- printo(rend, 30, 30, "hello", font, &text1, &rect1);
+
 		SDL_Event event;
 		while(SDL_PollEvent(&event))
 		{	
@@ -156,7 +100,7 @@ int main(int argc, char ** argv)
 			{
 				// cout << event <<'\n' << event.type;
 				cout <<"quiting was here";
-				// done =1 ;
+				done =1 ;
 			}
 			if(save)
 			{
@@ -204,7 +148,9 @@ void establishMatrix(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height)
 	glViewport(lx,ly,width,height);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
-	gluPerspective(45.0f,(GLfloat)width/(GLfloat)height,0.1f,200.0f);
+
+	// gluPerspective(45.0f,(GLfloat)width/(GLfloat)height,0.1f,200.0f);
+	glOrtho(-3.0,3.0,-3.0,3.0,-3.0,200.0);
 }
 
 void initGL(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height)
@@ -218,10 +164,10 @@ void initGL(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height)
 
 	glClearColor(0.80f,0.70f,0.90f,1.0f);
 
-	glEnable(GL_DEPTH_TEST);
-	glDepthFunc(GL_LEQUAL);
-	glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
-	glEnable(GL_PERSPECTIVE_CORRECTION_HINT);
+	// glEnable(GL_DEPTH_TEST);
+	// glDepthFunc(GL_LEQUAL);
+	// glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
+	// glEnable(GL_PERSPECTIVE_CORRECTION_HINT);
 }	
 
 

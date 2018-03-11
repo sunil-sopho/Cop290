@@ -18,7 +18,7 @@ void cube(){
 
 	glBegin(GL_QUADS);
 	//TOP
-	// glColor3f(0.1f,3.0f,3.0f);
+	glColor3f(0.0f,0.0f,0.0f);
 	glVertex3f(1.0f,1.0f,-1.0f);
 	glVertex3f(-1.0f,1.0f,-1.0f);
 	glVertex3f(-1.0f,1.0f,1.0f);
@@ -62,4 +62,56 @@ void cube(){
 
 	glEnd();
 
+}
+
+void linec(){
+	// updateView();
+	glEnable(GL_COLOR_MATERIAL);
+	glDisable(GL_CULL_FACE);
+
+	glBegin(GL_LINES);
+	glVertex3f(1.0f,1.0f,1.0f);
+	glVertex3f(-1.0f,1.0f,1.0f);
+
+	glVertex3f(1.0f,1.0f,1.0f);
+	glVertex3f(1.0f,-1.0f,1.0f);
+
+	glVertex3f(1.0f,1.0f,1.0f);
+	glVertex3f(1.0f,1.0f,-1.0f);
+
+	glVertex3f(-1.0f,1.0f,1.0f);
+	glVertex3f(-1.0f,1.0f,-1.0f);
+
+	glVertex3f(-1.0f,1.0f,1.0f);
+	glVertex3f(-1.0f,-1.0f,1.0f);
+
+	glVertex3f(-1.0f,-1.0f,1.0f);
+	glVertex3f(-1.0f,-1.0f,-1.0f);
+
+	glVertex3f(-1.0f,-1.0f,1.0f);
+	glVertex3f(1.0f,-1.0f,1.0f);
+
+	glVertex3f(1.0f,1.0f,1.0f);
+	glVertex3f(1.0f,1.0f,-1.0f);
+
+	glVertex3f(1.0f,-1.0f,1.0f);
+	glVertex3f(1.0f,-1.0f,-1.0f);
+
+	glVertex3f(1.0f,1.0f,-1.0f);
+	glVertex3f(1.0f,-1.0f,-1.0f);
+
+	glVertex3f(1.0f,-1.0f,-1.0f);
+	glVertex3f(-1.0f,-1.0f,-1.0f);
+
+	glVertex3f(-1.0f,-1.0f,-1.0f);
+	glVertex3f(-1.0f,1.0f,-1.0f);
+
+	glVertex3f(-1.0f,1.0f,-1.0f);
+	glVertex3f(1.0f,1.0f,-1.0f);
+
+	glEnd();
+}
+
+void addLine(){
+	
 }
