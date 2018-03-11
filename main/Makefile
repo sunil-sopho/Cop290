@@ -1,8 +1,8 @@
-IDIR = ./include
+IDIR = ../include
 CC=g++
 CFLAGS=-I$(IDIR)
 
-ODIR=./obj
+ODIR=../obj
 
 LIBS= -lm -lGL -lGLU -lglut
 	
