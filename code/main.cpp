@@ -26,7 +26,7 @@ int main(int iArgc, char** cppArgv) {
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(250, 250);
 	glutInitWindowPosition(200, 200);
-	glutCreateWindow("XoaX.net");
+	glutCreateWindow("CAD");
 	Initialize();
 	glutDisplayFunc(Draw);
 	glutMainLoop();
