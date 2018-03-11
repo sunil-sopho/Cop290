@@ -13,7 +13,7 @@ public:
 	/*! Array of 3d edges for storing all the edges of the 3d model.*/
 	// Edge edges;
 	/*! Rotates the given 3d model around the auxiliary plane.*/
-	void addEgde(Point src,Point dest,Model_3d m);
+	void addEgde(Point src,Point dest);
 	void removeEgde(Point src,Point dest);
 
 	Model_3d rotate(Plane p);
