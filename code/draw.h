@@ -109,7 +109,7 @@ int Drawscene4()
 	glPopMatrix();
 
 	glPushMatrix();
-	glTranslatef(2.5f,1.6f,2.5f);
+	glTranslatef(1.6f,2.4f,-20.0f);
 
 	// glBindTexture(GL_TEXTURE_2D, minusm);
 	// glEnable(GL_TEXTURE_2D);
