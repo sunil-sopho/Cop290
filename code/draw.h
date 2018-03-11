@@ -10,9 +10,10 @@ void Drawscene()
 	glLoadIdentity();
 	glPushMatrix();
 	glTranslatef(0,0,-10.0f);
+
 updateView();
 	linec();
-		
+
 	// cube();
 	glPopMatrix();
 	glFlush();
@@ -46,11 +47,11 @@ int Drawscene4()
 
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
-
+ // printo(rend, 199, 20, "--|--|", font, &text1, &rect1);
 	glPushMatrix();
 	glTranslatef(0.4f,1.8f,-5.0f);
- // printo(rend, 0, 0, "hello", font, &text1, &rect1);
-	// glBindTexture(GL_TEXTURE_2D, minusX)
+
+	// glBindTexture(GL_TEXTURE_2D, minusm);
 	// glEnable(GL_TEXTURE_2D);
 
 	glBegin(GL_QUADS);

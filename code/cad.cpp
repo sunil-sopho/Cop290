@@ -20,7 +20,7 @@ Projectname - CAD
 #include "keys.h"
 // #include "cube.h"
 #include "printtxt.h"
-#include "draw.h"
+#include "buttons.h"
 
 using namespace std;
 
@@ -30,8 +30,8 @@ using namespace std;
 	SDL_Texture *text1, *text2;
 	char *font_path = "FreeSans.ttf"; ;
 	TTF_Font *font;
-
-
+#include "draw.h"
+#include "clicks.h"
 // void Drawscene();
 // void Drawscene2();
 // void Drawscene3();
@@ -51,10 +51,11 @@ void establishMatrix4(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height);
 void initGL4(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height);
 
 const Uint8 *keys = NULL;
-
+int x,y;
 // main
 int main(int argc, char ** argv)
 {
+	loadbuttons();
 	if(SDL_Init(SDL_INIT_EVERYTHING)==-1)
 		{
 			cout <<"error\n"	;
@@ -89,10 +90,10 @@ int main(int argc, char ** argv)
 		initGL3(680,0,340,300);
 		Drawscene3();
 
-		// sidebar 
+		// // sidebar 
 		initGL4(20,0,280,610);
 		Drawscene4();
-
+ // printo(rend, 199, 20, "--|--|", font, &text1, &rect1);
 		SDL_Event event;
 		while(SDL_PollEvent(&event))
 		{	
@@ -101,6 +102,14 @@ int main(int argc, char ** argv)
 				// cout << event <<'\n' << event.type;
 				cout <<"quiting was here";
 				done =1 ;
+			}
+			if(event.type == SDL_MOUSEMOTION)
+			{
+				SDL_GetMouseState(&x,&y);
+			}
+			if(event.type == SDL_MOUSEBUTTONDOWN)
+			{
+				clicks(x,y);
 			}
 			if(save)
 			{
