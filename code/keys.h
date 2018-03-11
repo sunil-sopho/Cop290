@@ -2,6 +2,7 @@
 GLfloat ScaleFactor = 1.0f;
 GLfloat cubeRotateY = 0.0f;
 GLfloat cubeRotateX = 0.0f;
+bool save = false;
 
 GLboolean checkKeys(const Uint8* keys){
 
@@ -35,6 +36,9 @@ GLboolean checkKeys(const Uint8* keys){
  	if(keys[SDL_SCANCODE_W])
  	{
  		ScaleFactor -= 0.01;
+ 	}
+ 	if(keys[SDL_SCANCODE_J]){
+ 		save = true;
  	}
  	return false;
 

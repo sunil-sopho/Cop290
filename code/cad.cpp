@@ -6,10 +6,11 @@ Projectname - CAD
 
 
 #include <SDL2/SDL.h>
+#include <SDL2/SDL_ttf.h>
 #include <GL/gl.h>
 #include <GL/glu.h>
 #include <GL/glut.h>
-//#include "soil.h" // image importing utilities>
+#include <SOIL/SOIL.h> // image importing utilities>
 #include "stdio.h"
 #include "math.h" // for basic mathematic functions
 #include "stdlib.h"
@@ -17,30 +18,81 @@ Projectname - CAD
 #include  <bits/stdc++.h>
 #include "keys.h"
 #include "cube.h"
+#include "printtxt.h"
 
 using namespace std;
 
-SDL_Window *screen;
-
+	SDL_Window *screen;
+	SDL_Rect rect1,rect2;
+	SDL_Renderer *rend;
+	SDL_Texture *text1, *text2;
+	char *font_path = "FreeSans.ttf"; ;
+	TTF_Font *font;
 // Draw scene for all viewports
 void Drawscene()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	// cube();
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+	glPushMatrix();
+	glTranslatef(0,0,-10.0f);
+
 	cube();
+	glPopMatrix();
+	glFlush();
 }
 void Drawscene2()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	// cube();
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
 	cube();
+	glFlush();
 }
 void Drawscene3()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+	glPushMatrix();
+	glTranslatef(0,0,-10.0f);
 
+	cube();
+	glPopMatrix();
+	glFlush();
 }
-void Drawscene4()
+
+GLuint Drawscene4()
 {
+	glEnable(GL_COLOR_MATERIAL);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+
+	glPushMatrix();
+	glTranslatef(0.4f,1.8f,-5.0f);
+ // printo(rend, 0, 0, "hello", font, &text1, &rect1);
+	// glBindTexture(GL_TEXTURE_2D, minusX)
+	// glEnable(GL_TEXTURE_2D);
+
+	glBegin(GL_QUADS);
+
+	glColor3f(100.0f,100.0f,100.0f);
+	glTexCoord2d(0,0);
+	glVertex3f(0.15f,0.15f,0.15f);
+	glTexCoord2d(1,0);
+	glVertex3f(-0.15f,0.15f,0.15f);
+	glTexCoord2d(1,1);
+	glVertex3f(-0.15f,-0.15f,0.15f);
+	glTexCoord2d(0,1);
+	glVertex3f(0.15f,-0.15f,0.15f);
+	glEnd();
+	glPopMatrix();
+
+	// glPushMatrix();
 
 }
 
@@ -67,15 +119,21 @@ int main(int argc, char ** argv)
 	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
 	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 8);
 
-	screen = SDL_CreateWindow("CAD", 200,200,1024,610,SDL_WINDOW_OPENGL);
+	// strcpy(font_path ,"FreeSans.ttf".c_str());
+
+	SDL_CreateWindowAndRenderer(1024, 610, 0, &screen, &rend);
+    TTF_Init();
+    font = TTF_OpenFont(font_path, 24);
+   
+	// screen = SDL_CreateWindow("CAD", 200,200,1024,610,SDL_WINDOW_OPENGL);
 	
-	SDL_GLContext context = SDL_GL_CreateContext(screen);
-	SDL_GL_MakeCurrent(screen, context);
+	// SDL_GLContext context = SDL_GL_CreateContext(screen);
+	// SDL_GL_MakeCurrent(screen, context);
 
 	int done = 0;
 	while(!done)\
 	{
-		// done++;
+		done++;
 		// main viewport for 2D
 		initGL(320,0,340,300);
 		Drawscene();
@@ -90,7 +148,7 @@ int main(int argc, char ** argv)
 		// sidebar 
 		initGL4(20,0,280,610);
 		Drawscene4();
-
+ printo(rend, 30, 30, "hello", font, &text1, &rect1);
 		SDL_Event event;
 		while(SDL_PollEvent(&event))
 		{	
@@ -98,16 +156,44 @@ int main(int argc, char ** argv)
 			{
 				// cout << event <<'\n' << event.type;
 				cout <<"quiting was here";
-				done =1 ;
+				// done =1 ;
 			}
+			if(save)
+			{
+				int height = 610;
+				int width = 1024;
 
+				std::vector<unsigned char> v(width*height*3);
+
+				glPixelStorei(GL_PACK_ALIGNMENT,1);
+				glReadPixels(0,0,width,height,GL_RGB,GL_UNSIGNED_BYTE,&v[0]);
+
+				int err = SOIL_save_image(
+					"mycad.bmp",
+					SOIL_SAVE_TYPE_BMP,
+					width,
+					height,
+					3,
+					&v[0]
+					);
+				save = false;
+				// done = 1;
+			}
 			keys = SDL_GetKeyboardState(NULL);
+
+			SDL_SetRenderDrawColor(rend, 0, 0, 0, 0);
+	        SDL_RenderClear(rend);
+	        /* Use TTF textures. */
+	        SDL_RenderCopy(rend, text1, NULL, &rect1);
+	        SDL_RenderCopy(rend, text2, NULL, &rect2);
+	        SDL_RenderPresent(rend);
 		}
 		SDL_GL_SwapWindow(screen);
 
 		if(checkKeys(keys))
 			done = 1 ;
 	}
+	// SDL_GL_DeleteContext(context);
 	SDL_DestroyWindow(screen);
 	SDL_Quit();
 	return 0;
