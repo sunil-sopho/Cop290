@@ -16,14 +16,16 @@ Projectname - CAD
 #include "stdlib.h"
 #include "string.h"
 #include  <bits/stdc++.h>
-
+#include "node.h"
 #include "keys.h"
 // #include "cube.h"
 #include "printtxt.h"
 #include "buttons.h"
-
+#include <vector> 
+#include "construct.h"
+#include "project.h"
 using namespace std;
-
+	std::vector<node> v;
 	SDL_Window *screen;
 	SDL_Rect rect1,rect2;
 	SDL_Renderer *rend1;
@@ -67,7 +69,7 @@ int main(int argc, char ** argv)
 	// strcpy(font_path ,"FreeSans.ttf".c_str());
 
 
-	SDL_CreateWindowAndRenderer(1024, 610, 0, &screen, &rend);
+	SDL_CreateWindowAndRenderer(1024, 610, 0, &screen, &rend1);
     TTF_Init();
     font = TTF_OpenFont(font_path, 24);
 

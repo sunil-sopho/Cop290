@@ -1,3 +1,8 @@
+#ifndef CONSTRUCT_H
+#define CONSTRUCT_H
+#include <GL/gl.h>
+#include <GL/glu.h>
+#include <GL/glut.h>
 #include "point.h"
 
 void addPoint(point* p)
@@ -9,7 +14,7 @@ void addPoint(point* p)
 	glBegin(GL_POINTS);
 
 	glColor3f(0.0f,0.0f,0.0f);
-	glVertex(p[0].getC[0],p[0].getC[1],p[0].getC[2]);
+	glVertex3f(p[0].getC(0),p[0].getC(1),p[0].getC(2));
 
 	glEnd();
 }
@@ -24,7 +29,7 @@ void addLine(point* p){
 	glColor3f(0.0f,0.0f,0.0f);
 	for(int i=0; i<2;i++)
 	{
-		glVertex(p[i].getC[0],p[i].getC[1],p[i].getC[2]);
+		glVertex3f(p[i].getC(0),p[i].getC(1),p[i].getC(2));
 	}
 
 	glEnd();
@@ -42,7 +47,7 @@ void addTri(point* p){
 	glColor3f(0.0f,0.0f,0.0f);
 	for(int i=0; i<3;i++)
 	{
-		glVertex(p[i].getC[0],p[i].getC[1],p[i].getC[2]);
+		glVertex3f(p[i].getC(0),p[i].getC(1),p[i].getC(2));
 	}
 
 	glEnd();
@@ -58,7 +63,8 @@ void addPlane(point* p){
 	glColor3f(0.0f,0.0f,0.0f);
 	for(int i=0; i<4;i++)
 	{
-		glVertex(p[i].getC[0],p[i].getC[1],p[i].getC[2]);
+		glVertex3f(p[i].getC(0),p[i].getC(1),p[i].getC(2));
 	}
 	glEnd();
 }
+#endif
