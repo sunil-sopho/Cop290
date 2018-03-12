@@ -7,6 +7,7 @@
 
 void addPoint(point* p)
 {
+
 	glEnable(GL_COLOR_MATERIAL);
 	glDisable(GL_CULL_FACE);
 	// adding a point
@@ -20,6 +21,7 @@ void addPoint(point* p)
 }
 
 void addLine(point* p){
+
 
 	glEnable(GL_COLOR_MATERIAL);
 	glDisable(GL_CULL_FACE);

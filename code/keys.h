@@ -35,6 +35,7 @@ GLboolean checkKeys(const Uint8* keys){
  	}
  	if(keys[SDL_SCANCODE_W])
  	{
+ 		if(ScaleFactor >= 0.0000001)
  		ScaleFactor -= 0.01;
  	}
  	if(keys[SDL_SCANCODE_J]){

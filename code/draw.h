@@ -35,7 +35,9 @@ void Drawscene3()
 	glPushMatrix();
 	glTranslatef(0,0,-10.0f);
 
-	cube();
+	// cube();
+	updateView();
+	Project(v);
 	glPopMatrix();
 	glFlush();
 }
