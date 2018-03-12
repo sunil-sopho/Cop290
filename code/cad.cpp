@@ -57,7 +57,7 @@ int x,y;
 // main
 int main(int argc, char ** argv)
 {
-	loadbuttons();
+	// loadbuttons();
 	if(SDL_Init(SDL_INIT_EVERYTHING)==-1)
 		{
 			cout <<"error\n"	;
@@ -123,11 +123,14 @@ int main(int argc, char ** argv)
 				std::vector<unsigned char> v(width*height*3);
 
 				glPixelStorei(GL_PACK_ALIGNMENT,1);
-				glReadPixels(0,0,width,height,GL_RGB,GL_UNSIGNED_BYTE,&v[0]);
+				for(int i=0;i<height;i++)
+				glReadPixels(0,height-1- i,width,1,GL_RGB,GL_UNSIGNED_BYTE,&v[i*width*3]);
+
+				// reverse(v.begin(),v.end());
 
 				int err = SOIL_save_image(
 					"mycad.bmp",
-					SOIL_SAVE_TYPE_BMP,
+					SOIL_SAVE_TYPE_BMP ,
 					width,
 					height,
 					3,
