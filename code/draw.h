@@ -42,6 +42,20 @@ void Drawscene3()
 	glFlush();
 }
 
+// const int font1 = (int)GLUT_BITMAP_9_BY_15;
+// void output(char *s)
+// {
+// 	char *c;
+// 	glColor3f(255,0,0);
+// 	glRasterPos2f(1.4,0);
+// 	// char *s = (char*)malloc(sizeof(char)*10);
+// 	// s = "hithere";
+// 	for(c=s;*c !='\0';c++)
+// 	{
+// 		glutBitmapCharacter((void*)font1,*c);
+// 	} 
+// }
+
 int Drawscene4()
 {
 	glEnable(GL_COLOR_MATERIAL);
@@ -53,10 +67,13 @@ int Drawscene4()
 	glPushMatrix();
 	glTranslatef(2.4f,7.0f,-20.0f);
 
+	// char s[] = {'s','u','n','i','l','k','u','m','\0'};
+
+	// output("hithere\0");
 	// glBindTexture(GL_TEXTURE_2D, minusm);
 	// glEnable(GL_TEXTURE_2D);
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB,
-              GL_UNSIGNED_BYTE, image);
+	// glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB,
+ //              GL_UNSIGNED_BYTE, image);
 // cout << minusm <<'\n';
 	glBegin(GL_QUADS);
 
