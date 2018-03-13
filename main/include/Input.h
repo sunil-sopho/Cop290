@@ -7,7 +7,12 @@
 */
 #include <OrthographicView.h>
 #include <Model_3d.h>
+#include<Model_3d.h>
+#include <string>
+#include<fstream>
 /*! Contains functions for taking input from file.*/
+#ifndef Input_h
+#define Input_h
 class Input{
 public:
 	/*! Reads the file and return the orthographid views in the form of 2d graph.*/
@@ -15,3 +20,4 @@ public:
 	/*! Reads the file and returns 3d model in the form of 3d graph.*/
 	Model_3d readFrom3DFile(string file);
 };
+#endif
