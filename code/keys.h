@@ -105,28 +105,53 @@ GLboolean checkKeys(const Uint8* keys){
 			nod.setCode(mode);
 			counter++;
 		}
-		if(counter == 1){
-			nod.setP(1,lx,ly,lz);
-			counter++;
-		}
-		else if(counter == 2){
-			counter++;
-			nod.setP(2,lx,ly,lz);
-		}
-		else if(counter == 3){
-			counter++;
-			nod.setP(3,lx,ly,lz);
-		}
-		else if(counter == 4){
-			counter++;
-			nod.setP(4,lx,ly,lz);
-		}
+
+		// else if(counter == 2){
+		// 	counter++;
+		// 	nod.setP(2,lx,ly,lz);
+		// }
+		// else if(counter == 3){
+		// 	counter++;
+		// 	nod.setP(3,lx,ly,lz);
+		// }
+		// else if(counter == 4){
+		// 	counter++;
+		// 	nod.setP(4,lx,ly,lz);
+		// }
 		if(counter == mode +1){
 			v.push_back(nod);
 			counter =0;
 		}
 
+ 	}
+ 	if(keys[SDL_SCANCODE_KP_1])
+ 	{
+ 		if(counter == 1){
+			nod.setP(1,lx,ly,lz);
+			counter++;
+		}
+ 	}
+ 	 if(keys[SDL_SCANCODE_KP_2])
+ 	{
+ 		if(counter == 2){
+			counter++;
+			nod.setP(2,lx,ly,lz);
+		}
  	}  	
+ 	if(keys[SDL_SCANCODE_KP_3])
+ 	{
+ 		if(counter == 3){
+			counter++;
+			nod.setP(3,lx,ly,lz);
+		}
+ 	}  	
+ 	if(keys[SDL_SCANCODE_KP_4])
+ 	{
+ 		if(counter == 4){
+			counter++;
+			nod.setP(4,lx,ly,lz);
+		}
+ 	}  	  	
 //=======================================================================
 //========== specialised functions ======================================
 //=======================================================================
