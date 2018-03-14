@@ -3,13 +3,15 @@
 int numScreen = 0;
 bool save = false;
 #include "window.h"
+#include "construct.h"
 #include <vector>
 // #include "standardHandler.h"
 GLfloat ScaleFactor = 1.0f;
 GLfloat cubeRotateY = 0.0f;
 GLfloat cubeRotateX = 0.0f;
 GLfloat lx=0,ly=0,lz=0;
-int mode = 1;
+int mode = 1,counter =0;
+node nod ;
 GLboolean checkKeys(const Uint8* keys){
 
 	const GLfloat speed = 1.0f;
@@ -95,6 +97,35 @@ GLboolean checkKeys(const Uint8* keys){
  	if(keys[SDL_SCANCODE_4])
  	{
  		mode = 4;
+ 	}
+ 	if(keys[SDL_SCANCODE_RETURN])
+ 	{cout << mode <<" : "<< counter<<'\n';
+		
+		if(counter == 0){
+			nod.setCode(mode);
+			counter++;
+		}
+		if(counter == 1){
+			nod.setP(1,lx,ly,lz);
+			counter++;
+		}
+		else if(counter == 2){
+			counter++;
+			nod.setP(2,lx,ly,lz);
+		}
+		else if(counter == 3){
+			counter++;
+			nod.setP(3,lx,ly,lz);
+		}
+		else if(counter == 4){
+			counter++;
+			nod.setP(4,lx,ly,lz);
+		}
+		if(counter == mode +1){
+			v.push_back(nod);
+			counter =0;
+		}
+
  	}  	
 //=======================================================================
 //========== specialised functions ======================================
