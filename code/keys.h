@@ -1,16 +1,30 @@
-
+#ifndef KEYS_H
+#define KEYS_H
+int numScreen = 0;
+bool save = false;
+#include "window.h"
+#include <vector>
+// #include "standardHandler.h"
 GLfloat ScaleFactor = 1.0f;
 GLfloat cubeRotateY = 0.0f;
 GLfloat cubeRotateX = 0.0f;
-bool save = false;
-
+GLfloat lx=0,ly=0,lz=0;
+int mode = 1;
 GLboolean checkKeys(const Uint8* keys){
 
 	const GLfloat speed = 1.0f;
 
  	if(keys[SDL_SCANCODE_ESCAPE])
  	{
- 		return true;
+ 		// cout << numScreen <<'\n';
+ 		// if(numScreen == 0)
+ 		// return true;
+ 		// else
+ 		// {
+ 		// 	closeWindow();
+ 		// 	numScreen = 0;
+ 		// 	return false;
+ 		// }
  	}
  	if(keys[SDL_SCANCODE_LEFT])
  	{
@@ -38,10 +52,50 @@ GLboolean checkKeys(const Uint8* keys){
  		if(ScaleFactor >= 0.0000001)
  		ScaleFactor -= 0.01;
  	}
- 	if(keys[SDL_SCANCODE_J]){
+ 	if(keys[SDL_SCANCODE_P]){
  		save = true;
  	}
-
+ 	if(keys[SDL_SCANCODE_U])
+ 	{
+ 		lx += 0.01;
+ 	} 	
+ 	if(keys[SDL_SCANCODE_J])
+ 	{
+ 		lx -= 0.01;
+ 	}
+ 	if(keys[SDL_SCANCODE_I])
+ 	{
+ 		ly += 0.01;
+ 	}
+  	if(keys[SDL_SCANCODE_K])
+ 	{
+ 		ly -= 0.01;
+ 	}   
+ 	if(keys[SDL_SCANCODE_O])
+ 	{
+ 		lz += 0.01;
+ 	}
+ 	if(keys[SDL_SCANCODE_L])
+ 	{
+ 		lz -= 0.01;
+ 	}
+ 	if(keys[SDL_SCANCODE_1])
+ 	{
+ 		mode = 1;
+ 	} 
+  	if(keys[SDL_SCANCODE_2])
+ 	{
+ 		mode = 2;
+ 	} 
+ 	 	if(keys[SDL_SCANCODE_3])
+ 	{
+ 		// cout << "3";
+ 		mode = 3;
+ 	}
+ 	if(keys[SDL_SCANCODE_4])
+ 	{
+ 		mode = 4;
+ 	}  	
 //=======================================================================
 //========== specialised functions ======================================
 //=======================================================================
@@ -57,6 +111,23 @@ GLboolean checkKeys(const Uint8* keys){
  	{
  		// cubeRotateZ = 0.0f;
  	}
+ 	// if(keys[SDL_SCANCODE_N])
+ 	// {
+ 	// 	if(numScreen == 0){
+ 	// 		win[numScreen+1].init();
+ 	// 		numScreen++;
+ 	// 	}
+ 	// 	numScreen += 1;
+
+
+ 	// }
+ 	// if(keys[SDL_SCANCODE_M])
+ 	// {
+ 	// 	closeWindow();
+ 	// }
  	return false;
 
 }
+
+
+#endif

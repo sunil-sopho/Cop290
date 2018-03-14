@@ -28,8 +28,7 @@ using namespace std;
 	char *font_path = "FreeSans.ttf"; ;
 	TTF_Font *font;
 	int done = 0;
-const Uint8 *keys = NULL;
-#include "standardHandler.h"
+
 // #include "window.h"
 #include "keys.h"
 // #include "cube.h"
@@ -41,11 +40,10 @@ const Uint8 *keys = NULL;
 
 
 #include "draw.h"
-#include "messNet.h"
 #include "clicks.h"
 #include "Ltexture.h"
 
-std::vector<window> win(4);
+
 
 LTexture gTexture;
 
@@ -67,33 +65,61 @@ void establishMatrix5(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height);
 void initGL5(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height);
 
 
-
+const Uint8 *keys = NULL;
 
 // main
 int main(int argc, char ** argv)
 {
-
+	// loadbuttons();
 	if(SDL_Init(SDL_INIT_EVERYTHING)==-1)
-	{
+		{
 			cout <<"error\n"	;
-	}
-	
+		}
+		///cout <<"1\n";
 	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
 	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 8);
 
-	win[0].init();
+	// strcpy(font_path ,"FreeSans.ttf".c_str());
+
+
+	SDL_CreateWindowAndRenderer(1024, 610, 0, &screen, &rend1);
     TTF_Init();
     font = TTF_OpenFont(font_path, 24);
-
- 
-	
-	while(!done)
+    // gFont = TTF_OpenFont( "lazy.ttf", 28 );
+	if( font == NULL )
 	{
+		printf( "Failed to load lazy font! SDL_ttf Error: %s\n", TTF_GetError() );
+	}
+	else
+	{
+		//Render text
+
+	}
+   
+	// screen = SDL_CreateWindow("CAD", 200,200,1024,610,SDL_WINDOW_FOREIGN);
+	// rend1 = SDL_CreateRenderer(screen,-1,SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+	SDL_GLContext context = SDL_GL_CreateContext(screen);
+	SDL_GL_MakeCurrent(screen, context);
+		// string s = "hi guys so long no see yeah";
+		// SDL_Color textColor = { 255, 0, 0 };
+		// SDL_Surface* textSurface = TTF_RenderText_Solid( font, s.c_str(), textColor );
+		// SDL_Surface * bg = SDL_ConvertSurfaceFormat(textSurface);
+	
+	while(!done)\
+	{
+	// 	SDL_SetRenderDrawColor(rend1, 0xF0, 0xFF, 0x00, 0xFF );
+	// 	SDL_RenderClear(rend1);
+	// 	rect1.x = 20;
+	// 	rect1.y = 0;
+	// 	rect1.w = 280;
+	// 	rect1.h = 610;
+	// 	SDL_RenderSetViewport(rend1,&rect1);
+	// 	SDL_RenderCopy(rend1,NULL,NULL,NULL);
+
 
 		// main viewport for 2D
-		// if(numScreen <= 0)
-		// {
-		win[0].makeCurrent();
+		if(numScreen <= 0)
+		{
 			initGL(320,0,340,300);
 			Drawscene();
 
@@ -108,77 +134,86 @@ int main(int argc, char ** argv)
 			initGL4(20,0,280,610);
 			Drawscene4();
 			initGL5(1000,0,20,1);	
-		if(numScreen == 1){
-			win[1].makeCurrent();
-			win[1].inGL();
-			// initGL(320,0,340,300);
-			// Drawscene();
-			messinit();
 		}
-		
+		// if( !gTexture.loadFromRenderedText( "The quick brown fox jumps over the lazy dog", textColor ) )
+		// {
+		// 	printf( "Failed to render text texture!\n" );
+		// }
+
+ // printo(rend, 199, 20, "--|--|", font, &text1, &rect1);
 		SDL_Event event;
 		while(SDL_PollEvent(&event))
 		{	
-			if(event.type == SDL_KEYDOWN)
-			{
-				// cout << "was here keydown  pressed\n";
-				if(event.key.keysym.sym == SDLK_ESCAPE)
-				{				
-					cout << "was here keydownesc\n";
-					esc = true;
-				}
-				if(event.key.keysym.sym == SDLK_n){
-					cout << "n \n";
-					n = true;
-				}
-			}
-			standardHandler(event,win);
+			// if (event.type == SDL_QUIT)
+			// {
+			// 	// cout << event <<'\n' << event.type;
+			// 	cout << numScreen<<"gooooo"<<'\n';
+			// 	if(numScreen == 0)
+			// 		done = 1 ;
+			// 	else
+			// 		closeWindow();
+			// }
+			// if(event.type == SDL_MOUSEMOTION)
+			// {
+			// 	SDL_GetMouseState(&x,&y);
+			// }
+			// if(event.type == SDL_MOUSEBUTTONDOWN)
+			// {
+			// 	clicks(x,y);
+			// }
+			// if(save)
+			// {
+			// 	int height = 610;
+			// 	int width = 1024;
 
-			if(event.type = SDL_KEYUP)
-			{
-				cout << "was here keyup \n";
-				if(event.key.keysym.sym == SDLK_ESCAPE && esc == true)
-				{
-					
-					esc = false;
-					if(numScreen == 1){
-						win[numScreen].free();
-						numScreen--;
-					}
-					else
-					{
-						done = 1;
-					}
-				}
-				if(event.key.keysym.sym == SDLK_n && n == true)
-				{
-					cout << "N up\n";
-					n = false;
-					if(numScreen == 0)
-					win[1].init();
-					numScreen = 1;
-				}
-			}
+			// 	std::vector<unsigned char> v(width*height*3);
+
+			// 	glPixelStorei(GL_PACK_ALIGNMENT,1);
+			// 	for(int i=0;i<height;i++)
+			// 	glReadPixels(0,height-1- i,width,1,GL_RGB,GL_UNSIGNED_BYTE,&v[i*width*3]);
+
+			// 	// reverse(v.begin(),v.end());
+
+			// 	int err = SOIL_save_image(
+			// 		"mycad.bmp",
+			// 		SOIL_SAVE_TYPE_BMP ,
+			// 		width,
+			// 		height,
+			// 		3,
+			// 		&v[0]
+			// 		);
+			// 	save = false;
+			// 	// done = 1;
+			// }
 			keys = SDL_GetKeyboardState(NULL);
-			if(keys[SDL_SCANCODE_M])
- 			{
- 				// cout <<"M\n";
- 				win[1].free();
- 				numScreen=0;
- 			}
+
+			SDL_SetRenderDrawColor(rend1, 0, 0, 0, 0);
+	        SDL_RenderClear(rend1);
+	        /* Use TTF textures. */
+	        // SDL_RenderCopy(rend1, text1, NULL, &rect1);
+	        // gTexture.render((1024 - gTexture.getWidth())/2,(610 - gTexture.getHeight())/2);
+	        // SDL_RenderCopy(rend1, text2, NULL, &rect2);
+	        SDL_RenderPresent(rend1);
+	        // if(numScreen > 0)
+	        // {
+	        	
+	        // 	SDL_SetRenderDrawColor(rend2, 200, 0, 0, 0);
+		       //  SDL_RenderClear(rend2);	
+		       //  SDL_RenderPresent(rend2);
+	        // }
+
 		}
-		for(int i=0;i<4;i++)
-			win[i].render();
-		// SDL_GL_SwapWindow(win[0].screen);
+		// if(numScreen > 0)
+		// SDL_GL_SwapWindow(screen2);
+		SDL_GL_SwapWindow(screen);
+
 		if(checkKeys(keys))
 			done = 1 ;
 	}
 
 	gTexture.free();
 	TTF_CloseFont(font);
-	// SDL_GL_DeleteContext(context);
-	for(int i=0;i<win.size();i++)
-		win[i].free();
+	SDL_GL_DeleteContext(context);
 	SDL_DestroyRenderer(rend1);
 	SDL_DestroyWindow(screen);
 	TTF_Quit();

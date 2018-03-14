@@ -1,3 +1,6 @@
+#ifndef CLICKS_H
+#define CLICKS_H
+
 #include "construct.h"
 void clicks(int x, int y)
 {
@@ -6,7 +9,7 @@ void clicks(int x, int y)
 	{
 		cout<<"button 1 pressed point\n";
 		int x,y,z;
-		cin >> x >> y >> z;
+		cin >> x >> y >> z; 
 		node n ;
 		n.setCode(1);
 		n.setP(1,x,y,z);
@@ -91,3 +94,5 @@ void clicks(int x, int y)
 
 	}
 }
+
+#endif
