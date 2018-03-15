@@ -72,7 +72,24 @@ void initGL5(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height);
 // main
 int main(int argc, char ** argv)
 {
-
+	if(argc==2){
+		const char *filename=argv[1];
+		freopen(filename,"r",stdin);
+		int n,m;
+		float x,y,z;
+		char c;
+		cin>>n;
+		for(int i=0;i<n;i++){
+			cin>>m;
+			node no(m);
+			for(int j=0;j<m;j++){
+				cin>>c>>x>>c>>y>>c>>z>>c;
+				no.setP(j+1,x,y,z);
+			}
+			v.push_back(no);
+		}
+		fclose(stdin);	
+	}
 	if(SDL_Init(SDL_INIT_EVERYTHING)==-1)
 	{
 			cout <<"error\n"	;
