@@ -167,6 +167,20 @@ GLboolean checkKeys(const Uint8* keys){
  	{
  		// cubeRotateZ = 0.0f;
  	}
+ 	if(keys[SDL_SCANCODE_T]){
+ 		freopen("output.txt","w",stdout);
+ 		cout<<v.size()<<endl;
+ 		for(int i=0;i<v.size();i++){
+ 			int n=v[i].getCode();
+ 			cout<<n<<" ";
+ 			for(int j=0;j<n;j++){
+ 				point p=v[i].getP(j+1);
+ 				cout<<"("<<p.getC(0)<<", "<<p.getC(1)<<", "<<p.getC(2)<<") ";
+ 			}
+ 			cout<<endl;
+ 		}
+ 		fclose(stdout);
+ 	}
  	// if(keys[SDL_SCANCODE_N])
  	// {
  	// 	if(numScreen == 0){

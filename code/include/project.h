@@ -26,5 +26,5 @@
 		else
 			addPlane(p);
 	}
-	cout << "out of here\n";
+	//cout << "out of here\n";
 }
