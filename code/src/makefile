@@ -1,6 +1,6 @@
 IDIR =../include
 CXX=g++
-CXXFLAGS=-I../include
+CXXFLAGS= -I../include
 
 ODIR=obj
 LDIR=-L../lib
@@ -15,7 +15,7 @@ OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 $(ODIR)/%.o: %.cpp $(DEPS)
 	$(CXX) -c -o $@ $< $(CXXFLAGS)
 
-cadmake: $(OBJ)
+cad: $(OBJ)
 	g++ -o $@ $^ $(CXXFLAGS) $(LIBS) 
 
 

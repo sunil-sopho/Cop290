@@ -68,10 +68,10 @@ void initGL5(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height);
 
 
 
-
 // main
 int main(int argc, char ** argv)
 {
+
 	if(argc==2){
 		const char *filename=argv[1];
 		freopen(filename,"r",stdin);
