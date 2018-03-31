@@ -16,9 +16,9 @@ Projectname - CAD
 #include "math.h" // for basic mathematic functions
 #include "stdlib.h"
 #include "string.h"
-#include  <bits/stdc++.h>
+#include  <iostream>
 #include <vector> 
-#include "node.h"
+#include <node.h>
 using namespace std;
 	std::vector<node> v;
 	SDL_Window *screen,*screen2;

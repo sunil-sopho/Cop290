@@ -1,29 +1,22 @@
 IDIR =../include
-CC=gcc
-C_FLAGS=-I$(IDIR)
+CXX=g++
+CXXFLAGS=-I../include
 
 ODIR=obj
-LDIR=../lib
+LDIR=-L../lib
 
-LIBS=-lm -lSDL -lGLUT -lGLU -lGL
-
-_DEPS= clicks.h buttons.h construct.h cube.h draw.h keys.h Ltexture.h messNet.h node.h point.h printtxt.h project.h standardHandler.h window.h
-
-DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
+LIBS=-lm -lSDL2 -lGLU -lGL -lSOIL -lglut -lSDL2_ttf -lSDL2_image
 
 
-$(PROGNAME): $(O_FILES)
-	rm -f $(PROGNAME)
-	$(CC) $(L_FLAGS) -o $(PROGNAME) $(O_FILES) $(L_POSTFLAGS)
 _OBJ = cad.o 
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 
-$(ODIR)/%.o: %.c $(DEPS)
-	$(CC) -c -o $@ $< $(CFLAGS)
+$(ODIR)/%.o: %.cpp $(DEPS)
+	$(CXX) -c -o $@ $< $(CXXFLAGS)
 
 cadmake: $(OBJ)
-	gcc -o $@ $^ $(CFLAGS) $(LIBS)
+	g++ -o $@ $^ $(CXXFLAGS) $(LIBS) 
 
 
 .PHONY: clean
