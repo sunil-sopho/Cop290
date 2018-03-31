@@ -8,13 +8,13 @@ PROGNAME = at
 O_FILES = menus.o main.o
 
 $(PROGNAME): $(O_FILES)
-        rm -f $(PROGNAME)
-        $(CC) $(L_FLAGS) -o $(PROGNAME) $(O_FILES) $(L_POSTFLAGS)
+	rm -f $(PROGNAME)
+	$(CC) $(L_FLAGS) -o $(PROGNAME) $(O_FILES) $(L_POSTFLAGS)
 
 .c.o: 
-        $(CC) -c $(C_FLAGS) $<
+	$(CC) -c $(C_FLAGS) $<
 
 clean: 
-        rm -f core *.o $(PROGNAME) nohup.out
+	rm -f core *.o $(PROGNAME) nohup.out
 distclean: clean 
-        rm -f *~
+	rm -f *~
