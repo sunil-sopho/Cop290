@@ -8,6 +8,7 @@ void updateView(){
 	glScalef(ScaleFactor,ScaleFactor,ScaleFactor);
 	glRotatef(cubeRotateY,0,1,0);
 	glRotatef(cubeRotateX,1,0,0);
+	cout << cubeRotateY << " "<<cubeRotateX << endl;
 }
 
 void cube(){
@@ -18,7 +19,7 @@ void cube(){
 
 	glBegin(GL_QUADS);
 	//TOP
-	// glColor3f(0.0f,0.0f,0.0f);
+	glColor3f(255.0f,255.0f,255.0f);
 	glVertex3f(1.0f,1.0f,-1.0f);
 	glVertex3f(-1.0f,1.0f,-1.0f);
 	glVertex3f(-1.0f,1.0f,1.0f);

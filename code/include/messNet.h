@@ -16,7 +16,7 @@ void messinit()
 	
 	// glTranslatef(0,0,-10.0f);
 		cout << v.size()<<'\n';
-		Project(v);
+		Project(v,0);
 
 	// cout << cubeRotateX <<" : "<<cubeRotateY <<" : "<<ScaleFactor<<'\n';// 12 -41 0.34
 		glBegin(GL_LINES);

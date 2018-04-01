@@ -2,6 +2,7 @@
 // #include <GL/glu.h>
 #include "cube.h"
 // Draw scene for all viewports
+//front view
 void Drawscene()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -12,21 +13,29 @@ void Drawscene()
 	glTranslatef(0,0,-10.0f);
 
 updateView();
-	linec();
+	// linec();
+
+Project(v,1);
 
 	// cube();
 	glPopMatrix();
 	glFlush();
 }
+
+// 3D view
 void Drawscene2()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	// cube();
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
-	cube();
+	// cube();
+	updateView();
+	Project(v,0);
 	glFlush();
 }
+
+//Top view
 void Drawscene3()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -37,7 +46,8 @@ void Drawscene3()
 
 	// cube();
 	updateView();
-	Project(v);
+	glRotatef(90,1,0,0);
+	Project(v,1);
 	glPopMatrix();
 	glFlush();
 }
@@ -50,15 +60,19 @@ void Drawscene6()
 	glLoadIdentity();
 	glPushMatrix();
 	glTranslatef(0,0,-10.0f);
-
+	
 	updateView();
-	linec();
+	// linec();
+	glRotatef(90,0,1,0);
+	Project(v,1);
 
 	// cube();
 	glPopMatrix();
 	glFlush();
 }
 
+
+//horizontal line
 void Drawscene7()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -84,6 +98,7 @@ void Drawscene7()
 	glFlush();
 }
 
+// vertical line 1
 void Drawscene8()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -108,6 +123,9 @@ void Drawscene8()
 	glPopMatrix();
 	glFlush();
 }
+
+// vertical line 2
+
 void Drawscene9()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);

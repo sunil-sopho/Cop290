@@ -5,7 +5,7 @@
 #include <GL/glut.h>
 #include "node.h"
 
-void addPoint(point* p)
+void addPoint(point* p,int view)
 {
 
 	// glEnable(GL_COLOR_MATERIAL);
@@ -20,7 +20,7 @@ void addPoint(point* p)
 	glEnd();
 }
 
-void addLine(point* p){
+void addLine(point* p,int view){
 
 
 	// glEnable(GL_COLOR_MATERIAL);
@@ -28,7 +28,7 @@ void addLine(point* p){
 
 	// adds line
 	glBegin(GL_LINES);	
-	glColor3f(250.0f,0.0f,0.0f);
+	glColor3f(250.0f,250.0f,250.0f);
 	for(int i=0; i<2;i++)
 	{
 		glVertex3f(p[i].getC(0),p[i].getC(1),p[i].getC(2));
@@ -38,35 +38,74 @@ void addLine(point* p){
 
 }
 
-void addTri(point* p){
+void addTri(point* p,int view){
 
 	// glEnable(GL_COLOR_MATERIAL);
 	// glDisable(GL_CULL_FACE);
 
 	// adds line
-	glBegin(GL_TRIANGLES);	
 
-	glColor3f(250.0f,0.0f,0.0f);
-	for(int i=0; i<3;i++)
-	{
-		glVertex3f(p[i].getC(0),p[i].getC(1),p[i].getC(2));
+	if(!view){
+		glBegin(GL_TRIANGLES);	
+
+		glColor3f(250.0f,250.0f,250.0f);
+		for(int i=0; i<3;i++)
+		{
+			glVertex3f(p[i].getC(0),p[i].getC(1),p[i].getC(2));
+		}
+
+		glEnd();
 	}
+	else
+	{
+		glBegin(GL_LINES);
+		glColor3f(250.0f,250.0f,250.0f);
 
-	glEnd();
+		for(int i=0; i<3;i++)
+		{
+			glVertex3f(p[i].getC(0),p[i].getC(1),p[i].getC(2));
+			glVertex3f(p[(i+1)%3].getC(0),p[(i+1)%3].getC(1),p[(i+1)%3].getC(2));
+		}
+
+		glEnd();
+
+
+	}
 }
 
-void addPlane(point* p){
+void addPlane(point* p,int view){
 
 	// glEnable(GL_COLOR_MATERIAL);
 	// glDisable(GL_CULL_FACE);
 
 	// adds line
-	glBegin(GL_QUADS);	
-	glColor3f(250.0f,0.0f,0.0f);
-	for(int i=0; i<4;i++)
-	{
-		glVertex3f(p[i].getC(0),p[i].getC(1),p[i].getC(2));
+	if(!view){
+		glBegin(GL_QUADS);	
+		glColor3f(250.0f,250.0f,250.0f);
+		for(int i=0; i<4;i++)
+		{
+			glVertex3f(p[i].getC(0),p[i].getC(1),p[i].getC(2));
+		}
+		glEnd();
 	}
-	glEnd();
+	else
+	{
+		glBegin(GL_LINES);
+		glColor3f(250.0f,250.0f,250.0f);
+
+		for(int i=0; i<4;i++)
+		{
+			glVertex3f(p[i].getC(0),p[i].getC(1),p[i].getC(2));
+			glVertex3f(p[(i+1)%4].getC(0),p[(i+1)%4].getC(1),p[(i+1)%4].getC(2));
+		}
+
+		// for(int i=1; i<4;i+=2)
+		// {
+		// 	glVertex3f(p[i].getC(0),p[i].getC(1),p[i].getC(2));
+		// 	glVertex3f(p[(i+2)%4].getC(0),p[(i+2)%4].getC(1),p[(i+2)%4].getC(2));
+		// }
+
+		glEnd();
+	}
 }
 #endif

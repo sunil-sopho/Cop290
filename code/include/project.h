@@ -6,7 +6,10 @@
 #include "node.h"
 #include "construct.h"
 #include <vector>
- void Project(std::vector<node> v){
+
+// view =0 for 3d ,, view = 1 for ortho
+
+ void Project(std::vector<node> v,int view){
 	for(int i=0; i < v.size() ;i++ )
 	{
 		int code = v[i].getCode();
@@ -18,13 +21,13 @@
 		}
 
 		if(code == 1)
-			addPoint(p);
+			addPoint(p,view);
 		else if(code == 2)
-			addLine(p);
+			addLine(p,view);
 		else if(code == 3)
-			addTri(p);
+			addTri(p,view);
 		else
-			addPlane(p);
+			addPlane(p,view);
 	}
 	//cout << "out of here\n";
 }
