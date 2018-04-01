@@ -39,6 +39,57 @@ void initGL8(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height);
 
 void establishMatrix9(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height);
 void initGL9(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height);
+			
+			int np,ne;
+			vector<point> top_vertex,front_vertex,side_vertex;
+			vector<point> answer;
+			vector<vector<int>> top_adj,front_adj,side_adj;
+			vector<vector<int>> ans_adj;
+
+void generate_points(){
+	for(int i=0;i<np;i++){
+		point p=top_vertex[i];
+		point q=front_vertex[i];
+		point r=side_vertex[i];
+		point s;
+		s.setC(p.getC(0),q.getC(1),p.getC(2));
+		answer.push_back(s);
+	}
+}
+bool connected1(int i,int j){
+	point p=top_vertex[i];
+	point q=top_vertex[j];
+	if(p==q) return 1;
+	return find(top_adj[i].begin(),top_adj[i].end(),j)!=top_adj[i].end();
+}
+bool connected2(int i,int j){
+	point p=front_vertex[i];
+	point q=front_vertex[j];
+	if(p==q) return 1;
+	return find(front_adj[i].begin(),front_adj[i].end(),j)!=front_adj[i].end();
+}
+bool connected3(int i,int j){
+	point p=side_vertex[i];
+	point q=side_vertex[j];
+	if(p==q) return 1;
+	return find(side_adj[i].begin(),side_adj[i].end(),j)!=side_adj[i].end();
+}
+void generate_edges(){
+	int e=0;
+	// vector<vector<int>> adj;
+	vector<int> v;
+	for(int i=0;i<answer.size();i++)
+		ans_adj.push_back(v);
+	for(int i=0;i<answer.size();i++){
+		for(int j=i+1;j<answer.size();j++){
+			if(connected1(i,j) && connected2(i,j) && connected3(i,j)){
+				ans_adj[i].push_back(j);
+				ans_adj[j].push_back(i);
+				e++;
+			}
+		}
+	}
+}
 // main
 int main(int argc, char ** argv)
 {
@@ -50,25 +101,101 @@ int main(int argc, char ** argv)
 
 		ifstream file;
 		file.open(filename);
-		int n,m;
-		float x,y,z;
-		char c;
-		file>>n;
+		int type;
+		file>>type;
+		if(type==0){
+			int n,m;
+			float x,y,z;
+			char c;
+			file>>n;
 
-		for(int i=0;i<n;i++){
-			file>>m;
+			for(int i=0;i<n;i++){
+				file>>m;
 
-			node no(m);
-			for(int j=0;j<m;j++){
-				file>>c>>x>>c>>y>>c>>z>>c;
+				node no(m);
+				for(int j=0;j<m;j++){
+					file>>c>>x>>c>>y>>c>>z>>c;
 
-				no.setP(j+1,x,y,z);
+					no.setP(j+1,x,y,z);
+				}
+
+				v.push_back(no);
+
+			}
+		}
+		else{
+			float x,y,z;
+			vector<int> vi;
+			file>>np;
+			int n1,n2;
+			for(int i=0;i<np;i++){
+				file>>x>>y>>z;
+				point p;
+				// p.id=id;
+				p.setC(x,y,z);
+				top_vertex.push_back(p);
+			}
+			file>>ne;
+			for(int i=0;i<np;i++)
+				top_adj.push_back(vi);
+			for(int i=0;i<ne;i++){
+				file>>n1>>n2;
+				top_adj[n1].push_back(n2);
+				top_adj[n2].push_back(n1);
 			}
 
-			v.push_back(no);
+			file>>np;
+			for(int i=0;i<np;i++){
+				file>>x>>y>>z;
+				point p;
+				// p.id=id;
+				p.setC(x,y,z);
+				front_vertex.push_back(p);
+			}
+			file>>ne;
+			for(int i=0;i<np;i++)
+				front_adj.push_back(vi);
+			for(int i=0;i<ne;i++){
+				file>>n1>>n2;
+				front_adj[n1].push_back(n2);
+				front_adj[n2].push_back(n1);
+			}
 
+			file>>np;
+			for(int i=0;i<np;i++){
+				file>>x>>y>>z;
+				point p;
+				// p.id=id;
+				p.setC(x,y,z);
+				side_vertex.push_back(p);
+			}
+			file>>ne;
+			for(int i=0;i<np;i++)
+				side_adj.push_back(vi);
+			for(int i=0;i<ne;i++){
+				file>>n1>>n2;
+				side_adj[n1].push_back(n2);
+				side_adj[n2].push_back(n1);
+			}
+
+			generate_points();
+			generate_edges();
+			// for(int i=0;i<answer.size();i++){
+			// 	cout<<answer[i].getC(0)<<" "<<answer[i].getC(1)<<" "<<answer[i].getC(2)<<endl;
+			// }
+			// 	return 0;
+			for(int i=0;i<np;i++){
+				point p1=answer[i];
+				for(int j=0;j<ans_adj[i].size();j++){
+					int k=ans_adj[i][j];
+					point p2=answer[k];
+					node nod(2);
+					nod.setP(1,p1.getC(0),p1.getC(1),p1.getC(2));
+					nod.setP(2,p2.getC(0),p2.getC(1),p2.getC(2));
+					v.push_back(nod);
+				}
+			}
 		}
-
 		// fclose(stdin);
 		file.close(); 		
 
