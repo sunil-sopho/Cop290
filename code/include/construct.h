@@ -3,7 +3,7 @@
 #include <GL/gl.h>
 #include <GL/glu.h>
 #include <GL/glut.h>
-#include "point.h"
+#include "node.h"
 
 void addPoint(point* p)
 {
@@ -11,7 +11,7 @@ void addPoint(point* p)
 	// glEnable(GL_COLOR_MATERIAL);
 	// glDisable(GL_CULL_FACE);
 	// adding a point
-cout << p[0].getC(0) <<" : "<<p[0].getC(1)<<" : "<<p[0].getC(2)<<'\n';
+// cout << p[0].getC(0) <<" : "<<p[0].getC(1)<<" : "<<p[0].getC(2)<<'\n';
 	glBegin(GL_POINTS);
 
 	// glColor3f(0.0f,0.0f,0.0f);

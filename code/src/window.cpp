@@ -1,94 +1,10 @@
-#ifndef WINDOW_H
-#define WINDOW_H
+#include <iostream>
+#include <string>
 
-#include "keys.h"
-#include "standardHandler.h"
-// SDL_GLContext context2;
+using namespace std;
 
-// void establishMatrix4(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height)
-// {
-// 	glViewport(lx,ly,width,height);
-// 	glMatrixMode(GL_PROJECTION);
-// 	glLoadIdentity();
-// 	gluPerspective(45.0f,(GLfloat)width/(GLfloat)height,0.1f,200.0f);
-// }
-
-// void initGL4(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height)
-// {
-// 	establishMatrix4(lx,ly,width,height);
-
-// 	glDisable(GL_SCISSOR_TEST);
-// 	glClearColor(0.0f,1.0f,1.0f,1.0f);
-// 	glScissor(lx,ly,width,height);
-// 	glEnable(GL_SCISSOR_TEST);
-
-// 	glClearColor(0.50f,0.90f,0.10f,1.0f);
-
-// 	glEnable(GL_DEPTH_TEST);
-// 	glDepthFunc(GL_LEQUAL);
-// 	glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
-// 	glEnable(GL_PERSPECTIVE_CORRECTION_HINT);
-// }	
-
-// void createWindow(){	
-// 	SDL_CreateWindowAndRenderer(200,210, 0, &screen2, &rend2);
-//  //    context2 = SDL_GL_CreateContext(screen2);
-// 	// SDL_GL_MakeCurrent(screen2, context2);
-// }
-
-// void closeWindow()
-// 	{
-// 		// SDL_GL_DeleteContext(context2);
-// 	SDL_DestroyRenderer(rend2);
-// 	SDL_DestroyWindow(screen2);
-// 	numScreen=0;
-// }
-
-
-
-
-
-
-
-class window
-{
-public:
-		window();
-		// create window
-		bool init();
-
-		void eventHandler(SDL_Event& e);
-
-		void focus();
-		void render();
-		void free();
-		int getWidth();
-		int getHeight();
-
-		bool mouseFocus();
-		bool keyboadFocus();
-		bool mini();
-		void makeCurrent();
-		void inGL();
-		SDL_Window *screen;
-		SDL_Renderer* rend;
-private:
-	
-	
-	SDL_GLContext context;
-	int id;
-
-		//Window dimensions
-	int mWidth;
-	int mHeight;
-
-	//Window focus
-	bool mMouseFocus;
-	bool mKeyboardFocus;
-	bool mFullScreen;
-	bool mMinimized;
-	bool mShow;
-};
+#include <include.h>
+#include <window.h>
 
 
 window::window()
@@ -207,6 +123,3 @@ void initGLWindow(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height)
 void window::inGL(){
 	initGLWindow(0,0,mWidth,mHeight);
 }
-
-
-#endif

@@ -42,6 +42,96 @@ void Drawscene3()
 	glFlush();
 }
 
+void Drawscene6()
+{
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	// cube();
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+	glPushMatrix();
+	glTranslatef(0,0,-10.0f);
+
+	updateView();
+	linec();
+
+	// cube();
+	glPopMatrix();
+	glFlush();
+}
+
+void Drawscene7()
+{
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	// cube();
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+	glPushMatrix();
+	glTranslatef(0,0,-10.0f);
+
+	// updateView();
+	glEnable(GL_COLOR_MATERIAL);
+	glDisable(GL_CULL_FACE);
+
+	glBegin(GL_LINES);
+	glVertex3f(500.0f,1.0f,1.0f);
+	glVertex3f(-500.0f,1.0f,1.0f);
+	glEnd();
+
+	// linec();
+
+	// cube();
+	glPopMatrix();
+	glFlush();
+}
+
+void Drawscene8()
+{
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	// cube();
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+	glPushMatrix();
+	glTranslatef(0,0,-10.0f);
+
+	// updateView();
+	glEnable(GL_COLOR_MATERIAL);
+	glDisable(GL_CULL_FACE);
+
+	glBegin(GL_LINES);
+	glVertex3f(0.0f,-250.0f,1.0f);
+	glVertex3f(0.0f,210.0f,1.0f);
+	glEnd();
+
+	// linec();
+
+	// cube();
+	glPopMatrix();
+	glFlush();
+}
+void Drawscene9()
+{
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	// cube();
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+	glPushMatrix();
+	glTranslatef(0,0,-10.0f);
+
+	// updateView();
+	glEnable(GL_COLOR_MATERIAL);
+	glDisable(GL_CULL_FACE);
+
+	glBegin(GL_LINES);
+	glVertex3f(0.0f,-250.0f,1.0f);
+	glVertex3f(0.0f,210.0f,1.0f);
+	glEnd();
+
+	// linec();
+
+	// cube();
+	glPopMatrix();
+	glFlush();
+}
 // const int font1 = (int)GLUT_BITMAP_9_BY_15;
 // void output(char *s)
 // {

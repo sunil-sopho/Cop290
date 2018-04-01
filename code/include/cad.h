@@ -1,4 +1,5 @@
-
+#ifndef CAD_H
+#define CAD_H
 
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
@@ -38,4 +39,6 @@ const Uint8 *keys = NULL;
 #include "draw.h"
 #include "messNet.h"
 #include "clicks.h"
-#include "Ltexture.h"
+// #include "Ltexture.h"
+
+#endif

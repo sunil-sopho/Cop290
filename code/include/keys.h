@@ -5,6 +5,9 @@ bool save = false;
 #include "window.h"
 #include "construct.h"
 #include <vector>
+#include <fstream>
+
+using namespace std;
 // #include "standardHandler.h"
 GLfloat ScaleFactor = 1.0f;
 GLfloat cubeRotateY = 0.0f;
@@ -99,7 +102,8 @@ GLboolean checkKeys(const Uint8* keys){
  		mode = 4;
  	}
  	if(keys[SDL_SCANCODE_RETURN])
- 	{cout << mode <<" : "<< counter<<'\n';
+ 	{
+ 		// cout << mode <<" : "<< counter<<'\n';
 		
 		if(counter == 0){
 			nod.setCode(mode);
@@ -168,18 +172,24 @@ GLboolean checkKeys(const Uint8* keys){
  		// cubeRotateZ = 0.0f;
  	}
  	if(keys[SDL_SCANCODE_T]){
- 		freopen("output.txt","w",stdout);
- 		cout<<v.size()<<endl;
+ 		cout <<"pressed T\n";
+ 		ofstream file;
+
+ 		file.open("output.txt");
+ 		// freopen("output1.txt","w",stdout);
+ 		file <<v.size()<<endl;
  		for(int i=0;i<v.size();i++){
  			int n=v[i].getCode();
- 			cout<<n<<" ";
+ 			file <<n<<" ";
  			for(int j=0;j<n;j++){
  				point p=v[i].getP(j+1);
- 				cout<<"("<<p.getC(0)<<", "<<p.getC(1)<<", "<<p.getC(2)<<") ";
+ 				file <<"("<<p.getC(0)<<", "<<p.getC(1)<<", "<<p.getC(2)<<") ";
  			}
- 			cout<<endl;
+ 			file<<endl;
  		}
- 		fclose(stdout);
+ 		file.close();
+
+ 		cout << "escaped T\n";
  	}
  	// if(keys[SDL_SCANCODE_N])
  	// {
