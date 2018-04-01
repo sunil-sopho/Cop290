@@ -1,6 +1,6 @@
 #include <messNet.h>
 #include <header.h>
-void messinit(std::vector<node> v,int lx,int ly,int lz,int ScaleFactor ,int cubeRotateX,int cubeRotateY)
+void messinit(std::vector<node> v)
 {
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	// cube();
@@ -15,11 +15,12 @@ void messinit(std::vector<node> v,int lx,int ly,int lz,int ScaleFactor ,int cube
 	// glPushMatrix();
 	
 	// glTranslatef(0,0,-10.0f);
-		cout << v.size()<<'\n';
+		// cout << v.size()<<'\n';
 		Project(v,0);
 
 	// cout << cubeRotateX <<" : "<<cubeRotateY <<" : "<<ScaleFactor<<'\n';// 12 -41 0.34
 		glBegin(GL_LINES);
+			glColor3f(250.0f,250.0f,250.0f);
 		for(int i=0;i<100;i++)
 		{
 			glVertex3f(i,0,0);

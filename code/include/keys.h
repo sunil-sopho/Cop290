@@ -17,7 +17,7 @@ using namespace std;
 
 
 
-GLboolean checkKeys(unsigned char const* keys,std::vector<node> v);
+GLboolean checkKeys(unsigned char const* keys,std::vector<node> &v);
 
 
 #endif

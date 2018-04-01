@@ -3,10 +3,10 @@
 
 
 int mode = 1,counter =0;
-node nod ;
+node nod = node(4);
 
 // GLboolean checkKeys(const Uint8* keys,GLfloat *lx, GLfloat* ly, GLfloat *lz,GLfloat* ScaleFactor,GLfloat* cubeRotateX,GLfloat* cubeRotateY )
-GLboolean checkKeys(unsigned char const* keys,std::vector<node> v)
+GLboolean checkKeys(unsigned char const* keys,std::vector<node> &v)
 {
 
 	const GLfloat speed = 1.0f;
@@ -95,7 +95,7 @@ GLboolean checkKeys(unsigned char const* keys,std::vector<node> v)
  	}
  	if(keys[SDL_SCANCODE_RETURN])
  	{
- 		// cout << mode <<" : "<< counter<<'\n';
+ 		cout << mode <<" : "<< counter<<'\n';
 		
 		if(counter == 0){
 			nod.setCode(mode);
@@ -115,7 +115,9 @@ GLboolean checkKeys(unsigned char const* keys,std::vector<node> v)
 		// 	nod.setP(4,lx,ly,lz);
 		// }
 		if(counter == mode +1){
+			cout << nod.getCode() << " is this right\n";
 			v.push_back(nod);
+			cout << "vsize here is: "<<v.size()<<endl;
 			counter =0;
 		}
 
