@@ -14,7 +14,8 @@ Ltexture.h messNet.h node.h point.h printtxt.h project.h standardHandler.h windo
 	
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
-_OBJ = cad.o kiss_widgets.o kiss_draw.o kiss_general.o kiss_posix.o
+_OBJ = kiss_widgets.o kiss_draw.o kiss_general.o kiss_posix.o construct.o \
+	 messNet.o window.o clicks.o standardHandler.o project.o draw.o cube.o keys.o cad.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 

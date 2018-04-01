@@ -115,35 +115,35 @@ int main(int argc, char ** argv)
 
 			//ortho view
 			initGL(340,0,320,300);
-			Drawscene();
+			Drawscene(v);
 
 			//viewport for 3D projection
 			initGL2(320,320,680,300);
-			Drawscene2();
+			Drawscene2(v);
 
 			//orthoview
 			initGL3(680,0,320,300);
-			Drawscene3();
+			Drawscene3(v);
 
 			// sidebar 
 			initGL4(20,320,280,300);
-			Drawscene4();
+			Drawscene4(v);
 
 			//orthoview
 			initGL6(20,0,300,300);
-			Drawscene6();
+			Drawscene6(v);
 
 			//straight line horizontal
 			initGL7(0,300,1020,20);
-			Drawscene7();
+			Drawscene7(v);
 
 			// staright line vertical 1
 			initGL8(320,0,20,300);
-			Drawscene8();
+			Drawscene8(v);
 
 			// staright line vertical 2
 			initGL9(640,0,20,300);
-			Drawscene9();
+			Drawscene9(v);
 
 			initGL5(1000,0,20,1);	
 		if(numScreen == 1){
@@ -151,7 +151,7 @@ int main(int argc, char ** argv)
 			win[1].inGL();
 			// initGL(320,0,340,300);
 			// Drawscene();
-			messinit();
+			messinit(v,lx,ly,lz,ScaleFactor,cubeRotateX,cubeRotateY);
 		}
 
 		// kiss_window_draw(&win1, win[1].rend);
@@ -171,7 +171,7 @@ int main(int argc, char ** argv)
 					n = true;
 				}
 			}
-			//standardHandler(event,win);
+			standardHandler(event,win,v,&done,&save);
 
 			if(event.type = SDL_KEYUP)
 			{
@@ -198,6 +198,42 @@ int main(int argc, char ** argv)
 					numScreen = 1;
 				}
 			}
+			// // mouse clicks detection
+			// if(event.type == SDL_MOUSEMOTION)
+			// {
+			// 	SDL_GetMouseState(&x,&y);
+			// }
+			// if(event.type == SDL_MOUSEBUTTONDOWN)
+			// {
+			// 	clicks(x,y,v);
+			// }
+
+			// // for saving a screen shot of screen
+			// if(save)
+			// {
+			// 	int height = 610;
+			// 	int width = 1024;
+
+			// 	std::vector<unsigned char> v(width*height*3);
+
+			// 	glPixelStorei(GL_PACK_ALIGNMENT,1);
+			// 	for(int i=0;i<height;i++)
+			// 	glReadPixels(0,height-1- i,width,1,GL_RGB,GL_UNSIGNED_BYTE,&v[i*width*3]);
+
+			// 	// reverse(v.begin(),v.end());
+
+			// 	int err = SOIL_save_image(
+			// 		"mycad.bmp",
+			// 		SOIL_SAVE_TYPE_BMP ,
+			// 		width,
+			// 		height,
+			// 		3,
+			// 		&v[0]
+			// 		);
+			// 	save = false;
+			// 	// done = 1;
+			// }
+
 			keys = SDL_GetKeyboardState(NULL);
 			if(keys[SDL_SCANCODE_M])
  			{
@@ -215,7 +251,7 @@ int main(int argc, char ** argv)
 		// SDL_SetRenderDrawColor( rend1, 0xFF, 0xFF, 0xFF, 0xFF );
 		// SDL_GL_SwapWindow(screen);
 
-		if(checkKeys(keys))
+		if(checkKeys(keys,v))
 			done = 1 ;
 	}
 
