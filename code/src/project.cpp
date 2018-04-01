@@ -1,6 +1,6 @@
 #include <project.h>
 
-void Project(std::vector<node> v,int view)
+ void Project(std::vector<node> v,int view)
  {
 	for(int i=0; i < v.size() ;i++ )
 	{
@@ -22,4 +22,4 @@ void Project(std::vector<node> v,int view)
 			addPlane(p,view);
 	}
 	//cout << "out of here\n";
-};
+}

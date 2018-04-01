@@ -5,6 +5,7 @@ class point {
 		float y;
 		float z;
 	public:
+		// int id;
 		point(){
 			this->x=0.0f;
 			this->y=0.0f;
@@ -24,6 +25,9 @@ class point {
 			this->x = x;
 			this->y = y;
 			this->z = z;
+		}
+		bool operator==(point p){
+			return p.x==x && p.y==y && p.z==z;
 		}
 	
 };

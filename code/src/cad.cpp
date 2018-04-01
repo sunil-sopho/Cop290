@@ -278,7 +278,7 @@ int main(int argc, char ** argv)
 			win[1].inGL();
 			// initGL(320,0,340,300);
 			// Drawscene();
-			messinit(v,lx,ly,lz,ScaleFactor,cubeRotateX,cubeRotateY);
+			messinit(v);
 		}
 
 		// kiss_window_draw(&win1, win[1].rend);
@@ -378,7 +378,7 @@ int main(int argc, char ** argv)
 		// SDL_SetRenderDrawColor( rend1, 0xFF, 0xFF, 0xFF, 0xFF );
 		// SDL_GL_SwapWindow(screen);
 
-		if(checkKeys(keys,v))
+		if(checkKeys(keys, v))
 			done = 1 ;
 	}
 
