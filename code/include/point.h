@@ -29,11 +29,7 @@ class point {
 		bool operator==(point p){
 			return p.x==x && p.y==y && p.z==z;
 		}
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> 6412f52f19f6a14cf87e15b6219608097dee1370
 };
 
 #endif

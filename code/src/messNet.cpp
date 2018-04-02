@@ -20,26 +20,26 @@ void messinit(std::vector<node> v)
 
 	// cout << cubeRotateX <<" : "<<cubeRotateY <<" : "<<ScaleFactor<<'\n';// 12 -41 0.34
 		glBegin(GL_LINES);
-			glColor3f(250.0f,0.0f,0.0f);
+			glColor3f(219.0f,0.0f,0.0f);
 		for(int i=0;i<100;i++)
 		{
-			glVertex3f(i,0,0);
-			glVertex3f(i,100.0f,0);
+			glVertex3f(i-19,-19,-19);
+			glVertex3f(i-19,100.0f-19,-19);
 
-			glVertex3f(i,0,0);
-			glVertex3f(i,0,100);
+			glVertex3f(i-19,-19,-19);
+			glVertex3f(i-19,-19,100-19);
 
-			glVertex3f(0,i,0);
-			glVertex3f(0,i,100);
+			glVertex3f(0-19,i-19,-19);
+			glVertex3f(0-19,i-19,100-19);
 
-			glVertex3f(0,i,0);
-			glVertex3f(100,i,0);
+			glVertex3f(0-19,i-19,0-19);
+			glVertex3f(100-19,i-19,0-19);
 
-			glVertex3f(0,0,i);
-			glVertex3f(100,0,i);
+			glVertex3f(0-19,0-19,i-19);
+			glVertex3f(100-19,0-19,i-19);
 
-			glVertex3f(0,0,i);
-			glVertex3f(0,100,i);
+			glVertex3f(0-19,0-19,i-19);
+			glVertex3f(0-19,100-19,i-19);
 
 		}
 		glEnd();

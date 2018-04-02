@@ -1,7 +1,7 @@
 IDIR =../include 
-CXX=g++
+CXX=g++ 
 CC=gcc
-CXXFLAGS= -I$(IDIR) -I../kiss_sdl
+CXXFLAGS= -I$(IDIR) -I../kiss_sdl -std=c++11 -w
 
 ODIR=obj
 LDIR=-L../lib
@@ -31,4 +31,4 @@ cadmake: $(OBJ)
 .PHONY: clean
 
 clean:
-	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~ 
+	rm -f $(ODIR)/*.o cadmake
