@@ -90,6 +90,82 @@ void generate_edges(){
 		}
 	}
 }
+double* findplane(point p,point q,point r){
+	double e1[3]={p.getC(0)-q.getC(0),p.getC(1)-q.getC(1),p.getC(2)-q.getC(2)};
+	double e2[3]={p.getC(0)-r.getC(0),p.getC(1)-r.getC(1),p.getC(2)-r.getC(2)};
+
+	double e[3]={e1[1]*e2[2]-e2[1]*e1[2],
+				 e2[0]*e1[2]-e1[0]*e2[2],
+				 e1[0]*e2[1]-e1[1]*e2[0]
+				};
+	double *ret=new double[4];
+	ret[0]=e[0];
+	ret[1]=e[1];
+	ret[2]=e[2];
+	ret[3]=-(e[0]*p.getC(0)+e[1]*p.getC(1)+e[2]*p.getC(2));
+	return ret;
+}
+bool equal(double a,double b){
+	return fabs(a-b)<numeric_limits<double>::epsilon();
+}
+bool onplane(point p,double *plane){
+	double a=plane[0],b=plane[1],c=plane[2],d=plane[3];
+	return equal(a*p.getC(0)+b*p.getC(1)+c*p.getC(2)+d,0.0);	
+}
+bool ispresent(int p,vector<int> s){
+	return find(s.begin(),s.end(),p)!=s.end();
+}
+bool dfs(vector<int> &s,int top,int final,double* plane){
+	int curr=s[top];
+	if(curr==final)
+		return 1;
+	for(int i:ans_adj[curr]){
+		point next=answer[i];
+		if(!ispresent(i,s) && onplane(next,plane)){
+			s.push_back(i);
+			if(dfs(s,++top,final,plane))
+				return 1;
+		}
+	}
+	top--;
+	return 0;
+}
+vector<int> findloop(int i,int j,int k){
+	point a=answer[i];
+	point b=answer[j];
+	point c=answer[k];
+	double *plane=findplane(a,b,c);
+
+	vector<int> ret;
+	ret.push_back(i);
+	ret.push_back(j);
+	if(dfs(ret,1,k,plane))
+		return ret;
+	
+	vector<int> temp;
+	return temp; 
+}
+void generate_faces(){
+	for(int i=0;i<answer.size();i++){
+		int n=ans_adj[i].size();
+		for(int j=0;j<n;j++){
+			for(int k=j+1;k<n;k++){
+				vector<int> s=findloop(i,ans_adj[i][j],ans_adj[i][k]);
+				if(s.size()){
+					// for(int i:s){
+					// 	cout<<i<<" ";
+					// }
+					// cout<<endl;
+					node no(s.size());
+					for(int f=0;f<s.size();f++){
+						no.setP(f+1,answer[s[f]].getC(0),answer[s[f]].getC(1),answer[s[f]].getC(2));
+					}
+					v.push_back(no);
+				}
+			}
+		}		
+	}
+}
 // main
 int main(int argc, char ** argv)
 {
@@ -104,8 +180,8 @@ int main(int argc, char ** argv)
 		int type;
 		file>>type;
 		if(type==0){
-			int n,m;
-			float x,y,z;
+			int n,m,count=0;
+			float x,y,z,ax,ay,az;
 			char c;
 			file>>n;
 
@@ -115,13 +191,51 @@ int main(int argc, char ** argv)
 				node no(m);
 				for(int j=0;j<m;j++){
 					file>>c>>x>>c>>y>>c>>z>>c;
-
+					ax+=x;
+					ay+=y;
+					az+=z;
+					count++;
 					no.setP(j+1,x,y,z);
 				}
 
 				v.push_back(no);
 
 			}
+			ax/=count;
+			ay/=count;
+			az/=count;
+
+			for(int i=0;i<v.size();i++){
+				int n=v[i].getCode();
+				for(int j=0;j<n;j++){
+					point p=v[i].getP(j+1);
+					// p.setC(p.getC(0)-ax,p.getC(1)-ay,p.getC(2)-az);
+					v[i].setP(j+1,p.getC(0)-ax,p.getC(1)-ay,p.getC(2)-az);
+				}
+			}
+			// file.close();
+			// cout<<count;
+			// ax/=n;
+			// ay/=n;
+			// az/=n;
+			// file.open(filename);
+			// file>>n;			//decoy
+
+			// file>>n;
+			// for(int i=0;i<n;i++){
+			// 	file>>m;
+
+			// 	node no(m);
+			// 	for(int j=0;j<m;j++){
+			// 		file>>c>>x>>c>>y>>c>>z>>c;
+			// 		x-=ax;
+			// 		y-=ay;
+			// 		z-=az;
+			// 		no.setP(j+1,x,y,z);
+			// 	}
+
+			// 	v.push_back(no);
+			// }
 		}
 		else{
 			float x,y,z;
@@ -180,10 +294,13 @@ int main(int argc, char ** argv)
 
 			generate_points();
 			generate_edges();
+			generate_faces();
 			// for(int i=0;i<answer.size();i++){
 			// 	cout<<answer[i].getC(0)<<" "<<answer[i].getC(1)<<" "<<answer[i].getC(2)<<endl;
 			// }
 			// 	return 0;
+			float ax=0,ay=0,az=0;
+			int count=0;
 			for(int i=0;i<np;i++){
 				point p1=answer[i];
 				for(int j=0;j<ans_adj[i].size();j++){
@@ -193,8 +310,24 @@ int main(int argc, char ** argv)
 					nod.setP(1,p1.getC(0),p1.getC(1),p1.getC(2));
 					nod.setP(2,p2.getC(0),p2.getC(1),p2.getC(2));
 					v.push_back(nod);
+					ax+=p1.getC(0)+p2.getC(0);
+					ay+=p1.getC(1)+p2.getC(1);
+					az+=p1.getC(2)+p2.getC(2);
+					count+=2;
 				}
 			}
+			ax/=count;
+			ay/=count;
+			az/=count;
+			for(int i=0;i<v.size();i++){
+				int n=v[i].getCode();
+				for(int j=0;j<n;j++){
+					point p=v[i].getP(j+1);
+					// p.setC(p.getC(0)-ax,p.getC(1)-ay,p.getC(2)-az);
+					v[i].setP(j+1,p.getC(0)-ax,p.getC(1)-ay,p.getC(2)-az);
+				}
+			}
+
 		}
 		// fclose(stdin);
 		file.close(); 		
