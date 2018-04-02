@@ -20,7 +20,7 @@ void messinit(std::vector<node> v)
 
 	// cout << cubeRotateX <<" : "<<cubeRotateY <<" : "<<ScaleFactor<<'\n';// 12 -41 0.34
 		glBegin(GL_LINES);
-			glColor3f(250.0f,250.0f,250.0f);
+			glColor3f(250.0f,0.0f,0.0f);
 		for(int i=0;i<100;i++)
 		{
 			glVertex3f(i,0,0);

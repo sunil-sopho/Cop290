@@ -28,10 +28,10 @@ int kiss_window_new(kiss_window *window, kiss_window *wdw, int decorate,
 	int x, int y, int w, int h)
 {
 	if (!window) return -1;
-	window->bg = kiss_white;
+	window->bg = kiss_blue;
 	kiss_makerect(&window->rect, x, y, w, h);
 	window->decorate = decorate;
-	window->visible = 0;
+	window->visible = 1;
 	window->focus = 1;
 	window->wdw = wdw;
 	return 0;
@@ -68,7 +68,7 @@ int kiss_label_new(kiss_label *label, kiss_window *wdw, char *text,
 {
 	if (!label || !text) return -1;
 	if (label->font.magic != KISS_MAGIC) label->font = kiss_textfont;
-	label->textcolor = kiss_black;
+	label->textcolor = kiss_white;
 	kiss_makerect(&label->rect, x, y, 0, 0);
 	kiss_string_copy(label->text, KISS_MAX_LABEL, text, NULL);
 	label->visible = 0;

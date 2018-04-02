@@ -25,7 +25,10 @@ class point {
 			this->y = y;
 			this->z = z;
 		}
-	
+		bool operator==(point p){
+			return p.x==x && p.y==y && p.z==z;
+		}
+
 };
 
 #endif

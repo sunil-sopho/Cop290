@@ -190,7 +190,7 @@ SDL_Renderer* kiss_init(char* title, kiss_array *a, int w, int h, SDL_Window *wi
 	TTF_Init();
 	kiss_array_new(a);
 	
-	SDL_CreateWindowAndRenderer(1020,610, 0, &window, &renderer);
+	SDL_CreateWindowAndRenderer(w,h, 0, &window, &renderer);
 	SDL_SetRenderDrawColor( renderer, 0xFF, 0xFF, 0xFF, 0xFF );
 
 	SDL_GLContext context;

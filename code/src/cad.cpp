@@ -43,8 +43,8 @@ void initGL9(GLsizei lx, GLsizei ly, GLsizei width, GLsizei height);
 			int np,ne;
 			vector<point> top_vertex,front_vertex,side_vertex;
 			vector<point> answer;
-			vector<vector<int>> top_adj,front_adj,side_adj;
-			vector<vector<int>> ans_adj;
+			vector<vector<int> > top_adj,front_adj,side_adj;
+			vector<vector<int> > ans_adj;
 
 void generate_points(){
 	for(int i=0;i<np;i++){
@@ -208,7 +208,7 @@ int main(int argc, char ** argv)
 	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
 	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 8);
 
-	win[0].init();
+	// win[0].init();
     TTF_Init();
     font = TTF_OpenFont(font_path, 24);
 
@@ -217,19 +217,23 @@ int main(int argc, char ** argv)
 
     //kiss window for input
     kiss_array objects;
-    kiss_window win1;
+    kiss_window win1,win2;
     kiss_label coord1 = {0},coord2 = {0},coord3 = {0},coord4={0},disp={0};
     kiss_button ok = {0}, cancel ={0};
     kiss_entry  entry[12];
- 	
-	
- //    rend1 = kiss_init("cad",&objects,1020,610,screen);
+
+
+    rend1 = kiss_init("cader",&objects,1020,610,screen);
 	// //kiss_window
-	// kiss_window_new(&win1, NULL, 1, 0, 0, 1020,610);
+	kiss_window_new(&win1, NULL, 1, 0, 0, 1020,610);
+	kiss_window_new(&win2, NULL, 1, 0, 0, 1020,410);
+	kiss_label_new(&coord1, &win2, "Population",0,0);
+	// win2.visible = 0;
+	win1.visible =0 ;
+	win1.focus =0;
+	win2.focus =1 ;
 
-	win1.visible = 1;
-
-	int scre = 0;
+	int scre = 0,draw=1;
 
 
 	while(!done)
@@ -238,14 +242,14 @@ int main(int argc, char ** argv)
 		// main viewport for 2D
 		// if(numScreen <= 0)
 		// {
-		win[0].makeCurrent();
-
-			//ortho view
+		// win[0].makeCurrent();
+			// SDL_Delay(7);
+			// // ortho view
 			initGL(340,0,320,300);
 			Drawscene(v);
 
 			//viewport for 3D projection
-			initGL2(320,320,680,300);
+			initGL2(20,320,980,300);
 			Drawscene2(v);
 
 			//orthoview
@@ -253,8 +257,8 @@ int main(int argc, char ** argv)
 			Drawscene3(v);
 
 			// sidebar 
-			initGL4(20,320,280,300);
-			Drawscene4(v);
+			// initGL4(20,320,280,300);
+			// Drawscene4(v);
 
 			//orthoview
 			initGL6(20,0,300,300);
@@ -276,8 +280,8 @@ int main(int argc, char ** argv)
 		if(numScreen == 1){
 			win[1].makeCurrent();
 			win[1].inGL();
-			// initGL(320,0,340,300);
-			// Drawscene();
+			// // initGL(320,0,340,300);
+			// // Drawscene();
 			messinit(v);
 		}
 
@@ -298,7 +302,7 @@ int main(int argc, char ** argv)
 					n = true;
 				}
 			}
-			standardHandler(event,win,v,&done,&save);
+			// standardHandler(event,win,v,&done,&save);
 
 			if(event.type = SDL_KEYUP)
 			{
@@ -372,11 +376,16 @@ int main(int argc, char ** argv)
 		for(int i=0;i<4;i++)
 			win[i].render();
 		// SDL_GL_SwapWindow(win[0].screen);
+		// if (!draw) continue;
+		// SDL_RenderClear(rend1);
 
-		// kiss_window_draw(&win1, rend1);
-		// SDL_RenderPresent(rend1);
-		// SDL_SetRenderDrawColor( rend1, 0xFF, 0xFF, 0xFF, 0xFF );
-		// SDL_GL_SwapWindow(screen);
+		kiss_window_draw(&win1, rend1);
+		// // kiss_window_draw(&win2, rend1);
+		// // kiss_label_draw(&coord1, rend1);
+		SDL_RenderPresent(rend1);
+		// // SDL_SetRenderDrawColor( rend1, 0xFF, 0xFF, 0xFF, 0xFF );
+		SDL_GL_SwapWindow(screen);
+		// done =0;
 
 		if(checkKeys(keys, v))
 			done = 1 ;
