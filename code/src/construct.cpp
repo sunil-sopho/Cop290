@@ -1,4 +1,6 @@
 #include <construct.h>
+#include <iostream>
+using namespace std;
 
 void addPoint(point* p,int view)
 {
@@ -87,10 +89,11 @@ void addPlane(point* p,int view){
 		if(view)
 		glColor3f(250.0f,250.0f,250.0f);
 		else
-		glColor3f(0,0,0);
+		glColor3f(250,0,0);
 
 		for(int i=0; i<4;i++)
 		{
+			// cout << "line should print\n";
 			glVertex3f(p[i].getC(0),p[i].getC(1),p[i].getC(2));
 			glVertex3f(p[(i+1)%4].getC(0),p[(i+1)%4].getC(1),p[(i+1)%4].getC(2));
 		}

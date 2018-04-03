@@ -294,7 +294,7 @@ int main(int argc, char ** argv)
 
 			generate_points();
 			generate_edges();
-			generate_faces();
+			
 			// for(int i=0;i<answer.size();i++){
 			// 	cout<<answer[i].getC(0)<<" "<<answer[i].getC(1)<<" "<<answer[i].getC(2)<<endl;
 			// }
@@ -316,9 +316,11 @@ int main(int argc, char ** argv)
 					count+=2;
 				}
 			}
+			generate_faces();
 			ax/=count;
 			ay/=count;
 			az/=count;
+			
 			for(int i=0;i<v.size();i++){
 				int n=v[i].getCode();
 				for(int j=0;j<n;j++){
@@ -327,6 +329,7 @@ int main(int argc, char ** argv)
 					v[i].setP(j+1,p.getC(0)-ax,p.getC(1)-ay,p.getC(2)-az);
 				}
 			}
+
 
 		}
 		// fclose(stdin);

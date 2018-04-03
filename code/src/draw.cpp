@@ -1,5 +1,9 @@
 #include <draw.h>
 #include <cube.h>
+#include <iostream>
+
+using namespace std;
+
 int numScreen = 0;
 bool save = false;
 // Draw scene for all viewports
@@ -32,6 +36,7 @@ void Drawscene2(std::vector<node> v)
 	glLoadIdentity();
 	// cube();
 	updateView();
+	cout << "from 3d view\n";
 	Project(v,0);
 	glFlush();
 }
