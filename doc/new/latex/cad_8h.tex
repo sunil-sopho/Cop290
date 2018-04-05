@@ -1,0 +1,200 @@
+\hypertarget{cad_8h}{}\section{cad.\+h File Reference}
+\label{cad_8h}\index{cad.\+h@{cad.\+h}}
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$G\+L/gl.\+h$>$}\newline
+{\ttfamily \#include $<$G\+L/glu.\+h$>$}\newline
+{\ttfamily \#include $<$G\+L/glut.\+h$>$}\newline
+{\ttfamily \#include $<$S\+O\+I\+L/\+S\+O\+I\+L.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}stdio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}math.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stdlib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}string.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$bits/stdc++.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}node.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}standard\+Handler.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}window.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}keys.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$header.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}cube.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}construct.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}project.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}draw.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mess\+Net.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}clicks.\+h\char`\"{}}\newline
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{cad_8h_a7b021422247f8459ad1785d08acd295b}{n} = false
+\item 
+bool \hyperlink{cad_8h_a36ac403961e1376be1acb187c5f42085}{esc} = false
+\item 
+std\+::vector$<$ \hyperlink{classnode}{node} $>$ \hyperlink{cad_8h_a5df377739e89b6f1bb0ca4cdf99ad340}{v}
+\item 
+S\+D\+L\+\_\+\+Window $\ast$ \hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}
+\item 
+S\+D\+L\+\_\+\+Window $\ast$ \hyperlink{cad_8h_ab6400ef7fc23e731b15a03fc35baa955}{screen2}
+\item 
+S\+D\+L\+\_\+\+Rect \hyperlink{cad_8h_a36dd49358141defc669f6149346f1ffb}{rect1}
+\item 
+S\+D\+L\+\_\+\+Rect \hyperlink{cad_8h_a0fc237e58caf350b43f62fe775a407aa}{rect2}
+\item 
+S\+D\+L\+\_\+\+Renderer $\ast$ \hyperlink{cad_8h_a4419a316c1c90640d30093ed67105b7e}{rend1}
+\item 
+S\+D\+L\+\_\+\+Renderer $\ast$ \hyperlink{cad_8h_a9f2e098e620c9ae86f09a0e54b3bc44e}{rend2}
+\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \hyperlink{cad_8h_a58186d66d53b7008bac5d3a2ec026906}{text1}
+\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \hyperlink{cad_8h_a7470b021f0a9a0c0c8860b316372c0d6}{text2}
+\item 
+char $\ast$ \hyperlink{cad_8h_a784a04e7cac504bf3fe606e2c3ba2aa9}{font\+\_\+path} = \char`\"{}Free\+Sans.\+ttf\char`\"{}
+\item 
+T\+T\+F\+\_\+\+Font $\ast$ \hyperlink{cad_8h_abf5bfa705e66ffc1ddaa6ce46c960873}{font}
+\item 
+int \hyperlink{cad_8h_a5992b274cfdcacdbc1fa8347fd01ebde}{done} = 0
+\item 
+G\+Lfloat \hyperlink{cad_8h_a12b61bfad8c79166222d5814cc703cc0}{Scale\+Factor} = 1.\+0f
+\item 
+G\+Lfloat \hyperlink{cad_8h_a79e9710a87a4b0ee7b5f1dc9339db0ff}{cube\+RotateY} = 0.\+0f
+\item 
+G\+Lfloat \hyperlink{cad_8h_a47de241d5a79319813702f8593900f3e}{cube\+RotateX} = 0.\+0f
+\item 
+G\+Lfloat \hyperlink{cad_8h_ae52aea5a37d9df0f03628596d2b8cfa3}{lx} =0
+\item 
+G\+Lfloat \hyperlink{cad_8h_ade132746aa65c06227b1f613df579a2c}{ly} =0
+\item 
+G\+Lfloat \hyperlink{cad_8h_aeb07f5e52938d0cfd0c4858b66b11b12}{lz} =0
+\item 
+const Uint8 $\ast$ \hyperlink{cad_8h_a704349c03afcf972e8ff6a026868690a}{keys} = N\+U\+LL
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{cad_8h_a47de241d5a79319813702f8593900f3e}\label{cad_8h_a47de241d5a79319813702f8593900f3e}} 
+\index{cad.\+h@{cad.\+h}!cube\+RotateX@{cube\+RotateX}}
+\index{cube\+RotateX@{cube\+RotateX}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{cube\+RotateX}{cubeRotateX}}
+{\footnotesize\ttfamily G\+Lfloat cube\+RotateX = 0.\+0f}
+
+\mbox{\Hypertarget{cad_8h_a79e9710a87a4b0ee7b5f1dc9339db0ff}\label{cad_8h_a79e9710a87a4b0ee7b5f1dc9339db0ff}} 
+\index{cad.\+h@{cad.\+h}!cube\+RotateY@{cube\+RotateY}}
+\index{cube\+RotateY@{cube\+RotateY}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{cube\+RotateY}{cubeRotateY}}
+{\footnotesize\ttfamily G\+Lfloat cube\+RotateY = 0.\+0f}
+
+\mbox{\Hypertarget{cad_8h_a5992b274cfdcacdbc1fa8347fd01ebde}\label{cad_8h_a5992b274cfdcacdbc1fa8347fd01ebde}} 
+\index{cad.\+h@{cad.\+h}!done@{done}}
+\index{done@{done}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{done}{done}}
+{\footnotesize\ttfamily int done = 0}
+
+\mbox{\Hypertarget{cad_8h_a36ac403961e1376be1acb187c5f42085}\label{cad_8h_a36ac403961e1376be1acb187c5f42085}} 
+\index{cad.\+h@{cad.\+h}!esc@{esc}}
+\index{esc@{esc}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{esc}{esc}}
+{\footnotesize\ttfamily bool esc = false}
+
+\mbox{\Hypertarget{cad_8h_abf5bfa705e66ffc1ddaa6ce46c960873}\label{cad_8h_abf5bfa705e66ffc1ddaa6ce46c960873}} 
+\index{cad.\+h@{cad.\+h}!font@{font}}
+\index{font@{font}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily T\+T\+F\+\_\+\+Font$\ast$ font}
+
+\mbox{\Hypertarget{cad_8h_a784a04e7cac504bf3fe606e2c3ba2aa9}\label{cad_8h_a784a04e7cac504bf3fe606e2c3ba2aa9}} 
+\index{cad.\+h@{cad.\+h}!font\+\_\+path@{font\+\_\+path}}
+\index{font\+\_\+path@{font\+\_\+path}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{font\+\_\+path}{font\_path}}
+{\footnotesize\ttfamily char$\ast$ font\+\_\+path = \char`\"{}Free\+Sans.\+ttf\char`\"{}}
+
+\mbox{\Hypertarget{cad_8h_a704349c03afcf972e8ff6a026868690a}\label{cad_8h_a704349c03afcf972e8ff6a026868690a}} 
+\index{cad.\+h@{cad.\+h}!keys@{keys}}
+\index{keys@{keys}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{keys}{keys}}
+{\footnotesize\ttfamily const Uint8$\ast$ keys = N\+U\+LL}
+
+\mbox{\Hypertarget{cad_8h_ae52aea5a37d9df0f03628596d2b8cfa3}\label{cad_8h_ae52aea5a37d9df0f03628596d2b8cfa3}} 
+\index{cad.\+h@{cad.\+h}!lx@{lx}}
+\index{lx@{lx}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{lx}{lx}}
+{\footnotesize\ttfamily G\+Lfloat lx =0}
+
+\mbox{\Hypertarget{cad_8h_ade132746aa65c06227b1f613df579a2c}\label{cad_8h_ade132746aa65c06227b1f613df579a2c}} 
+\index{cad.\+h@{cad.\+h}!ly@{ly}}
+\index{ly@{ly}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{ly}{ly}}
+{\footnotesize\ttfamily G\+Lfloat ly =0}
+
+\mbox{\Hypertarget{cad_8h_aeb07f5e52938d0cfd0c4858b66b11b12}\label{cad_8h_aeb07f5e52938d0cfd0c4858b66b11b12}} 
+\index{cad.\+h@{cad.\+h}!lz@{lz}}
+\index{lz@{lz}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{lz}{lz}}
+{\footnotesize\ttfamily G\+Lfloat lz =0}
+
+\mbox{\Hypertarget{cad_8h_a7b021422247f8459ad1785d08acd295b}\label{cad_8h_a7b021422247f8459ad1785d08acd295b}} 
+\index{cad.\+h@{cad.\+h}!n@{n}}
+\index{n@{n}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily bool n = false}
+
+\mbox{\Hypertarget{cad_8h_a36dd49358141defc669f6149346f1ffb}\label{cad_8h_a36dd49358141defc669f6149346f1ffb}} 
+\index{cad.\+h@{cad.\+h}!rect1@{rect1}}
+\index{rect1@{rect1}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{rect1}{rect1}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Rect rect1}
+
+\mbox{\Hypertarget{cad_8h_a0fc237e58caf350b43f62fe775a407aa}\label{cad_8h_a0fc237e58caf350b43f62fe775a407aa}} 
+\index{cad.\+h@{cad.\+h}!rect2@{rect2}}
+\index{rect2@{rect2}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{rect2}{rect2}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Rect rect2}
+
+\mbox{\Hypertarget{cad_8h_a4419a316c1c90640d30093ed67105b7e}\label{cad_8h_a4419a316c1c90640d30093ed67105b7e}} 
+\index{cad.\+h@{cad.\+h}!rend1@{rend1}}
+\index{rend1@{rend1}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{rend1}{rend1}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Renderer$\ast$ rend1}
+
+\mbox{\Hypertarget{cad_8h_a9f2e098e620c9ae86f09a0e54b3bc44e}\label{cad_8h_a9f2e098e620c9ae86f09a0e54b3bc44e}} 
+\index{cad.\+h@{cad.\+h}!rend2@{rend2}}
+\index{rend2@{rend2}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{rend2}{rend2}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Renderer $\ast$ rend2}
+
+\mbox{\Hypertarget{cad_8h_a12b61bfad8c79166222d5814cc703cc0}\label{cad_8h_a12b61bfad8c79166222d5814cc703cc0}} 
+\index{cad.\+h@{cad.\+h}!Scale\+Factor@{Scale\+Factor}}
+\index{Scale\+Factor@{Scale\+Factor}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{Scale\+Factor}{ScaleFactor}}
+{\footnotesize\ttfamily G\+Lfloat Scale\+Factor = 1.\+0f}
+
+\mbox{\Hypertarget{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}\label{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}} 
+\index{cad.\+h@{cad.\+h}!screen@{screen}}
+\index{screen@{screen}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{screen}{screen}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Window$\ast$ screen}
+
+This vector stores the object i.\+e., all the basic shapes (points, lines, triangle and quadrilaterals) \mbox{\Hypertarget{cad_8h_ab6400ef7fc23e731b15a03fc35baa955}\label{cad_8h_ab6400ef7fc23e731b15a03fc35baa955}} 
+\index{cad.\+h@{cad.\+h}!screen2@{screen2}}
+\index{screen2@{screen2}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{screen2}{screen2}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Window $\ast$ screen2}
+
+\mbox{\Hypertarget{cad_8h_a58186d66d53b7008bac5d3a2ec026906}\label{cad_8h_a58186d66d53b7008bac5d3a2ec026906}} 
+\index{cad.\+h@{cad.\+h}!text1@{text1}}
+\index{text1@{text1}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{text1}{text1}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ text1}
+
+\mbox{\Hypertarget{cad_8h_a7470b021f0a9a0c0c8860b316372c0d6}\label{cad_8h_a7470b021f0a9a0c0c8860b316372c0d6}} 
+\index{cad.\+h@{cad.\+h}!text2@{text2}}
+\index{text2@{text2}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{text2}{text2}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture $\ast$ text2}
+
+\mbox{\Hypertarget{cad_8h_a5df377739e89b6f1bb0ca4cdf99ad340}\label{cad_8h_a5df377739e89b6f1bb0ca4cdf99ad340}} 
+\index{cad.\+h@{cad.\+h}!v@{v}}
+\index{v@{v}!cad.\+h@{cad.\+h}}
+\subsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classnode}{node}$>$ v}
+

@@ -205,24 +205,24 @@ SDL_Renderer* kiss_init(char* title, kiss_array *a, int w, int h, SDL_Window *wi
 	// renderer = SDL_CreateRenderer(window, -1,SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 
 	if (renderer) kiss_array_append(a, RENDERER_TYPE, renderer);
-	r += kiss_font_new(&kiss_textfont, "../fonts/kiss_font.ttf", a,
-		kiss_textfont_size);
-	r += kiss_font_new(&kiss_buttonfont, "../fonts/kiss_font.ttf", a,
-		kiss_buttonfont_size);
-	r += kiss_image_new(&kiss_normal, "../icons/kiss_normal.png", a, renderer);
-	r += kiss_image_new(&kiss_prelight, "../icons/kiss_prelight.png", a, renderer);
-	r += kiss_image_new(&kiss_active, "../icons/kiss_active.png", a, renderer);
-	r += kiss_image_new(&kiss_bar, "../icons/kiss_bar.png", a, renderer);
-	r += kiss_image_new(&kiss_vslider, "../icons/kiss_vslider.png", a, renderer);
-	r += kiss_image_new(&kiss_hslider, "../icons/kiss_hslider.png", a, renderer);
-	r += kiss_image_new(&kiss_up, "../icons/kiss_up.png", a, renderer);
-	r += kiss_image_new(&kiss_down, "../icons/kiss_down.png", a, renderer);
-	r += kiss_image_new(&kiss_left, "../icons/kiss_left.png", a, renderer);
-	r += kiss_image_new(&kiss_right, "../icons/kiss_right.png", a, renderer);
-	r += kiss_image_new(&kiss_combo, "../icons/kiss_combo.png", a, renderer);
-	r += kiss_image_new(&kiss_selected, "../icons/kiss_selected.png", a, renderer);
-	r += kiss_image_new(&kiss_unselected, "../icons/kiss_unselected.png", a,
-		renderer);
+	// r += kiss_font_new(&kiss_textfont, "../fonts/kiss_font.ttf", a,
+	// 	kiss_textfont_size);
+	// r += kiss_font_new(&kiss_buttonfont, "../fonts/kiss_font.ttf", a,
+	// 	kiss_buttonfont_size);
+	// r += kiss_image_new(&kiss_normal, "../icons/kiss_normal.png", a, renderer);
+	// r += kiss_image_new(&kiss_prelight, "../icons/kiss_prelight.png", a, renderer);
+	// r += kiss_image_new(&kiss_active, "../icons/kiss_active.png", a, renderer);
+	// r += kiss_image_new(&kiss_bar, "../icons/kiss_bar.png", a, renderer);
+	// r += kiss_image_new(&kiss_vslider, "../icons/kiss_vslider.png", a, renderer);
+	// r += kiss_image_new(&kiss_hslider, "../icons/kiss_hslider.png", a, renderer);
+	// r += kiss_image_new(&kiss_up, "../icons/kiss_up.png", a, renderer);
+	// r += kiss_image_new(&kiss_down, "../icons/kiss_down.png", a, renderer);
+	// r += kiss_image_new(&kiss_left, "../icons/kiss_left.png", a, renderer);
+	// r += kiss_image_new(&kiss_right, "../icons/kiss_right.png", a, renderer);
+	// r += kiss_image_new(&kiss_combo, "../icons/kiss_combo.png", a, renderer);
+	// r += kiss_image_new(&kiss_selected, "../icons/kiss_selected.png", a, renderer);
+	// r += kiss_image_new(&kiss_unselected, "../icons/kiss_unselected.png", a,
+	// 	renderer);
 	if (r) {
 		kiss_clean(a);
 		return NULL;

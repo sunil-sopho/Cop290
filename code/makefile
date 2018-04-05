@@ -1,32 +1,40 @@
-IDIR =../include
+IDIR =include 
+CXX=g++ 
 CC=gcc
-C_FLAGS=-I$(IDIR)
+CXXFLAGS= -I$(IDIR) -I./lib -I./kiss_sdl -std=c++11 -w
 
-ODIR=obj
-LDIR=../lib
+SRCDIR=src
+ODIR=build
+TARGET=bin/cadmake
+LDIR=-L../lib
 
-LIBS=-lm -lSDL -lGLUT -lGLU -lGL
+LIBS=-lm -lSDL2 -lGLU -lGL -lSOIL -lglut -lSDL2_ttf -lSDL2_image
 
-_DEPS= clicks.h buttons.h construct.h cube.h draw.h keys.h Ltexture.h messNet.h node.h point.h printtxt.h project.h standardHandler.h window.h
 
+_DEPS= clicks.h buttons.h construct.h cube.h draw.h keys.h \
+Ltexture.h messNet.h node.h point.h printtxt.h project.h standardHandler.h window.h cad.h kiss_sdl.h
+	
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
-
-$(PROGNAME): $(O_FILES)
-        rm -f $(PROGNAME)
-        $(CC) $(L_FLAGS) -o $(PROGNAME) $(O_FILES) $(L_POSTFLAGS)
-_OBJ = cad.o 
+_OBJ = kiss_widgets.o kiss_draw.o kiss_general.o kiss_posix.o construct.o \
+	 messNet.o window.o clicks.o standardHandler.o project.o draw.o cube.o keys.o cad.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 
-$(ODIR)/%.o: %.c $(DEPS)
-	$(CC) -c -o $@ $< $(CFLAGS)
+$(ODIR)/%.o: $(SRCDIR)/%.cpp 
+	@mkdir -p $(ODIR)
+	$(CXX) -c -o $@ $< $(CXXFLAGS)
+$(ODIR)/%.o: $(SRCDIR)/%.c
+	@mkdir -p $(ODIR)
+	$(CC) -c -o $@ $< $(CXXFLAGS)
 
-cadmake: $(OBJ)
-	gcc -o $@ $^ $(CFLAGS) $(LIBS)
+$(TARGET): $(OBJ)
+	@echo "\n\n\n Linking ...." 
+	g++ -o $@ $^ $(CXXFLAGS) $(LIBS) 
 
 
 .PHONY: clean
 
 clean:
-	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~ 
+	@echo " Cleaning ....";
+	rm -rf $(ODIR) bin/cadmake

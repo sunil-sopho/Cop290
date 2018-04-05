@@ -1,0 +1,8 @@
+# Ignore build 
+./code/build
+
+# Ignore any executables
+./code/bin/*
+
+#Ignore Mac Os files
+.DS_Store

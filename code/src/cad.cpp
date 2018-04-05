@@ -302,6 +302,7 @@ int main(int argc, char ** argv)
 		file.close(); 		
 
 	}
+	cout << v.size() <<'\n';
 	if(SDL_Init(SDL_INIT_EVERYTHING)==-1)
 	{
 			cout <<"error\n"	;

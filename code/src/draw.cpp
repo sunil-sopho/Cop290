@@ -31,7 +31,7 @@ void Drawscene2(std::vector<node> v)
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 	updateView();
-	cout << "from 3d view\n";
+	// cout << "from 3d view\n";
 	Project(v,0);
 	glFlush();
 }

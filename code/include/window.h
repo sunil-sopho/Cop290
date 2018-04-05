@@ -4,6 +4,7 @@
 #include <SDL2/SDL_ttf.h>
 #include <SDL2/SDL_image.h>
 
+/*!Wrapper class to make main screen */
 class window
 {
 public:
