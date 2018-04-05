@@ -1,3 +1,10 @@
+/*! \mainpage Engineering Drawing Software
+	<B>Welcome to Engineering Drawing Software source documentation!</B>\n\n
+	We hope you'll find it a convenient tool to explore, understand and experiment with the internals of the program.\n\n
+	Being generated from the actual state of the code, this documentation is by no means a well structured corpus or a textbook, but more an utility to browse through the sources.\n\n
+	Don't hesitate to rebuild an up to date doc from source as often as needed.\n\n
+	You can find the source code <a href="https://github.com/sunil-sopho/Cop290">here</a>.
+*/
 #ifndef CAD_H
 #define CAD_H
 
@@ -17,7 +24,7 @@
 #include "node.h"
 using namespace std;
 	bool n = false,esc = false;
-	std::vector<node> v;
+	std::vector<node> v;/*! This vector stores the object i.e., all the basic shapes (points, lines, triangle and quadrilaterals)*/
 	SDL_Window *screen,*screen2;
 	SDL_Rect rect1,rect2;
 	SDL_Renderer *rend1,*rend2;

@@ -1,0 +1,299 @@
+\hypertarget{glcore_8h}{}\section{G\+L/internal/glcore.h File Reference}
+\label{glcore_8h}\index{G\+L/internal/glcore.\+h@{G\+L/internal/glcore.\+h}}
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_____g_lcontext_modes_rec}{\+\_\+\+\_\+\+G\+Lcontext\+Modes\+Rec}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{glcore_8h_a9f658cb826e72ebccd80f843532e831e}{G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+S\+GI}~1
+\item 
+\#define \hyperlink{glcore_8h_a0cd34720c2620478a0c26f581f409153}{G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+M\+E\+SA}~2
+\item 
+\#define \hyperlink{glcore_8h_ad2850fcf88bbcd1ebe239ba8e906c8cc}{G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+A\+P\+P\+LE}~4
+\item 
+\#define \hyperlink{glcore_8h_a39902b9be66c78e62169e41f598da943}{G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+W\+I\+N\+D\+O\+WS}~8
+\item 
+\#define \hyperlink{glcore_8h_a469be69ad75b8720ad5f00160bd671b7}{G\+L\+X\+\_\+\+N\+O\+NE}~0x8000
+\item 
+\#define \hyperlink{glcore_8h_aeb1d4b6b85fb53f9958aaf63dfc697aa}{G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+C\+O\+N\+F\+IG}~0x8001
+\item 
+\#define \hyperlink{glcore_8h_abe725d7d3c640b7c698114ef27b2b2df}{G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+OR}~0x8002
+\item 
+\#define \hyperlink{glcore_8h_adb3f2ceaa1fba3b0c97bb0880ff6cce2}{G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+OR}~0x8003
+\item 
+\#define \hyperlink{glcore_8h_a8fea3c0abfe2929ee257ecf1a137c259}{G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+OR}~0x8004
+\item 
+\#define \hyperlink{glcore_8h_a0b8e43514dcd363ad0c3ad8938c2b836}{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+OR}~0x8005
+\item 
+\#define \hyperlink{glcore_8h_a9928d6f51bedefef8538e2ce3a631fb0}{G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+LE}~0x8006
+\item 
+\#define \hyperlink{glcore_8h_ac2755eb66996189e7554da1f380d98fa}{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+AY}~0x8007
+\item 
+\#define \hyperlink{glcore_8h_a752fccf1e81a8cb94773fc5192662623}{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+GB}~0x8008
+\item 
+\#define \hyperlink{glcore_8h_a71e88eac4edd6b4b55287b4467893075}{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+EX}~0x8009
+\item 
+\#define \hyperlink{glcore_8h_adadd435abcc247be896391d019ebfbea}{G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+C\+O\+N\+F\+IG}~0x800D
+\item 
+\#define \hyperlink{glcore_8h_ab23ced13cd5a60a93a8531d16a413fb5}{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+O\+ML}~0x8061
+\item 
+\#define \hyperlink{glcore_8h_a2468bfb6a251c336e6396f5aca2c9674}{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+P\+Y\+\_\+\+O\+ML}~0x8062
+\item 
+\#define \hyperlink{glcore_8h_a4fe2af57efb0ec3acb654db3824fc91c}{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D\+\_\+\+O\+ML}~0x8063
+\item 
+\#define \hyperlink{glcore_8h_a139db61d3057b17b2f058ba5d4f57606}{G\+L\+X\+\_\+\+D\+O\+N\+T\+\_\+\+C\+A\+RE}~0x\+F\+F\+F\+F\+F\+F\+FF
+\item 
+\#define \hyperlink{glcore_8h_a6ac91c2ef1293de23e782773c065d309}{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+B\+IT}~0x00000001
+\item 
+\#define \hyperlink{glcore_8h_a1a7c1c861fa561e43cf9315c92fedc36}{G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+B\+IT}~0x00000002
+\item 
+\#define \hyperlink{glcore_8h_aea4137405780d52ab6a7af2839d8e41d}{G\+L\+X\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+B\+IT}~0x00000001
+\item 
+\#define \hyperlink{glcore_8h_a8b043ca42cf3151855f5bb1415fa8ab8}{G\+L\+X\+\_\+\+P\+I\+X\+M\+A\+P\+\_\+\+B\+IT}~0x00000002
+\item 
+\#define \hyperlink{glcore_8h_a40747561b132c6268a17c152248ff1c3}{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}~0x00000004
+\item 
+\#define \hyperlink{glcore_8h_a06c1a1a7fa90cf0e27eeda2e74bfdca8}{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+\_\+\+E\+XT}~0x20\+D0
+\item 
+\#define \hyperlink{glcore_8h_a9adffe85376e091b1b54fd8b358f1018}{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT}~0x20\+D1
+\item 
+\#define \hyperlink{glcore_8h_abc4f5184b4db99c8d96c4cb3730581be}{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT}~0x20\+D2
+\item 
+\#define \hyperlink{glcore_8h_aa9ed7186e9c9a6b499416206fc12c4d2}{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+S\+\_\+\+E\+XT}~0x20\+D3
+\item 
+\#define \hyperlink{glcore_8h_a5da97b982e5ccafaab84235cb8738022}{G\+L\+X\+\_\+\+Y\+\_\+\+I\+N\+V\+E\+R\+T\+E\+D\+\_\+\+E\+XT}~0x20\+D4
+\item 
+\#define \hyperlink{glcore_8h_a871d7feebca00547af00864fbb398013}{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT}~0x00000001
+\item 
+\#define \hyperlink{glcore_8h_ad00c49da5233261e8e384b88863020a2}{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT}~0x00000002
+\item 
+\#define \hyperlink{glcore_8h_a0efa804082f8579292118e4e92f756cd}{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT}~0x00000004
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \+\_\+\+\_\+\+G\+Lcontext\+Rec \hyperlink{glcore_8h_a31b0e6e5db8118e8da112c0ce847b4bb}{\+\_\+\+\_\+\+G\+Lcontext}
+\item 
+typedef struct \hyperlink{struct_____g_lcontext_modes_rec}{\+\_\+\+\_\+\+G\+Lcontext\+Modes\+Rec} \hyperlink{glcore_8h_a40e4d63d191232b068c32cf437649f12}{\+\_\+\+\_\+\+G\+Lcontext\+Modes}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{glcore_8h_ad2850fcf88bbcd1ebe239ba8e906c8cc}\label{glcore_8h_ad2850fcf88bbcd1ebe239ba8e906c8cc}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+A\+P\+P\+LE@{G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+A\+P\+P\+LE}}
+\index{G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+A\+P\+P\+LE@{G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+A\+P\+P\+LE}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+A\+P\+P\+LE}{GL\_CORE\_APPLE}}
+{\footnotesize\ttfamily \#define G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+A\+P\+P\+LE~4}
+
+\mbox{\Hypertarget{glcore_8h_a0cd34720c2620478a0c26f581f409153}\label{glcore_8h_a0cd34720c2620478a0c26f581f409153}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+M\+E\+SA@{G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+M\+E\+SA}}
+\index{G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+M\+E\+SA@{G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+M\+E\+SA}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+M\+E\+SA}{GL\_CORE\_MESA}}
+{\footnotesize\ttfamily \#define G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+M\+E\+SA~2}
+
+\mbox{\Hypertarget{glcore_8h_a9f658cb826e72ebccd80f843532e831e}\label{glcore_8h_a9f658cb826e72ebccd80f843532e831e}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+S\+GI@{G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+S\+GI}}
+\index{G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+S\+GI@{G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+S\+GI}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+S\+GI}{GL\_CORE\_SGI}}
+{\footnotesize\ttfamily \#define G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+S\+GI~1}
+
+\mbox{\Hypertarget{glcore_8h_a39902b9be66c78e62169e41f598da943}\label{glcore_8h_a39902b9be66c78e62169e41f598da943}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+W\+I\+N\+D\+O\+WS@{G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+W\+I\+N\+D\+O\+WS}}
+\index{G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+W\+I\+N\+D\+O\+WS@{G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+W\+I\+N\+D\+O\+WS}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+W\+I\+N\+D\+O\+WS}{GL\_CORE\_WINDOWS}}
+{\footnotesize\ttfamily \#define G\+L\+\_\+\+C\+O\+R\+E\+\_\+\+W\+I\+N\+D\+O\+WS~8}
+
+\mbox{\Hypertarget{glcore_8h_abc4f5184b4db99c8d96c4cb3730581be}\label{glcore_8h_abc4f5184b4db99c8d96c4cb3730581be}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT}{GLX\_BIND\_TO\_MIPMAP\_TEXTURE\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT~0x20\+D2}
+
+\mbox{\Hypertarget{glcore_8h_a06c1a1a7fa90cf0e27eeda2e74bfdca8}\label{glcore_8h_a06c1a1a7fa90cf0e27eeda2e74bfdca8}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+\_\+\+E\+XT}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+\_\+\+E\+XT}{GLX\_BIND\_TO\_TEXTURE\_RGB\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+\_\+\+E\+XT~0x20\+D0}
+
+\mbox{\Hypertarget{glcore_8h_a9adffe85376e091b1b54fd8b358f1018}\label{glcore_8h_a9adffe85376e091b1b54fd8b358f1018}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT}{GLX\_BIND\_TO\_TEXTURE\_RGBA\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT~0x20\+D1}
+
+\mbox{\Hypertarget{glcore_8h_aa9ed7186e9c9a6b499416206fc12c4d2}\label{glcore_8h_aa9ed7186e9c9a6b499416206fc12c4d2}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+S\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+S\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+S\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+S\+\_\+\+E\+XT}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+S\+\_\+\+E\+XT}{GLX\_BIND\_TO\_TEXTURE\_TARGETS\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+S\+\_\+\+E\+XT~0x20\+D3}
+
+\mbox{\Hypertarget{glcore_8h_a1a7c1c861fa561e43cf9315c92fedc36}\label{glcore_8h_a1a7c1c861fa561e43cf9315c92fedc36}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+B\+IT}}
+\index{G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+B\+IT}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+B\+IT}{GLX\_COLOR\_INDEX\_BIT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+B\+IT~0x00000002}
+
+\mbox{\Hypertarget{glcore_8h_adb3f2ceaa1fba3b0c97bb0880ff6cce2}\label{glcore_8h_adb3f2ceaa1fba3b0c97bb0880ff6cce2}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+OR@{G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+OR}}
+\index{G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+OR@{G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+OR}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+OR}{GLX\_DIRECT\_COLOR}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+OR~0x8003}
+
+\mbox{\Hypertarget{glcore_8h_a139db61d3057b17b2f058ba5d4f57606}\label{glcore_8h_a139db61d3057b17b2f058ba5d4f57606}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+D\+O\+N\+T\+\_\+\+C\+A\+RE@{G\+L\+X\+\_\+\+D\+O\+N\+T\+\_\+\+C\+A\+RE}}
+\index{G\+L\+X\+\_\+\+D\+O\+N\+T\+\_\+\+C\+A\+RE@{G\+L\+X\+\_\+\+D\+O\+N\+T\+\_\+\+C\+A\+RE}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+D\+O\+N\+T\+\_\+\+C\+A\+RE}{GLX\_DONT\_CARE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+D\+O\+N\+T\+\_\+\+C\+A\+RE~0x\+F\+F\+F\+F\+F\+F\+FF}
+
+\mbox{\Hypertarget{glcore_8h_a9928d6f51bedefef8538e2ce3a631fb0}\label{glcore_8h_a9928d6f51bedefef8538e2ce3a631fb0}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+LE@{G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+LE}}
+\index{G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+LE@{G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+LE}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+LE}{GLX\_GRAY\_SCALE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+LE~0x8006}
+
+\mbox{\Hypertarget{glcore_8h_adadd435abcc247be896391d019ebfbea}\label{glcore_8h_adadd435abcc247be896391d019ebfbea}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+C\+O\+N\+F\+IG@{G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+C\+O\+N\+F\+IG}}
+\index{G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+C\+O\+N\+F\+IG@{G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+C\+O\+N\+F\+IG}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+C\+O\+N\+F\+IG}{GLX\_NON\_CONFORMANT\_CONFIG}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+C\+O\+N\+F\+IG~0x800D}
+
+\mbox{\Hypertarget{glcore_8h_a469be69ad75b8720ad5f00160bd671b7}\label{glcore_8h_a469be69ad75b8720ad5f00160bd671b7}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+N\+O\+NE@{G\+L\+X\+\_\+\+N\+O\+NE}}
+\index{G\+L\+X\+\_\+\+N\+O\+NE@{G\+L\+X\+\_\+\+N\+O\+NE}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+N\+O\+NE}{GLX\_NONE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+N\+O\+NE~0x8000}
+
+\mbox{\Hypertarget{glcore_8h_a40747561b132c6268a17c152248ff1c3}\label{glcore_8h_a40747561b132c6268a17c152248ff1c3}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}}
+\index{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}{GLX\_PBUFFER\_BIT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT~0x00000004}
+
+\mbox{\Hypertarget{glcore_8h_a8b043ca42cf3151855f5bb1415fa8ab8}\label{glcore_8h_a8b043ca42cf3151855f5bb1415fa8ab8}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+P\+I\+X\+M\+A\+P\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+P\+I\+X\+M\+A\+P\+\_\+\+B\+IT}}
+\index{G\+L\+X\+\_\+\+P\+I\+X\+M\+A\+P\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+P\+I\+X\+M\+A\+P\+\_\+\+B\+IT}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+P\+I\+X\+M\+A\+P\+\_\+\+B\+IT}{GLX\_PIXMAP\_BIT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+P\+I\+X\+M\+A\+P\+\_\+\+B\+IT~0x00000002}
+
+\mbox{\Hypertarget{glcore_8h_a8fea3c0abfe2929ee257ecf1a137c259}\label{glcore_8h_a8fea3c0abfe2929ee257ecf1a137c259}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+OR@{G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+OR}}
+\index{G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+OR@{G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+OR}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+OR}{GLX\_PSEUDO\_COLOR}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+OR~0x8004}
+
+\mbox{\Hypertarget{glcore_8h_a6ac91c2ef1293de23e782773c065d309}\label{glcore_8h_a6ac91c2ef1293de23e782773c065d309}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+B\+IT}}
+\index{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+B\+IT}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+B\+IT}{GLX\_RGBA\_BIT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+B\+IT~0x00000001}
+
+\mbox{\Hypertarget{glcore_8h_aeb1d4b6b85fb53f9958aaf63dfc697aa}\label{glcore_8h_aeb1d4b6b85fb53f9958aaf63dfc697aa}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+C\+O\+N\+F\+IG@{G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+C\+O\+N\+F\+IG}}
+\index{G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+C\+O\+N\+F\+IG@{G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+C\+O\+N\+F\+IG}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+C\+O\+N\+F\+IG}{GLX\_SLOW\_CONFIG}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+C\+O\+N\+F\+IG~0x8001}
+
+\mbox{\Hypertarget{glcore_8h_a0b8e43514dcd363ad0c3ad8938c2b836}\label{glcore_8h_a0b8e43514dcd363ad0c3ad8938c2b836}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+OR@{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+OR}}
+\index{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+OR@{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+OR}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+OR}{GLX\_STATIC\_COLOR}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+OR~0x8005}
+
+\mbox{\Hypertarget{glcore_8h_ac2755eb66996189e7554da1f380d98fa}\label{glcore_8h_ac2755eb66996189e7554da1f380d98fa}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+AY@{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+AY}}
+\index{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+AY@{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+AY}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+AY}{GLX\_STATIC\_GRAY}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+AY~0x8007}
+
+\mbox{\Hypertarget{glcore_8h_a2468bfb6a251c336e6396f5aca2c9674}\label{glcore_8h_a2468bfb6a251c336e6396f5aca2c9674}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+P\+Y\+\_\+\+O\+ML@{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+P\+Y\+\_\+\+O\+ML}}
+\index{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+P\+Y\+\_\+\+O\+ML@{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+P\+Y\+\_\+\+O\+ML}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+P\+Y\+\_\+\+O\+ML}{GLX\_SWAP\_COPY\_OML}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+P\+Y\+\_\+\+O\+ML~0x8062}
+
+\mbox{\Hypertarget{glcore_8h_ab23ced13cd5a60a93a8531d16a413fb5}\label{glcore_8h_ab23ced13cd5a60a93a8531d16a413fb5}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+O\+ML@{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+O\+ML}}
+\index{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+O\+ML@{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+O\+ML}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+O\+ML}{GLX\_SWAP\_EXCHANGE\_OML}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+O\+ML~0x8061}
+
+\mbox{\Hypertarget{glcore_8h_a4fe2af57efb0ec3acb654db3824fc91c}\label{glcore_8h_a4fe2af57efb0ec3acb654db3824fc91c}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D\+\_\+\+O\+ML@{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D\+\_\+\+O\+ML}}
+\index{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D\+\_\+\+O\+ML@{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D\+\_\+\+O\+ML}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D\+\_\+\+O\+ML}{GLX\_SWAP\_UNDEFINED\_OML}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D\+\_\+\+O\+ML~0x8063}
+
+\mbox{\Hypertarget{glcore_8h_a871d7feebca00547af00864fbb398013}\label{glcore_8h_a871d7feebca00547af00864fbb398013}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT}{GLX\_TEXTURE\_1D\_BIT\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT~0x00000001}
+
+\mbox{\Hypertarget{glcore_8h_ad00c49da5233261e8e384b88863020a2}\label{glcore_8h_ad00c49da5233261e8e384b88863020a2}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT}{GLX\_TEXTURE\_2D\_BIT\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT~0x00000002}
+
+\mbox{\Hypertarget{glcore_8h_a0efa804082f8579292118e4e92f756cd}\label{glcore_8h_a0efa804082f8579292118e4e92f756cd}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT}{GLX\_TEXTURE\_RECTANGLE\_BIT\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT~0x00000004}
+
+\mbox{\Hypertarget{glcore_8h_a71e88eac4edd6b4b55287b4467893075}\label{glcore_8h_a71e88eac4edd6b4b55287b4467893075}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+EX@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+EX}}
+\index{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+EX@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+EX}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+EX}{GLX\_TRANSPARENT\_INDEX}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+EX~0x8009}
+
+\mbox{\Hypertarget{glcore_8h_a752fccf1e81a8cb94773fc5192662623}\label{glcore_8h_a752fccf1e81a8cb94773fc5192662623}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+GB@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+GB}}
+\index{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+GB@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+GB}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+GB}{GLX\_TRANSPARENT\_RGB}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+GB~0x8008}
+
+\mbox{\Hypertarget{glcore_8h_abe725d7d3c640b7c698114ef27b2b2df}\label{glcore_8h_abe725d7d3c640b7c698114ef27b2b2df}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+OR@{G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+OR}}
+\index{G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+OR@{G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+OR}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+OR}{GLX\_TRUE\_COLOR}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+OR~0x8002}
+
+\mbox{\Hypertarget{glcore_8h_aea4137405780d52ab6a7af2839d8e41d}\label{glcore_8h_aea4137405780d52ab6a7af2839d8e41d}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+B\+IT}}
+\index{G\+L\+X\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+B\+IT}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+B\+IT}{GLX\_WINDOW\_BIT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+B\+IT~0x00000001}
+
+\mbox{\Hypertarget{glcore_8h_a5da97b982e5ccafaab84235cb8738022}\label{glcore_8h_a5da97b982e5ccafaab84235cb8738022}} 
+\index{glcore.\+h@{glcore.\+h}!G\+L\+X\+\_\+\+Y\+\_\+\+I\+N\+V\+E\+R\+T\+E\+D\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+Y\+\_\+\+I\+N\+V\+E\+R\+T\+E\+D\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+Y\+\_\+\+I\+N\+V\+E\+R\+T\+E\+D\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+Y\+\_\+\+I\+N\+V\+E\+R\+T\+E\+D\+\_\+\+E\+XT}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+Y\+\_\+\+I\+N\+V\+E\+R\+T\+E\+D\+\_\+\+E\+XT}{GLX\_Y\_INVERTED\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+Y\+\_\+\+I\+N\+V\+E\+R\+T\+E\+D\+\_\+\+E\+XT~0x20\+D4}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{glcore_8h_a31b0e6e5db8118e8da112c0ce847b4bb}\label{glcore_8h_a31b0e6e5db8118e8da112c0ce847b4bb}} 
+\index{glcore.\+h@{glcore.\+h}!\+\_\+\+\_\+\+G\+Lcontext@{\+\_\+\+\_\+\+G\+Lcontext}}
+\index{\+\_\+\+\_\+\+G\+Lcontext@{\+\_\+\+\_\+\+G\+Lcontext}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+G\+Lcontext}{\_\_GLcontext}}
+{\footnotesize\ttfamily typedef struct \+\_\+\+\_\+\+G\+Lcontext\+Rec \hyperlink{glcore_8h_a31b0e6e5db8118e8da112c0ce847b4bb}{\+\_\+\+\_\+\+G\+Lcontext}}
+
+\mbox{\Hypertarget{glcore_8h_a40e4d63d191232b068c32cf437649f12}\label{glcore_8h_a40e4d63d191232b068c32cf437649f12}} 
+\index{glcore.\+h@{glcore.\+h}!\+\_\+\+\_\+\+G\+Lcontext\+Modes@{\+\_\+\+\_\+\+G\+Lcontext\+Modes}}
+\index{\+\_\+\+\_\+\+G\+Lcontext\+Modes@{\+\_\+\+\_\+\+G\+Lcontext\+Modes}!glcore.\+h@{glcore.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+G\+Lcontext\+Modes}{\_\_GLcontextModes}}
+{\footnotesize\ttfamily typedef struct \hyperlink{struct_____g_lcontext_modes_rec}{\+\_\+\+\_\+\+G\+Lcontext\+Modes\+Rec}  \hyperlink{glcore_8h_a40e4d63d191232b068c32cf437649f12}{\+\_\+\+\_\+\+G\+Lcontext\+Modes}}
+
+Mode and limit information for a context. This information is kept around in the context so that values can be used during command execution, and for returning information about the context to the application.
+
+Instances of this structure are shared by the driver and the loader. To maintain binary compatability, new fields {\bfseries must} be added only to the end of the structure.
+
+\begin{DoxySeeAlso}{See also}
+\+\_\+gl\+\_\+context\+\_\+modes\+\_\+create 
+\end{DoxySeeAlso}

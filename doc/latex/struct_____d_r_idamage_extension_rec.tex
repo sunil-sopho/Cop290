@@ -1,0 +1,50 @@
+\hypertarget{struct_____d_r_idamage_extension_rec}{}\section{\+\_\+\+\_\+\+D\+R\+Idamage\+Extension\+Rec Struct Reference}
+\label{struct_____d_r_idamage_extension_rec}\index{\+\_\+\+\_\+\+D\+R\+Idamage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idamage\+Extension\+Rec}}
+
+
+{\ttfamily \#include $<$dri\+\_\+interface.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\+\_\+\+\_\+\+D\+R\+Iextension} \hyperlink{struct_____d_r_idamage_extension_rec_a0c243c58e0f74a72a45e8397f78407fc}{base}
+\item 
+\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \hyperlink{struct_____d_r_idamage_extension_rec_af2bea08f719c79263f76d12ecddf24bc}{report\+Damage} )(\hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\+\_\+\+\_\+\+D\+R\+Idrawable} $\ast$draw, int \hyperlink{gl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}, int \hyperlink{gl_8h_a1675d9d7bb68e1657ff028643b4037e3}{y}, \hyperlink{dri__interface_8h_a912a372f2417e4f139f82bbf0a3d4fc1}{drm\+\_\+clip\+\_\+rect\+\_\+t} $\ast$rects, int num\+\_\+rects, \hyperlink{gl_8h_aea1419aa8aec5854bd9807b45171029d}{G\+Lboolean} front\+\_\+buffer, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_____d_r_idamage_extension_rec_a0c243c58e0f74a72a45e8397f78407fc}\label{struct_____d_r_idamage_extension_rec_a0c243c58e0f74a72a45e8397f78407fc}} 
+\index{\+\_\+\+\_\+\+D\+R\+Idamage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idamage\+Extension\+Rec}!base@{base}}
+\index{base@{base}!\+\_\+\+\_\+\+D\+R\+Idamage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idamage\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{base}{base}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\+\_\+\+\_\+\+D\+R\+Iextension} \+\_\+\+\_\+\+D\+R\+Idamage\+Extension\+Rec\+::base}
+
+\mbox{\Hypertarget{struct_____d_r_idamage_extension_rec_af2bea08f719c79263f76d12ecddf24bc}\label{struct_____d_r_idamage_extension_rec_af2bea08f719c79263f76d12ecddf24bc}} 
+\index{\+\_\+\+\_\+\+D\+R\+Idamage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idamage\+Extension\+Rec}!report\+Damage@{report\+Damage}}
+\index{report\+Damage@{report\+Damage}!\+\_\+\+\_\+\+D\+R\+Idamage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idamage\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{report\+Damage}{reportDamage}}
+{\footnotesize\ttfamily \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \+\_\+\+\_\+\+D\+R\+Idamage\+Extension\+Rec\+::report\+Damage) (\hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\+\_\+\+\_\+\+D\+R\+Idrawable} $\ast$draw, int \hyperlink{gl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}, int \hyperlink{gl_8h_a1675d9d7bb68e1657ff028643b4037e3}{y}, \hyperlink{dri__interface_8h_a912a372f2417e4f139f82bbf0a3d4fc1}{drm\+\_\+clip\+\_\+rect\+\_\+t} $\ast$rects, int num\+\_\+rects, \hyperlink{gl_8h_aea1419aa8aec5854bd9807b45171029d}{G\+Lboolean} front\+\_\+buffer, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)}
+
+Reports areas of the given drawable which have been modified by the driver.
+
+
+\begin{DoxyParams}{Parameters}
+{\em drawable} & which the drawing was done to. \\
+\hline
+{\em rects} & rectangles affected, with the drawable origin as the origin. \\
+\hline
+{\em x} & X offset of the drawable within the screen (used in the front\+\_\+buffer case) \\
+\hline
+{\em y} & Y offset of the drawable within the screen. \\
+\hline
+{\em front\+\_\+buffer} & boolean flag for whether the drawing to the drawable was actually done directly to the front buffer (instead of backing storage, for example) \\
+\hline
+{\em loader\+Private} & the data passed in at create\+New\+Drawable time \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+L/internal/\hyperlink{dri__interface_8h}{dri\+\_\+interface.\+h}\end{DoxyCompactItemize}

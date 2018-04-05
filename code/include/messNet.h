@@ -8,4 +8,5 @@
 
 using namespace std;
 
+/*! Function to initialize the interface for drawing the object*/
 void messinit(std::vector<node> v);

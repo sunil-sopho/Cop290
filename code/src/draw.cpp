@@ -11,18 +11,15 @@ bool save = false;
 void Drawscene(std::vector<node> v)
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	// cube();
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 	glPushMatrix();
 	glTranslatef(0,0,-10.0f);
 
 	updateView();
-	// linec();
 
 	Project(v,1);
 
-	// cube();
 	glPopMatrix();
 	glFlush();
 }
@@ -31,10 +28,8 @@ void Drawscene(std::vector<node> v)
 void Drawscene2(std::vector<node> v)
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	// cube();
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
-	// cube();
 	updateView();
 	cout << "from 3d view\n";
 	Project(v,0);
@@ -50,7 +45,6 @@ void Drawscene3(std::vector<node> v)
 	glPushMatrix();
 	glTranslatef(0,0,-10.0f);
 
-	// cube();
 	updateView();
 	glRotatef(90,1,0,0);
 	Project(v,1);
@@ -61,18 +55,14 @@ void Drawscene3(std::vector<node> v)
 void Drawscene6(std::vector<node> v)
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	// cube();
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 	glPushMatrix();
 	glTranslatef(0,0,-10.0f);
 	
 	updateView();
-	// linec();
 	glRotatef(90,0,1,0);
 	Project(v,1);
-
-	// cube();
 	glPopMatrix();
 	glFlush();
 }
@@ -82,13 +72,11 @@ void Drawscene6(std::vector<node> v)
 void Drawscene7(std::vector<node> v)
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	// cube();
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 	glPushMatrix();
 	glTranslatef(0,0,-10.0f);
 
-	// updateView();
 	glEnable(GL_COLOR_MATERIAL);
 	glDisable(GL_CULL_FACE);
 
@@ -97,9 +85,6 @@ void Drawscene7(std::vector<node> v)
 	glVertex3f(-500.0f,1.0f,1.0f);
 	glEnd();
 
-	// linec();
-
-	// cube();
 	glPopMatrix();
 	glFlush();
 }
@@ -108,13 +93,11 @@ void Drawscene7(std::vector<node> v)
 void Drawscene8(std::vector<node> v)
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	// cube();
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 	glPushMatrix();
 	glTranslatef(0,0,-10.0f);
 
-	// updateView();
 	glEnable(GL_COLOR_MATERIAL);
 	glDisable(GL_CULL_FACE);
 
@@ -123,25 +106,19 @@ void Drawscene8(std::vector<node> v)
 	glVertex3f(0.0f,210.0f,1.0f);
 	glEnd();
 
-	// linec();
-
-	// cube();
 	glPopMatrix();
 	glFlush();
 }
 
 // vertical line 2
-
 void Drawscene9(std::vector<node> v)
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	// cube();
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 	glPushMatrix();
 	glTranslatef(0,0,-10.0f);
 
-	// updateView();
 	glEnable(GL_COLOR_MATERIAL);
 	glDisable(GL_CULL_FACE);
 
@@ -150,25 +127,9 @@ void Drawscene9(std::vector<node> v)
 	glVertex3f(0.0f,210.0f,1.0f);
 	glEnd();
 
-	// linec();
-
-	// cube();
 	glPopMatrix();
 	glFlush();
 }
-// const int font1 = (int)GLUT_BITMAP_9_BY_15;
-// void output(char *s)
-// {
-// 	char *c;
-// 	glColor3f(255,0,0);
-// 	glRasterPos2f(1.4,0);
-// 	// char *s = (char*)malloc(sizeof(char)*10);
-// 	// s = "hithere";
-// 	for(c=s;*c !='\0';c++)
-// 	{
-// 		glutBitmapCharacter((void*)font1,*c);
-// 	} 
-// }
 
 void Drawscene4(std::vector<node> v)
 {
@@ -177,18 +138,9 @@ void Drawscene4(std::vector<node> v)
 
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
- // printo(rend, 199, 20, "--|--|", font, &text1, &rect1);
 	glPushMatrix();
 	glTranslatef(2.4f,7.0f,-20.0f);
 
-	// char s[] = {'s','u','n','i','l','k','u','m','\0'};
-
-	// output("hithere\0");
-	// glBindTexture(GL_TEXTURE_2D, minusm);
-	// glEnable(GL_TEXTURE_2D);
-	// glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB,
- //              GL_UNSIGNED_BYTE, image);
-// cout << minusm <<'\n';
 	glBegin(GL_QUADS);
 
 	glColor3f(100.0f,100.0f,100.0f);
@@ -206,8 +158,6 @@ void Drawscene4(std::vector<node> v)
 	glPushMatrix();
 	glTranslatef(2.4f, 5.5f,-20.0f);
 
-	// glBindTexture(GL_TEXTURE_2D, minusm);
-	// glEnable(GL_TEXTURE_2D);
 
 	glBegin(GL_QUADS);
 
@@ -226,9 +176,6 @@ void Drawscene4(std::vector<node> v)
 	glPushMatrix();
 	glTranslatef(2.4f,4.0f,-20.0f);
 
-	// glBindTexture(GL_TEXTURE_2D, minusm);
-	// glEnable(GL_TEXTURE_2D);
-
 	glBegin(GL_QUADS);
 
 	glColor3f(100.0f,100.0f,100.0f);
@@ -245,9 +192,6 @@ void Drawscene4(std::vector<node> v)
 
 	glPushMatrix();
 	glTranslatef(2.4f,2.5f,-20.0f);
-
-	// glBindTexture(GL_TEXTURE_2D, minusm);
-	// glEnable(GL_TEXTURE_2D);
 
 	glBegin(GL_QUADS);
 
@@ -266,9 +210,6 @@ void Drawscene4(std::vector<node> v)
 // button
 	glPushMatrix();
 	glTranslatef(-2.0f,7.0f,-20.0f);
-
-	// glBindTexture(GL_TEXTURE_2D, minusm);
-	// glEnable(GL_TEXTURE_2D);
 
 	glBegin(GL_QUADS);
 
@@ -289,9 +230,6 @@ void Drawscene4(std::vector<node> v)
 	glPushMatrix();
 	glTranslatef(-2.0f,5.5f,-20.0f);
 
-	// glBindTexture(GL_TEXTURE_2D, minusm);
-	// glEnable(GL_TEXTURE_2D);
-
 	glBegin(GL_QUADS);
 
 	glColor3f(100.0f,100.0f,100.0f);
@@ -309,9 +247,6 @@ void Drawscene4(std::vector<node> v)
 	glPushMatrix();
 	glTranslatef(-2.0f,4.0f,-20.0f);
 
-	// glBindTexture(GL_TEXTURE_2D, minusm);
-	// glEnable(GL_TEXTURE_2D);
-
 	glBegin(GL_QUADS);
 
 	glColor3f(100.0f,100.0f,100.0f);
@@ -328,9 +263,6 @@ void Drawscene4(std::vector<node> v)
 
 	glPushMatrix();
 	glTranslatef(-2.0f,2.5f,-20.0f);
-
-	// glBindTexture(GL_TEXTURE_2D, minusm);
-	// glEnable(GL_TEXTURE_2D);
 
 	glBegin(GL_QUADS);
 

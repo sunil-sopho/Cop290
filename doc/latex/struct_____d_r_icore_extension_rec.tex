@@ -1,0 +1,129 @@
+\hypertarget{struct_____d_r_icore_extension_rec}{}\section{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec Struct Reference}
+\label{struct_____d_r_icore_extension_rec}\index{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}}
+
+
+{\ttfamily \#include $<$dri\+\_\+interface.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\+\_\+\+\_\+\+D\+R\+Iextension} \hyperlink{struct_____d_r_icore_extension_rec_a5f960f7c4747dbda8574a66c246f2cc0}{base}
+\item 
+\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_ac1f7443c2b0244968dffeb347ee32fcb}{create\+New\+Screen} )(int \hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, int fd, unsigned int sarea\+\_\+handle, const \hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\+\_\+\+\_\+\+D\+R\+Iextension} $\ast$$\ast$extensions, const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\+\_\+\+\_\+\+D\+R\+Iconfig} $\ast$$\ast$$\ast$driver\+Configs, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)
+\item 
+\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_adcd287b6c4009b4d8e01bac36fb0f09b}{destroy\+Screen} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen})
+\item 
+const \hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\+\_\+\+\_\+\+D\+R\+Iextension} $\ast$$\ast$($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_a410e0cf43ceb7137f9cdacae1f9a7a41}{get\+Extensions} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen})
+\item 
+int($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_af06eab75defdb8ffe7b61d4cc975ffc3}{get\+Config\+Attrib} )(const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\+\_\+\+\_\+\+D\+R\+Iconfig} $\ast$config, unsigned int attrib, unsigned int $\ast$\hyperlink{glcorearb_8h_a8ad81492d410ff2ac11f754f4042150f}{value})
+\item 
+int($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_aa32e6df7cd0c50578903c9dd78aba59e}{index\+Config\+Attrib} )(const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\+\_\+\+\_\+\+D\+R\+Iconfig} $\ast$config, int \hyperlink{glcorearb_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index}, unsigned int $\ast$attrib, unsigned int $\ast$\hyperlink{glcorearb_8h_a8ad81492d410ff2ac11f754f4042150f}{value})
+\item 
+\hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\+\_\+\+\_\+\+D\+R\+Idrawable} $\ast$($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_a335908b0f7bce3aaec55789f40003643}{create\+New\+Drawable} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\+\_\+\+\_\+\+D\+R\+Iconfig} $\ast$config, unsigned int drawable\+\_\+id, unsigned int head, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)
+\item 
+\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_a3ddbdbe3193d26ea0d60b84dbaf91170}{destroy\+Drawable} )(\hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\+\_\+\+\_\+\+D\+R\+Idrawable} $\ast$drawable)
+\item 
+\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_addec4bfd74138870a2ff1a75239e0bc2}{swap\+Buffers} )(\hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\+\_\+\+\_\+\+D\+R\+Idrawable} $\ast$drawable)
+\item 
+\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_ae126058e87a3b74c27f48e275bb28e7b}{create\+New\+Context} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\+\_\+\+\_\+\+D\+R\+Iconfig} $\ast$config, \hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$shared, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)
+\item 
+int($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_a99fd52f404cda5918af5fba5b9553f5e}{copy\+Context} )(\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$dest, \hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$\hyperlink{glcorearb_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}, unsigned long \hyperlink{glcorearb_8h_a2e8825c19147a8250013df8e4275f5b6}{mask})
+\item 
+\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_aebb9ddac0852b22a75568195c64e3e54}{destroy\+Context} )(\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$context)
+\item 
+int($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_ab2b49ae5760b170090d3f88d269857f4}{bind\+Context} )(\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$ctx, \hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\+\_\+\+\_\+\+D\+R\+Idrawable} $\ast$pdraw, \hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\+\_\+\+\_\+\+D\+R\+Idrawable} $\ast$pread)
+\item 
+int($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_a04850b3ee32c27c78b8efac1aeeb98b6}{unbind\+Context} )(\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$ctx)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_____d_r_icore_extension_rec_a5f960f7c4747dbda8574a66c246f2cc0}\label{struct_____d_r_icore_extension_rec_a5f960f7c4747dbda8574a66c246f2cc0}} 
+\index{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}!base@{base}}
+\index{base@{base}!\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{base}{base}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\+\_\+\+\_\+\+D\+R\+Iextension} \+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec\+::base}
+
+\mbox{\Hypertarget{struct_____d_r_icore_extension_rec_ab2b49ae5760b170090d3f88d269857f4}\label{struct_____d_r_icore_extension_rec_ab2b49ae5760b170090d3f88d269857f4}} 
+\index{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}!bind\+Context@{bind\+Context}}
+\index{bind\+Context@{bind\+Context}!\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{bind\+Context}{bindContext}}
+{\footnotesize\ttfamily int($\ast$ \+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec\+::bind\+Context) (\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$ctx, \hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\+\_\+\+\_\+\+D\+R\+Idrawable} $\ast$pdraw, \hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\+\_\+\+\_\+\+D\+R\+Idrawable} $\ast$pread)}
+
+\mbox{\Hypertarget{struct_____d_r_icore_extension_rec_a99fd52f404cda5918af5fba5b9553f5e}\label{struct_____d_r_icore_extension_rec_a99fd52f404cda5918af5fba5b9553f5e}} 
+\index{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}!copy\+Context@{copy\+Context}}
+\index{copy\+Context@{copy\+Context}!\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{copy\+Context}{copyContext}}
+{\footnotesize\ttfamily int($\ast$ \+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec\+::copy\+Context) (\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$dest, \hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$\hyperlink{glcorearb_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}, unsigned long \hyperlink{glcorearb_8h_a2e8825c19147a8250013df8e4275f5b6}{mask})}
+
+\mbox{\Hypertarget{struct_____d_r_icore_extension_rec_ae126058e87a3b74c27f48e275bb28e7b}\label{struct_____d_r_icore_extension_rec_ae126058e87a3b74c27f48e275bb28e7b}} 
+\index{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}!create\+New\+Context@{create\+New\+Context}}
+\index{create\+New\+Context@{create\+New\+Context}!\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{create\+New\+Context}{createNewContext}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext}$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec\+::create\+New\+Context) (\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\+\_\+\+\_\+\+D\+R\+Iconfig} $\ast$config, \hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$shared, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)}
+
+\mbox{\Hypertarget{struct_____d_r_icore_extension_rec_a335908b0f7bce3aaec55789f40003643}\label{struct_____d_r_icore_extension_rec_a335908b0f7bce3aaec55789f40003643}} 
+\index{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}!create\+New\+Drawable@{create\+New\+Drawable}}
+\index{create\+New\+Drawable@{create\+New\+Drawable}!\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{create\+New\+Drawable}{createNewDrawable}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\+\_\+\+\_\+\+D\+R\+Idrawable}$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec\+::create\+New\+Drawable) (\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\+\_\+\+\_\+\+D\+R\+Iconfig} $\ast$config, unsigned int drawable\+\_\+id, unsigned int head, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)}
+
+\mbox{\Hypertarget{struct_____d_r_icore_extension_rec_ac1f7443c2b0244968dffeb347ee32fcb}\label{struct_____d_r_icore_extension_rec_ac1f7443c2b0244968dffeb347ee32fcb}} 
+\index{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}!create\+New\+Screen@{create\+New\+Screen}}
+\index{create\+New\+Screen@{create\+New\+Screen}!\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{create\+New\+Screen}{createNewScreen}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen}$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec\+::create\+New\+Screen) (int \hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, int fd, unsigned int sarea\+\_\+handle, const \hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\+\_\+\+\_\+\+D\+R\+Iextension} $\ast$$\ast$extensions, const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\+\_\+\+\_\+\+D\+R\+Iconfig} $\ast$$\ast$$\ast$driver\+Configs, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)}
+
+\mbox{\Hypertarget{struct_____d_r_icore_extension_rec_aebb9ddac0852b22a75568195c64e3e54}\label{struct_____d_r_icore_extension_rec_aebb9ddac0852b22a75568195c64e3e54}} 
+\index{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}!destroy\+Context@{destroy\+Context}}
+\index{destroy\+Context@{destroy\+Context}!\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{destroy\+Context}{destroyContext}}
+{\footnotesize\ttfamily \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec\+::destroy\+Context) (\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$context)}
+
+\mbox{\Hypertarget{struct_____d_r_icore_extension_rec_a3ddbdbe3193d26ea0d60b84dbaf91170}\label{struct_____d_r_icore_extension_rec_a3ddbdbe3193d26ea0d60b84dbaf91170}} 
+\index{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}!destroy\+Drawable@{destroy\+Drawable}}
+\index{destroy\+Drawable@{destroy\+Drawable}!\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{destroy\+Drawable}{destroyDrawable}}
+{\footnotesize\ttfamily \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec\+::destroy\+Drawable) (\hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\+\_\+\+\_\+\+D\+R\+Idrawable} $\ast$drawable)}
+
+\mbox{\Hypertarget{struct_____d_r_icore_extension_rec_adcd287b6c4009b4d8e01bac36fb0f09b}\label{struct_____d_r_icore_extension_rec_adcd287b6c4009b4d8e01bac36fb0f09b}} 
+\index{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}!destroy\+Screen@{destroy\+Screen}}
+\index{destroy\+Screen@{destroy\+Screen}!\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{destroy\+Screen}{destroyScreen}}
+{\footnotesize\ttfamily \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec\+::destroy\+Screen) (\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen})}
+
+\mbox{\Hypertarget{struct_____d_r_icore_extension_rec_af06eab75defdb8ffe7b61d4cc975ffc3}\label{struct_____d_r_icore_extension_rec_af06eab75defdb8ffe7b61d4cc975ffc3}} 
+\index{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}!get\+Config\+Attrib@{get\+Config\+Attrib}}
+\index{get\+Config\+Attrib@{get\+Config\+Attrib}!\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{get\+Config\+Attrib}{getConfigAttrib}}
+{\footnotesize\ttfamily int($\ast$ \+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec\+::get\+Config\+Attrib) (const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\+\_\+\+\_\+\+D\+R\+Iconfig} $\ast$config, unsigned int attrib, unsigned int $\ast$\hyperlink{glcorearb_8h_a8ad81492d410ff2ac11f754f4042150f}{value})}
+
+\mbox{\Hypertarget{struct_____d_r_icore_extension_rec_a410e0cf43ceb7137f9cdacae1f9a7a41}\label{struct_____d_r_icore_extension_rec_a410e0cf43ceb7137f9cdacae1f9a7a41}} 
+\index{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}!get\+Extensions@{get\+Extensions}}
+\index{get\+Extensions@{get\+Extensions}!\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{get\+Extensions}{getExtensions}}
+{\footnotesize\ttfamily const \hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\+\_\+\+\_\+\+D\+R\+Iextension}$\ast$$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec\+::get\+Extensions) (\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen})}
+
+\mbox{\Hypertarget{struct_____d_r_icore_extension_rec_aa32e6df7cd0c50578903c9dd78aba59e}\label{struct_____d_r_icore_extension_rec_aa32e6df7cd0c50578903c9dd78aba59e}} 
+\index{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}!index\+Config\+Attrib@{index\+Config\+Attrib}}
+\index{index\+Config\+Attrib@{index\+Config\+Attrib}!\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{index\+Config\+Attrib}{indexConfigAttrib}}
+{\footnotesize\ttfamily int($\ast$ \+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec\+::index\+Config\+Attrib) (const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\+\_\+\+\_\+\+D\+R\+Iconfig} $\ast$config, int \hyperlink{glcorearb_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index}, unsigned int $\ast$attrib, unsigned int $\ast$\hyperlink{glcorearb_8h_a8ad81492d410ff2ac11f754f4042150f}{value})}
+
+\mbox{\Hypertarget{struct_____d_r_icore_extension_rec_addec4bfd74138870a2ff1a75239e0bc2}\label{struct_____d_r_icore_extension_rec_addec4bfd74138870a2ff1a75239e0bc2}} 
+\index{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}!swap\+Buffers@{swap\+Buffers}}
+\index{swap\+Buffers@{swap\+Buffers}!\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{swap\+Buffers}{swapBuffers}}
+{\footnotesize\ttfamily \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec\+::swap\+Buffers) (\hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\+\_\+\+\_\+\+D\+R\+Idrawable} $\ast$drawable)}
+
+\mbox{\Hypertarget{struct_____d_r_icore_extension_rec_a04850b3ee32c27c78b8efac1aeeb98b6}\label{struct_____d_r_icore_extension_rec_a04850b3ee32c27c78b8efac1aeeb98b6}} 
+\index{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}!unbind\+Context@{unbind\+Context}}
+\index{unbind\+Context@{unbind\+Context}!\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{unbind\+Context}{unbindContext}}
+{\footnotesize\ttfamily int($\ast$ \+\_\+\+\_\+\+D\+R\+Icore\+Extension\+Rec\+::unbind\+Context) (\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$ctx)}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+L/internal/\hyperlink{dri__interface_8h}{dri\+\_\+interface.\+h}\end{DoxyCompactItemize}

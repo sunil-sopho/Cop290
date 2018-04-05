@@ -1,0 +1,85 @@
+\hypertarget{struct_____d_r_iframebuffer_rec}{}\section{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec Struct Reference}
+\label{struct_____d_r_iframebuffer_rec}\index{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec@{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec}}
+
+
+{\ttfamily \#include $<$dri\+\_\+interface.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char $\ast$ \hyperlink{struct_____d_r_iframebuffer_rec_ad4b7d037cf68bf62da49568e6826a2d6}{base}
+\item 
+int \hyperlink{struct_____d_r_iframebuffer_rec_aa3a4d320b15693103d593499abce5b08}{size}
+\item 
+int \hyperlink{struct_____d_r_iframebuffer_rec_a2889cbb92d1327c5bebb4cacbe9f6774}{stride}
+\item 
+int \hyperlink{struct_____d_r_iframebuffer_rec_a9b92fd71279bc61c4d58d88a8b06425b}{width}
+\item 
+int \hyperlink{struct_____d_r_iframebuffer_rec_aae5cb6f3fb0d56e7a8989bcb2a2d3761}{height}
+\item 
+int \hyperlink{struct_____d_r_iframebuffer_rec_a0bfbde5e050baa8aa3450a60ce51a85d}{dev\+\_\+priv\+\_\+size}
+\item 
+\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$ \hyperlink{struct_____d_r_iframebuffer_rec_af315b382c3a95a2acbddd5ed8157bfad}{dev\+\_\+priv}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Framebuffer information record. Used by lib\+GL to communicate information about the framebuffer to the driver\textquotesingle{}s {\ttfamily \+\_\+\+\_\+dri\+Create\+New\+Screen} function.
+
+In X\+Free86, most of this information is derrived from data returned by calling {\ttfamily X\+F86\+D\+R\+I\+Get\+Device\+Info}.
+
+\begin{DoxySeeAlso}{See also}
+X\+F86\+D\+R\+I\+Get\+Device\+Info \+\_\+\+\_\+\+D\+R\+Idisplay\+Rec\+::create\+New\+Screen \+\_\+\+\_\+dri\+Util\+Create\+New\+Screen Call\+Create\+New\+Screen
+\end{DoxySeeAlso}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000001}{Bug}]This structure could be better named. \end{DoxyRefDesc}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_____d_r_iframebuffer_rec_ad4b7d037cf68bf62da49568e6826a2d6}\label{struct_____d_r_iframebuffer_rec_ad4b7d037cf68bf62da49568e6826a2d6}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec@{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec}!base@{base}}
+\index{base@{base}!\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec@{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec}}
+\subsubsection{\texorpdfstring{base}{base}}
+{\footnotesize\ttfamily unsigned char$\ast$ \+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec\+::base}
+
+Framebuffer base address in the C\+PU\textquotesingle{}s address space. This value is calculated by calling {\ttfamily drm\+Map} on the framebuffer handle returned by {\ttfamily X\+F86\+D\+R\+I\+Get\+Device\+Info} (or a similar function). \mbox{\Hypertarget{struct_____d_r_iframebuffer_rec_af315b382c3a95a2acbddd5ed8157bfad}\label{struct_____d_r_iframebuffer_rec_af315b382c3a95a2acbddd5ed8157bfad}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec@{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec}!dev\+\_\+priv@{dev\+\_\+priv}}
+\index{dev\+\_\+priv@{dev\+\_\+priv}!\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec@{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec}}
+\subsubsection{\texorpdfstring{dev\+\_\+priv}{dev\_priv}}
+{\footnotesize\ttfamily \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}$\ast$ \+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec\+::dev\+\_\+priv}
+
+Pointer to the driver\textquotesingle{}s dev-\/priv structure. \mbox{\Hypertarget{struct_____d_r_iframebuffer_rec_a0bfbde5e050baa8aa3450a60ce51a85d}\label{struct_____d_r_iframebuffer_rec_a0bfbde5e050baa8aa3450a60ce51a85d}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec@{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec}!dev\+\_\+priv\+\_\+size@{dev\+\_\+priv\+\_\+size}}
+\index{dev\+\_\+priv\+\_\+size@{dev\+\_\+priv\+\_\+size}!\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec@{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec}}
+\subsubsection{\texorpdfstring{dev\+\_\+priv\+\_\+size}{dev\_priv\_size}}
+{\footnotesize\ttfamily int \+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec\+::dev\+\_\+priv\+\_\+size}
+
+Size of the driver\textquotesingle{}s dev-\/priv structure. \mbox{\Hypertarget{struct_____d_r_iframebuffer_rec_aae5cb6f3fb0d56e7a8989bcb2a2d3761}\label{struct_____d_r_iframebuffer_rec_aae5cb6f3fb0d56e7a8989bcb2a2d3761}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec@{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec}!height@{height}}
+\index{height@{height}!\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec@{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int \+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec\+::height}
+
+Pixel height of the framebuffer. \mbox{\Hypertarget{struct_____d_r_iframebuffer_rec_aa3a4d320b15693103d593499abce5b08}\label{struct_____d_r_iframebuffer_rec_aa3a4d320b15693103d593499abce5b08}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec@{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec}!size@{size}}
+\index{size@{size}!\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec@{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily int \+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec\+::size}
+
+Framebuffer size, in bytes. \mbox{\Hypertarget{struct_____d_r_iframebuffer_rec_a2889cbb92d1327c5bebb4cacbe9f6774}\label{struct_____d_r_iframebuffer_rec_a2889cbb92d1327c5bebb4cacbe9f6774}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec@{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec}!stride@{stride}}
+\index{stride@{stride}!\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec@{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec}}
+\subsubsection{\texorpdfstring{stride}{stride}}
+{\footnotesize\ttfamily int \+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec\+::stride}
+
+Number of bytes from one line to the next. \mbox{\Hypertarget{struct_____d_r_iframebuffer_rec_a9b92fd71279bc61c4d58d88a8b06425b}\label{struct_____d_r_iframebuffer_rec_a9b92fd71279bc61c4d58d88a8b06425b}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec@{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec}!width@{width}}
+\index{width@{width}!\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec@{\+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int \+\_\+\+\_\+\+D\+R\+Iframebuffer\+Rec\+::width}
+
+Pixel width of the framebuffer. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+L/internal/\hyperlink{dri__interface_8h}{dri\+\_\+interface.\+h}\end{DoxyCompactItemize}

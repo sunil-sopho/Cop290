@@ -1,0 +1,41 @@
+\hypertarget{struct_____d_r_imedia_stream_counter_extension_rec}{}\section{\+\_\+\+\_\+\+D\+R\+Imedia\+Stream\+Counter\+Extension\+Rec Struct Reference}
+\label{struct_____d_r_imedia_stream_counter_extension_rec}\index{\+\_\+\+\_\+\+D\+R\+Imedia\+Stream\+Counter\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Imedia\+Stream\+Counter\+Extension\+Rec}}
+
+
+{\ttfamily \#include $<$dri\+\_\+interface.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\+\_\+\+\_\+\+D\+R\+Iextension} \hyperlink{struct_____d_r_imedia_stream_counter_extension_rec_a042c5ddf263000434a369b5da09efacc}{base}
+\item 
+int($\ast$ \hyperlink{struct_____d_r_imedia_stream_counter_extension_rec_a107fccbb1b65855b80ad77bf18cc1f8e}{wait\+For\+M\+SC} )(\hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\+\_\+\+\_\+\+D\+R\+Idrawable} $\ast$drawable, int64\+\_\+t target\+\_\+msc, int64\+\_\+t \hyperlink{glcorearb_8h_a8663d897b5393d6facc1df40530f841d}{divisor}, int64\+\_\+t remainder, int64\+\_\+t $\ast$msc, int64\+\_\+t $\ast$sbc)
+\item 
+int($\ast$ \hyperlink{struct_____d_r_imedia_stream_counter_extension_rec_a82d7d1aecc55e2ac74d30b5b14acce95}{get\+Drawable\+M\+SC} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, \hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\+\_\+\+\_\+\+D\+R\+Idrawable} $\ast$drawable, int64\+\_\+t $\ast$msc)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_____d_r_imedia_stream_counter_extension_rec_a042c5ddf263000434a369b5da09efacc}\label{struct_____d_r_imedia_stream_counter_extension_rec_a042c5ddf263000434a369b5da09efacc}} 
+\index{\+\_\+\+\_\+\+D\+R\+Imedia\+Stream\+Counter\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Imedia\+Stream\+Counter\+Extension\+Rec}!base@{base}}
+\index{base@{base}!\+\_\+\+\_\+\+D\+R\+Imedia\+Stream\+Counter\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Imedia\+Stream\+Counter\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{base}{base}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\+\_\+\+\_\+\+D\+R\+Iextension} \+\_\+\+\_\+\+D\+R\+Imedia\+Stream\+Counter\+Extension\+Rec\+::base}
+
+\mbox{\Hypertarget{struct_____d_r_imedia_stream_counter_extension_rec_a82d7d1aecc55e2ac74d30b5b14acce95}\label{struct_____d_r_imedia_stream_counter_extension_rec_a82d7d1aecc55e2ac74d30b5b14acce95}} 
+\index{\+\_\+\+\_\+\+D\+R\+Imedia\+Stream\+Counter\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Imedia\+Stream\+Counter\+Extension\+Rec}!get\+Drawable\+M\+SC@{get\+Drawable\+M\+SC}}
+\index{get\+Drawable\+M\+SC@{get\+Drawable\+M\+SC}!\+\_\+\+\_\+\+D\+R\+Imedia\+Stream\+Counter\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Imedia\+Stream\+Counter\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{get\+Drawable\+M\+SC}{getDrawableMSC}}
+{\footnotesize\ttfamily int($\ast$ \+\_\+\+\_\+\+D\+R\+Imedia\+Stream\+Counter\+Extension\+Rec\+::get\+Drawable\+M\+SC) (\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, \hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\+\_\+\+\_\+\+D\+R\+Idrawable} $\ast$drawable, int64\+\_\+t $\ast$msc)}
+
+Get the number of vertical refreshes since some point in time before this function was first called (i.\+e., system start up). \mbox{\Hypertarget{struct_____d_r_imedia_stream_counter_extension_rec_a107fccbb1b65855b80ad77bf18cc1f8e}\label{struct_____d_r_imedia_stream_counter_extension_rec_a107fccbb1b65855b80ad77bf18cc1f8e}} 
+\index{\+\_\+\+\_\+\+D\+R\+Imedia\+Stream\+Counter\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Imedia\+Stream\+Counter\+Extension\+Rec}!wait\+For\+M\+SC@{wait\+For\+M\+SC}}
+\index{wait\+For\+M\+SC@{wait\+For\+M\+SC}!\+\_\+\+\_\+\+D\+R\+Imedia\+Stream\+Counter\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Imedia\+Stream\+Counter\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{wait\+For\+M\+SC}{waitForMSC}}
+{\footnotesize\ttfamily int($\ast$ \+\_\+\+\_\+\+D\+R\+Imedia\+Stream\+Counter\+Extension\+Rec\+::wait\+For\+M\+SC) (\hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\+\_\+\+\_\+\+D\+R\+Idrawable} $\ast$drawable, int64\+\_\+t target\+\_\+msc, int64\+\_\+t \hyperlink{glcorearb_8h_a8663d897b5393d6facc1df40530f841d}{divisor}, int64\+\_\+t remainder, int64\+\_\+t $\ast$msc, int64\+\_\+t $\ast$sbc)}
+
+Wait for the M\+SC to equal target\+\_\+msc, or, if that has already passed, the next time (M\+SC \% divisor) is equal to remainder. If divisor is zero, the function will return as soon as M\+SC is greater than or equal to target\+\_\+msc. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+L/internal/\hyperlink{dri__interface_8h}{dri\+\_\+interface.\+h}\end{DoxyCompactItemize}

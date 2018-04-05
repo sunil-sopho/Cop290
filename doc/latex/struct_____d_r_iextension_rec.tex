@@ -1,0 +1,40 @@
+\hypertarget{struct_____d_r_iextension_rec}{}\section{\+\_\+\+\_\+\+D\+R\+Iextension\+Rec Struct Reference}
+\label{struct_____d_r_iextension_rec}\index{\+\_\+\+\_\+\+D\+R\+Iextension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iextension\+Rec}}
+
+
+{\ttfamily \#include $<$dri\+\_\+interface.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{struct_____d_r_iextension_rec_a477dbf3ee1bdd155ef7dda4896bb2540}{name}
+\item 
+int \hyperlink{struct_____d_r_iextension_rec_a6fa021bb0b66dbc662a4397a21ffa198}{version}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Extension struct. Drivers \textquotesingle{}inherit\textquotesingle{} from this struct by embedding it as the first element in the extension struct.
+
+We never break A\+PI in for a D\+RI extension. If we need to change the way things work in a non-\/backwards compatible manner, we introduce a new extension. During a transition period, we can leave both the old and the new extension in the driver, which allows us to move to the new interface without having to update the loader(s) in lock step.
+
+However, we can add entry points to an extension over time as long as we don\textquotesingle{}t break the old ones. As we add entry points to an extension, we increase the version number. The corresponding \#define can be used to guard code that accesses the new entry points at compile time and the version field in the extension struct can be used at run-\/time to determine how to use the extension. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_____d_r_iextension_rec_a477dbf3ee1bdd155ef7dda4896bb2540}\label{struct_____d_r_iextension_rec_a477dbf3ee1bdd155ef7dda4896bb2540}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iextension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iextension\+Rec}!name@{name}}
+\index{name@{name}!\+\_\+\+\_\+\+D\+R\+Iextension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iextension\+Rec}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily const char$\ast$ \+\_\+\+\_\+\+D\+R\+Iextension\+Rec\+::name}
+
+\mbox{\Hypertarget{struct_____d_r_iextension_rec_a6fa021bb0b66dbc662a4397a21ffa198}\label{struct_____d_r_iextension_rec_a6fa021bb0b66dbc662a4397a21ffa198}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iextension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iextension\+Rec}!version@{version}}
+\index{version@{version}!\+\_\+\+\_\+\+D\+R\+Iextension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iextension\+Rec}}
+\subsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily int \+\_\+\+\_\+\+D\+R\+Iextension\+Rec\+::version}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+L/internal/\hyperlink{dri__interface_8h}{dri\+\_\+interface.\+h}\end{DoxyCompactItemize}

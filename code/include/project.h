@@ -10,8 +10,7 @@
 #include "construct.h"
 #include <vector>
 
-// view =0 for 3d ,, view = 1 for ortho
-
- void Project(std::vector<node> v,int view);
+/*! Function to project the object on the screen*/
+void Project(std::vector<node> v,int view);
 
 #endif

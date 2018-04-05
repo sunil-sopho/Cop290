@@ -6,17 +6,14 @@ extern int numScreen;
 #include <GL/glu.h>
 #include <GL/glut.h>
 #include "window.h"
-// #include <cad.h>
 #include "construct.h"
 #include <vector>
 #include <iostream>
 #include <fstream>
-// #include <header.h>
 using namespace std;
-// #include "standardHandler.h"
 
 
-
+/*! Detects which key is pressed */
 GLboolean checkKeys(unsigned char const* keys,std::vector<node> &v);
 
 

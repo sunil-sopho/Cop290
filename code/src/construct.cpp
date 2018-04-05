@@ -4,14 +4,8 @@ using namespace std;
 
 void addPoint(point* p,int view)
 {
-
-	// glEnable(GL_COLOR_MATERIAL);
-	// glDisable(GL_CULL_FACE);
-	// adding a point
-// cout << p[0].getC(0) <<" : "<<p[0].getC(1)<<" : "<<p[0].getC(2)<<'\n';
 	glBegin(GL_POINTS);
 
-	// glColor3f(0.0f,0.0f,0.0f);
 	glVertex3f(p[0].getC(0),p[0].getC(1),p[0].getC(2));
 
 	glEnd();
@@ -19,11 +13,6 @@ void addPoint(point* p,int view)
 
 void addLine(point* p,int view){
 
-
-	// glEnable(GL_COLOR_MATERIAL);
-	// glDisable(GL_CULL_FACE);
-
-	// adds line
 	glBegin(GL_LINES);	
 	glColor3f(250.0f,250.0f,250.0f);
 	for(int i=0; i<2;i++)
@@ -36,11 +25,6 @@ void addLine(point* p,int view){
 }
 
 void addTri(point* p,int view){
-
-	// glEnable(GL_COLOR_MATERIAL);
-	// glDisable(GL_CULL_FACE);
-
-	// adds line
 
 	if(!view){
 		glBegin(GL_TRIANGLES);	
@@ -70,11 +54,6 @@ void addTri(point* p,int view){
 }
 
 void addPlane(point* p,int view){
-
-	// glEnable(GL_COLOR_MATERIAL);
-	// glDisable(GL_CULL_FACE);
-
-	// adds line
 	if(!view){
 		glBegin(GL_QUADS);	
 		glColor3f(250.0f,250.0f,250.0f);
@@ -93,7 +72,6 @@ void addPlane(point* p,int view){
 
 		for(int i=0; i<4;i++)
 		{
-			// cout << "line should print\n";
 			glVertex3f(p[i].getC(0),p[i].getC(1),p[i].getC(2));
 			glVertex3f(p[(i+1)%4].getC(0),p[(i+1)%4].getC(1),p[(i+1)%4].getC(2));
 		}

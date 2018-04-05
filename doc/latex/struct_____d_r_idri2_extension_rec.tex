@@ -1,0 +1,110 @@
+\hypertarget{struct_____d_r_idri2_extension_rec}{}\section{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec Struct Reference}
+\label{struct_____d_r_idri2_extension_rec}\index{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}}
+
+
+{\ttfamily \#include $<$dri\+\_\+interface.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\+\_\+\+\_\+\+D\+R\+Iextension} \hyperlink{struct_____d_r_idri2_extension_rec_a71675244c4518f1cd35041acd4836135}{base}
+\item 
+\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$($\ast$ \hyperlink{struct_____d_r_idri2_extension_rec_ac66b0bfcd83df59d0ce66d6aa1a44a91}{create\+New\+Screen} )(int \hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, int fd, const \hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\+\_\+\+\_\+\+D\+R\+Iextension} $\ast$$\ast$extensions, const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\+\_\+\+\_\+\+D\+R\+Iconfig} $\ast$$\ast$$\ast$driver\+\_\+configs, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)
+\item 
+\hyperlink{dri__interface_8h_ac32374b98e1c97cd35c2d247455c0a57}{\+\_\+\+\_\+\+D\+R\+Icreate\+New\+Drawable\+Func} \hyperlink{struct_____d_r_idri2_extension_rec_a8ab2424cbe4598219f503e9e7dad2d04}{create\+New\+Drawable}
+\item 
+\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$($\ast$ \hyperlink{struct_____d_r_idri2_extension_rec_a887b9ee8dc23cd4b15daea66f0fd48fe}{create\+New\+Context} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\+\_\+\+\_\+\+D\+R\+Iconfig} $\ast$config, \hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$shared, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)
+\item 
+\hyperlink{dri__interface_8h_a89f080ad71d4ec1295cb23c069e086e6}{\+\_\+\+\_\+\+D\+R\+Iget\+A\+P\+I\+Mask\+Func} \hyperlink{struct_____d_r_idri2_extension_rec_a9c3f7b24e9b71140c7442456e7f19e95}{get\+A\+P\+I\+Mask}
+\item 
+\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$($\ast$ \hyperlink{struct_____d_r_idri2_extension_rec_a804b05f07cd878f1eb495f4ec9902fea}{create\+New\+Context\+For\+A\+PI} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, int api, const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\+\_\+\+\_\+\+D\+R\+Iconfig} $\ast$config, \hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$shared, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$\hyperlink{gl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data})
+\item 
+\hyperlink{dri__interface_8h_a99ccb036a4865817ec4d06d153ba2446}{\+\_\+\+\_\+\+D\+R\+Ibuffer} $\ast$($\ast$ \hyperlink{struct_____d_r_idri2_extension_rec_a454aa5adc5253e6f73ce687bf3f043e5}{allocate\+Buffer} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, unsigned int \hyperlink{glcorearb_8h_ad8f97111cc6514af5f352219d1cceb40}{attachment}, unsigned int \hyperlink{gl_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}, int \hyperlink{gl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}, int \hyperlink{gl_8h_aa352f2804b9902ac30769c00dde75d5f}{height})
+\item 
+\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \hyperlink{struct_____d_r_idri2_extension_rec_a1f4dd792279f85e71c5cd4c8c47b5bdc}{release\+Buffer} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, \hyperlink{dri__interface_8h_a99ccb036a4865817ec4d06d153ba2446}{\+\_\+\+\_\+\+D\+R\+Ibuffer} $\ast$\hyperlink{glcorearb_8h_a76461e97a098d2c9ae20ac193d3825ae}{buffer})
+\item 
+\hyperlink{dri__interface_8h_a4f3d1005ed90cec052090fda5340fbfc}{\+\_\+\+\_\+\+D\+R\+Icreate\+Context\+Attribs\+Func} \hyperlink{struct_____d_r_idri2_extension_rec_acfac8ddb8a1248baf2e5863ea7132f11}{create\+Context\+Attribs}
+\item 
+\hyperlink{dri__interface_8h_a2055c7208f40b9580b75148d76365262}{\+\_\+\+\_\+\+D\+R\+Icreate\+New\+Screen2\+Func} \hyperlink{struct_____d_r_idri2_extension_rec_a47c8ee98c9b4192e1d167d9112c5cd67}{create\+New\+Screen2}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_____d_r_idri2_extension_rec_a454aa5adc5253e6f73ce687bf3f043e5}\label{struct_____d_r_idri2_extension_rec_a454aa5adc5253e6f73ce687bf3f043e5}} 
+\index{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}!allocate\+Buffer@{allocate\+Buffer}}
+\index{allocate\+Buffer@{allocate\+Buffer}!\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{allocate\+Buffer}{allocateBuffer}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a99ccb036a4865817ec4d06d153ba2446}{\+\_\+\+\_\+\+D\+R\+Ibuffer}$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec\+::allocate\+Buffer) (\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, unsigned int \hyperlink{glcorearb_8h_ad8f97111cc6514af5f352219d1cceb40}{attachment}, unsigned int \hyperlink{gl_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}, int \hyperlink{gl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}, int \hyperlink{gl_8h_aa352f2804b9902ac30769c00dde75d5f}{height})}
+
+\mbox{\Hypertarget{struct_____d_r_idri2_extension_rec_a71675244c4518f1cd35041acd4836135}\label{struct_____d_r_idri2_extension_rec_a71675244c4518f1cd35041acd4836135}} 
+\index{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}!base@{base}}
+\index{base@{base}!\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{base}{base}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\+\_\+\+\_\+\+D\+R\+Iextension} \+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec\+::base}
+
+\mbox{\Hypertarget{struct_____d_r_idri2_extension_rec_acfac8ddb8a1248baf2e5863ea7132f11}\label{struct_____d_r_idri2_extension_rec_acfac8ddb8a1248baf2e5863ea7132f11}} 
+\index{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}!create\+Context\+Attribs@{create\+Context\+Attribs}}
+\index{create\+Context\+Attribs@{create\+Context\+Attribs}!\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{create\+Context\+Attribs}{createContextAttribs}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a4f3d1005ed90cec052090fda5340fbfc}{\+\_\+\+\_\+\+D\+R\+Icreate\+Context\+Attribs\+Func} \+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec\+::create\+Context\+Attribs}
+
+Create a context for a particular A\+PI with a set of attributes
+
+\begin{DoxySince}{Since}
+version 3
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{struct_____d_r_iswrast_extension_rec_a2432fdc12df7ee3feb1e31fa8efc8c71}{\+\_\+\+\_\+\+D\+R\+Iswrast\+Extension\+Rec\+::create\+Context\+Attribs} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{struct_____d_r_idri2_extension_rec_a887b9ee8dc23cd4b15daea66f0fd48fe}\label{struct_____d_r_idri2_extension_rec_a887b9ee8dc23cd4b15daea66f0fd48fe}} 
+\index{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}!create\+New\+Context@{create\+New\+Context}}
+\index{create\+New\+Context@{create\+New\+Context}!\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{create\+New\+Context}{createNewContext}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext}$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec\+::create\+New\+Context) (\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\+\_\+\+\_\+\+D\+R\+Iconfig} $\ast$config, \hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$shared, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)}
+
+\mbox{\Hypertarget{struct_____d_r_idri2_extension_rec_a804b05f07cd878f1eb495f4ec9902fea}\label{struct_____d_r_idri2_extension_rec_a804b05f07cd878f1eb495f4ec9902fea}} 
+\index{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}!create\+New\+Context\+For\+A\+PI@{create\+New\+Context\+For\+A\+PI}}
+\index{create\+New\+Context\+For\+A\+PI@{create\+New\+Context\+For\+A\+PI}!\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{create\+New\+Context\+For\+A\+PI}{createNewContextForAPI}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext}$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec\+::create\+New\+Context\+For\+A\+PI) (\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, int api, const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\+\_\+\+\_\+\+D\+R\+Iconfig} $\ast$config, \hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$shared, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$\hyperlink{gl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data})}
+
+\mbox{\Hypertarget{struct_____d_r_idri2_extension_rec_a8ab2424cbe4598219f503e9e7dad2d04}\label{struct_____d_r_idri2_extension_rec_a8ab2424cbe4598219f503e9e7dad2d04}} 
+\index{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}!create\+New\+Drawable@{create\+New\+Drawable}}
+\index{create\+New\+Drawable@{create\+New\+Drawable}!\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{create\+New\+Drawable}{createNewDrawable}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_ac32374b98e1c97cd35c2d247455c0a57}{\+\_\+\+\_\+\+D\+R\+Icreate\+New\+Drawable\+Func} \+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec\+::create\+New\+Drawable}
+
+\mbox{\Hypertarget{struct_____d_r_idri2_extension_rec_ac66b0bfcd83df59d0ce66d6aa1a44a91}\label{struct_____d_r_idri2_extension_rec_ac66b0bfcd83df59d0ce66d6aa1a44a91}} 
+\index{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}!create\+New\+Screen@{create\+New\+Screen}}
+\index{create\+New\+Screen@{create\+New\+Screen}!\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{create\+New\+Screen}{createNewScreen}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen}$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec\+::create\+New\+Screen) (int \hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, int fd, const \hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\+\_\+\+\_\+\+D\+R\+Iextension} $\ast$$\ast$extensions, const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\+\_\+\+\_\+\+D\+R\+Iconfig} $\ast$$\ast$$\ast$driver\+\_\+configs, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)}
+
+\mbox{\Hypertarget{struct_____d_r_idri2_extension_rec_a47c8ee98c9b4192e1d167d9112c5cd67}\label{struct_____d_r_idri2_extension_rec_a47c8ee98c9b4192e1d167d9112c5cd67}} 
+\index{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}!create\+New\+Screen2@{create\+New\+Screen2}}
+\index{create\+New\+Screen2@{create\+New\+Screen2}!\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{create\+New\+Screen2}{createNewScreen2}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a2055c7208f40b9580b75148d76365262}{\+\_\+\+\_\+\+D\+R\+Icreate\+New\+Screen2\+Func} \+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec\+::create\+New\+Screen2}
+
+create\+New\+Screen with the driver\textquotesingle{}s extension list passed in.
+
+\begin{DoxySince}{Since}
+version 4 
+\end{DoxySince}
+\mbox{\Hypertarget{struct_____d_r_idri2_extension_rec_a9c3f7b24e9b71140c7442456e7f19e95}\label{struct_____d_r_idri2_extension_rec_a9c3f7b24e9b71140c7442456e7f19e95}} 
+\index{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}!get\+A\+P\+I\+Mask@{get\+A\+P\+I\+Mask}}
+\index{get\+A\+P\+I\+Mask@{get\+A\+P\+I\+Mask}!\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{get\+A\+P\+I\+Mask}{getAPIMask}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a89f080ad71d4ec1295cb23c069e086e6}{\+\_\+\+\_\+\+D\+R\+Iget\+A\+P\+I\+Mask\+Func} \+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec\+::get\+A\+P\+I\+Mask}
+
+\mbox{\Hypertarget{struct_____d_r_idri2_extension_rec_a1f4dd792279f85e71c5cd4c8c47b5bdc}\label{struct_____d_r_idri2_extension_rec_a1f4dd792279f85e71c5cd4c8c47b5bdc}} 
+\index{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}!release\+Buffer@{release\+Buffer}}
+\index{release\+Buffer@{release\+Buffer}!\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{release\+Buffer}{releaseBuffer}}
+{\footnotesize\ttfamily \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec\+::release\+Buffer) (\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, \hyperlink{dri__interface_8h_a99ccb036a4865817ec4d06d153ba2446}{\+\_\+\+\_\+\+D\+R\+Ibuffer} $\ast$\hyperlink{glcorearb_8h_a76461e97a098d2c9ae20ac193d3825ae}{buffer})}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+L/internal/\hyperlink{dri__interface_8h}{dri\+\_\+interface.\+h}\end{DoxyCompactItemize}

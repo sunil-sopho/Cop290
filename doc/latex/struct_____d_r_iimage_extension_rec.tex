@@ -1,0 +1,213 @@
+\hypertarget{struct_____d_r_iimage_extension_rec}{}\section{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec Struct Reference}
+\label{struct_____d_r_iimage_extension_rec}\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}}
+
+
+{\ttfamily \#include $<$dri\+\_\+interface.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\+\_\+\+\_\+\+D\+R\+Iextension} \hyperlink{struct_____d_r_iimage_extension_rec_a0705eddcc3909eb2c216213a4ba74040}{base}
+\item 
+\hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$($\ast$ \hyperlink{struct_____d_r_iimage_extension_rec_ae37aa83d91973f4d86e3bb6a34d1ca7b}{create\+Image\+From\+Name} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, int \hyperlink{gl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}, int \hyperlink{gl_8h_aa352f2804b9902ac30769c00dde75d5f}{height}, int \hyperlink{gl_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}, int \hyperlink{glcorearb_8h_aaced7cfc21e7d37775d6921bb8177239}{name}, int pitch, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)
+\item 
+\hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$($\ast$ \hyperlink{struct_____d_r_iimage_extension_rec_a4e84cfb8503d08dc5219fa7f1a6edbb6}{create\+Image\+From\+Renderbuffer} )(\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$context, int \hyperlink{glcorearb_8h_a2de59ce19521dddd661a02a95abc2764}{renderbuffer}, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)
+\item 
+\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \hyperlink{struct_____d_r_iimage_extension_rec_ac97ca702de4f8bf00393ebe2c5ccbc5b}{destroy\+Image} )(\hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$\hyperlink{gl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image})
+\item 
+\hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$($\ast$ \hyperlink{struct_____d_r_iimage_extension_rec_a500f4798f4932ecc0c99b8f2c070fabe}{create\+Image} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, int \hyperlink{gl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}, int \hyperlink{gl_8h_aa352f2804b9902ac30769c00dde75d5f}{height}, int \hyperlink{gl_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}, unsigned int use, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)
+\item 
+\hyperlink{gl_8h_aea1419aa8aec5854bd9807b45171029d}{G\+Lboolean}($\ast$ \hyperlink{struct_____d_r_iimage_extension_rec_a9954149cb12055c40fb7cc9b3a36b47d}{query\+Image} )(\hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$\hyperlink{gl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}, int attrib, int $\ast$\hyperlink{glcorearb_8h_a8ad81492d410ff2ac11f754f4042150f}{value})
+\item 
+\hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$($\ast$ \hyperlink{struct_____d_r_iimage_extension_rec_a084831ab09b3ef978251b3f2af64ac0f}{dup\+Image} )(\hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$\hyperlink{gl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)
+\item 
+\hyperlink{gl_8h_aea1419aa8aec5854bd9807b45171029d}{G\+Lboolean}($\ast$ \hyperlink{struct_____d_r_iimage_extension_rec_ac010719587d0c91d02627ae77a0fe6e1}{validate\+Usage} )(\hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$\hyperlink{gl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}, unsigned int use)
+\item 
+\hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$($\ast$ \hyperlink{struct_____d_r_iimage_extension_rec_aa99f203a85c969ff1fdd24ed591d23dd}{create\+Image\+From\+Names} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, int \hyperlink{gl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}, int \hyperlink{gl_8h_aa352f2804b9902ac30769c00dde75d5f}{height}, int fourcc, int $\ast$\hyperlink{glext_8h_a339b9616ddcfbc036f0258f8dcdd8902}{names}, int num\+\_\+names, int $\ast$\hyperlink{glcorearb_8h_abdc1551331dfc83183e1c34542207728}{strides}, int $\ast$\hyperlink{glcorearb_8h_a1b4d6c0d4a1eb8b693aa458f455ed705}{offsets}, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)
+\item 
+\hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$($\ast$ \hyperlink{struct_____d_r_iimage_extension_rec_a631bc6c918b65f625fbb919765b886a2}{from\+Planar} )(\hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$\hyperlink{gl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}, int plane, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)
+\item 
+\hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$($\ast$ \hyperlink{struct_____d_r_iimage_extension_rec_a50e04180f62cbc5892abaca76cfab2ab}{create\+Image\+From\+Texture} )(\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$context, int \hyperlink{glcorearb_8h_af9d0cbbbeb7414e786c41899e5a856d7}{target}, unsigned \hyperlink{glcorearb_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}, int \hyperlink{gl_8h_aa8bd8cf1eef34712fdb6ad58b540a2ee}{depth}, int \hyperlink{gl_8h_a2b536fca24f51d6a849aed325793e661}{level}, unsigned $\ast$error, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)
+\item 
+\hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$($\ast$ \hyperlink{struct_____d_r_iimage_extension_rec_a182eb36ae38206c982a209e2a9579ba5}{create\+Image\+From\+Fds} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, int \hyperlink{gl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}, int \hyperlink{gl_8h_aa352f2804b9902ac30769c00dde75d5f}{height}, int fourcc, int $\ast$fds, int num\+\_\+fds, int $\ast$\hyperlink{glcorearb_8h_abdc1551331dfc83183e1c34542207728}{strides}, int $\ast$\hyperlink{glcorearb_8h_a1b4d6c0d4a1eb8b693aa458f455ed705}{offsets}, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)
+\item 
+\hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$($\ast$ \hyperlink{struct_____d_r_iimage_extension_rec_a82ff9a5cf1d35bc7c3ee65320d049be6}{create\+Image\+From\+Dma\+Bufs} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, int \hyperlink{gl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}, int \hyperlink{gl_8h_aa352f2804b9902ac30769c00dde75d5f}{height}, int fourcc, int $\ast$fds, int num\+\_\+fds, int $\ast$\hyperlink{glcorearb_8h_abdc1551331dfc83183e1c34542207728}{strides}, int $\ast$\hyperlink{glcorearb_8h_a1b4d6c0d4a1eb8b693aa458f455ed705}{offsets}, enum \hyperlink{dri__interface_8h_a5afaea685809559659c2404ae006c2cd}{\+\_\+\+\_\+\+D\+R\+I\+Y\+U\+V\+Color\+Space} color\+\_\+space, enum \hyperlink{dri__interface_8h_a61a717b5248bb2b24994fa9854f774fc}{\+\_\+\+\_\+\+D\+R\+I\+Sample\+Range} sample\+\_\+range, enum \hyperlink{dri__interface_8h_a1624a92a3df1f832597cd6e6b908778c}{\+\_\+\+\_\+\+D\+R\+I\+Chroma\+Siting} horiz\+\_\+siting, enum \hyperlink{dri__interface_8h_a1624a92a3df1f832597cd6e6b908778c}{\+\_\+\+\_\+\+D\+R\+I\+Chroma\+Siting} vert\+\_\+siting, unsigned $\ast$error, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)
+\item 
+\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \hyperlink{struct_____d_r_iimage_extension_rec_aa6d6ca04ed7557f8e08322ca56b7d8fc}{blit\+Image} )(\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$context, \hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$\hyperlink{glcorearb_8h_a92034251bfd455d524a9b5610cddba00}{dst}, \hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$\hyperlink{glcorearb_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}, int dstx0, int dsty0, int dstwidth, int dstheight, int srcx0, int srcy0, int srcwidth, int srcheight, int flush\+\_\+flag)
+\item 
+int($\ast$ \hyperlink{struct_____d_r_iimage_extension_rec_a1d7762afe105f4a0e0dd1af9a69dde24}{get\+Capabilities} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen})
+\item 
+\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$($\ast$ \hyperlink{struct_____d_r_iimage_extension_rec_abdb0fc20bc51e7b9d7b651cf89f922e5}{map\+Image} )(\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$context, \hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$\hyperlink{gl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}, int \hyperlink{glext_8h_a98ac434677655cc8438bb72de2719f39}{x0}, int \hyperlink{glext_8h_ae7f97ed6c9c8e502fcbc44c7cb8a8312}{y0}, int \hyperlink{gl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}, int \hyperlink{gl_8h_aa352f2804b9902ac30769c00dde75d5f}{height}, unsigned int \hyperlink{glcorearb_8h_ac7ba7d3cce3d19ca020e056b37231289}{flags}, int $\ast$\hyperlink{glcorearb_8h_a743715bb319dd426e85b9774559cc0ea}{stride}, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$$\ast$\hyperlink{gl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data})
+\item 
+\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \hyperlink{struct_____d_r_iimage_extension_rec_abd0d8c26cfced376ff7b8c31699570cf}{unmap\+Image} )(\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$context, \hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$\hyperlink{gl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$\hyperlink{gl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data})
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_____d_r_iimage_extension_rec_a0705eddcc3909eb2c216213a4ba74040}\label{struct_____d_r_iimage_extension_rec_a0705eddcc3909eb2c216213a4ba74040}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}!base@{base}}
+\index{base@{base}!\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{base}{base}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\+\_\+\+\_\+\+D\+R\+Iextension} \+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec\+::base}
+
+\mbox{\Hypertarget{struct_____d_r_iimage_extension_rec_aa6d6ca04ed7557f8e08322ca56b7d8fc}\label{struct_____d_r_iimage_extension_rec_aa6d6ca04ed7557f8e08322ca56b7d8fc}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}!blit\+Image@{blit\+Image}}
+\index{blit\+Image@{blit\+Image}!\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{blit\+Image}{blitImage}}
+{\footnotesize\ttfamily \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec\+::blit\+Image) (\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$context, \hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$\hyperlink{glcorearb_8h_a92034251bfd455d524a9b5610cddba00}{dst}, \hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$\hyperlink{glcorearb_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}, int dstx0, int dsty0, int dstwidth, int dstheight, int srcx0, int srcy0, int srcwidth, int srcheight, int flush\+\_\+flag)}
+
+Blit a part of a \+\_\+\+\_\+\+D\+R\+Iimage to another and flushes
+
+flush\+\_\+flag\+: 0\+: no flush \+\_\+\+\_\+\+B\+L\+I\+T\+\_\+\+F\+L\+A\+G\+\_\+\+F\+L\+U\+SH\+: flush after the blit operation \+\_\+\+\_\+\+B\+L\+I\+T\+\_\+\+F\+L\+A\+G\+\_\+\+F\+I\+N\+I\+SH\+: flush and wait the blit finished
+
+\begin{DoxySince}{Since}
+9 
+\end{DoxySince}
+\mbox{\Hypertarget{struct_____d_r_iimage_extension_rec_a500f4798f4932ecc0c99b8f2c070fabe}\label{struct_____d_r_iimage_extension_rec_a500f4798f4932ecc0c99b8f2c070fabe}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}!create\+Image@{create\+Image}}
+\index{create\+Image@{create\+Image}!\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{create\+Image}{createImage}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage}$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec\+::create\+Image) (\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, int \hyperlink{gl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}, int \hyperlink{gl_8h_aa352f2804b9902ac30769c00dde75d5f}{height}, int \hyperlink{gl_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}, unsigned int use, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)}
+
+\mbox{\Hypertarget{struct_____d_r_iimage_extension_rec_a82ff9a5cf1d35bc7c3ee65320d049be6}\label{struct_____d_r_iimage_extension_rec_a82ff9a5cf1d35bc7c3ee65320d049be6}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}!create\+Image\+From\+Dma\+Bufs@{create\+Image\+From\+Dma\+Bufs}}
+\index{create\+Image\+From\+Dma\+Bufs@{create\+Image\+From\+Dma\+Bufs}!\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{create\+Image\+From\+Dma\+Bufs}{createImageFromDmaBufs}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage}$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec\+::create\+Image\+From\+Dma\+Bufs) (\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, int \hyperlink{gl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}, int \hyperlink{gl_8h_aa352f2804b9902ac30769c00dde75d5f}{height}, int fourcc, int $\ast$fds, int num\+\_\+fds, int $\ast$\hyperlink{glcorearb_8h_abdc1551331dfc83183e1c34542207728}{strides}, int $\ast$\hyperlink{glcorearb_8h_a1b4d6c0d4a1eb8b693aa458f455ed705}{offsets}, enum \hyperlink{dri__interface_8h_a5afaea685809559659c2404ae006c2cd}{\+\_\+\+\_\+\+D\+R\+I\+Y\+U\+V\+Color\+Space} color\+\_\+space, enum \hyperlink{dri__interface_8h_a61a717b5248bb2b24994fa9854f774fc}{\+\_\+\+\_\+\+D\+R\+I\+Sample\+Range} sample\+\_\+range, enum \hyperlink{dri__interface_8h_a1624a92a3df1f832597cd6e6b908778c}{\+\_\+\+\_\+\+D\+R\+I\+Chroma\+Siting} horiz\+\_\+siting, enum \hyperlink{dri__interface_8h_a1624a92a3df1f832597cd6e6b908778c}{\+\_\+\+\_\+\+D\+R\+I\+Chroma\+Siting} vert\+\_\+siting, unsigned $\ast$error, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)}
+
+Like create\+Image\+From\+Fds, but takes additional attributes.
+
+For E\+G\+L\+\_\+\+E\+X\+T\+\_\+image\+\_\+dma\+\_\+buf\+\_\+import.
+
+\begin{DoxySince}{Since}
+8 
+\end{DoxySince}
+\mbox{\Hypertarget{struct_____d_r_iimage_extension_rec_a182eb36ae38206c982a209e2a9579ba5}\label{struct_____d_r_iimage_extension_rec_a182eb36ae38206c982a209e2a9579ba5}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}!create\+Image\+From\+Fds@{create\+Image\+From\+Fds}}
+\index{create\+Image\+From\+Fds@{create\+Image\+From\+Fds}!\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{create\+Image\+From\+Fds}{createImageFromFds}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage}$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec\+::create\+Image\+From\+Fds) (\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, int \hyperlink{gl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}, int \hyperlink{gl_8h_aa352f2804b9902ac30769c00dde75d5f}{height}, int fourcc, int $\ast$fds, int num\+\_\+fds, int $\ast$\hyperlink{glcorearb_8h_abdc1551331dfc83183e1c34542207728}{strides}, int $\ast$\hyperlink{glcorearb_8h_a1b4d6c0d4a1eb8b693aa458f455ed705}{offsets}, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)}
+
+Like create\+Image\+From\+Names, but takes a prime fd instead.
+
+\begin{DoxySince}{Since}
+7 
+\end{DoxySince}
+\mbox{\Hypertarget{struct_____d_r_iimage_extension_rec_ae37aa83d91973f4d86e3bb6a34d1ca7b}\label{struct_____d_r_iimage_extension_rec_ae37aa83d91973f4d86e3bb6a34d1ca7b}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}!create\+Image\+From\+Name@{create\+Image\+From\+Name}}
+\index{create\+Image\+From\+Name@{create\+Image\+From\+Name}!\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{create\+Image\+From\+Name}{createImageFromName}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage}$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec\+::create\+Image\+From\+Name) (\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, int \hyperlink{gl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}, int \hyperlink{gl_8h_aa352f2804b9902ac30769c00dde75d5f}{height}, int \hyperlink{gl_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}, int \hyperlink{glcorearb_8h_aaced7cfc21e7d37775d6921bb8177239}{name}, int pitch, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)}
+
+\mbox{\Hypertarget{struct_____d_r_iimage_extension_rec_aa99f203a85c969ff1fdd24ed591d23dd}\label{struct_____d_r_iimage_extension_rec_aa99f203a85c969ff1fdd24ed591d23dd}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}!create\+Image\+From\+Names@{create\+Image\+From\+Names}}
+\index{create\+Image\+From\+Names@{create\+Image\+From\+Names}!\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{create\+Image\+From\+Names}{createImageFromNames}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage}$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec\+::create\+Image\+From\+Names) (\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, int \hyperlink{gl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}, int \hyperlink{gl_8h_aa352f2804b9902ac30769c00dde75d5f}{height}, int fourcc, int $\ast$\hyperlink{glext_8h_a339b9616ddcfbc036f0258f8dcdd8902}{names}, int num\+\_\+names, int $\ast$\hyperlink{glcorearb_8h_abdc1551331dfc83183e1c34542207728}{strides}, int $\ast$\hyperlink{glcorearb_8h_a1b4d6c0d4a1eb8b693aa458f455ed705}{offsets}, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)}
+
+Unlike create\+Image\+From\+Name \+\_\+\+\_\+\+D\+R\+I\+\_\+\+I\+M\+A\+G\+E\+\_\+\+F\+O\+R\+M\+AT is not but instead \+\_\+\+\_\+\+D\+R\+I\+\_\+\+I\+M\+A\+G\+E\+\_\+\+F\+O\+U\+R\+CC and strides are in bytes not pixels. Stride is also per block and not per pixel (for non-\/\+R\+GB, see gallium blocks).
+
+\begin{DoxySince}{Since}
+5 
+\end{DoxySince}
+\mbox{\Hypertarget{struct_____d_r_iimage_extension_rec_a4e84cfb8503d08dc5219fa7f1a6edbb6}\label{struct_____d_r_iimage_extension_rec_a4e84cfb8503d08dc5219fa7f1a6edbb6}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}!create\+Image\+From\+Renderbuffer@{create\+Image\+From\+Renderbuffer}}
+\index{create\+Image\+From\+Renderbuffer@{create\+Image\+From\+Renderbuffer}!\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{create\+Image\+From\+Renderbuffer}{createImageFromRenderbuffer}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage}$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec\+::create\+Image\+From\+Renderbuffer) (\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$context, int \hyperlink{glcorearb_8h_a2de59ce19521dddd661a02a95abc2764}{renderbuffer}, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)}
+
+\mbox{\Hypertarget{struct_____d_r_iimage_extension_rec_a50e04180f62cbc5892abaca76cfab2ab}\label{struct_____d_r_iimage_extension_rec_a50e04180f62cbc5892abaca76cfab2ab}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}!create\+Image\+From\+Texture@{create\+Image\+From\+Texture}}
+\index{create\+Image\+From\+Texture@{create\+Image\+From\+Texture}!\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{create\+Image\+From\+Texture}{createImageFromTexture}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage}$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec\+::create\+Image\+From\+Texture) (\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$context, int \hyperlink{glcorearb_8h_af9d0cbbbeb7414e786c41899e5a856d7}{target}, unsigned \hyperlink{glcorearb_8h_a8f486379aef534669f4f06f515e7ce6c}{texture}, int \hyperlink{gl_8h_aa8bd8cf1eef34712fdb6ad58b540a2ee}{depth}, int \hyperlink{gl_8h_a2b536fca24f51d6a849aed325793e661}{level}, unsigned $\ast$error, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)}
+
+Create image from texture.
+
+\begin{DoxySince}{Since}
+6 
+\end{DoxySince}
+\mbox{\Hypertarget{struct_____d_r_iimage_extension_rec_ac97ca702de4f8bf00393ebe2c5ccbc5b}\label{struct_____d_r_iimage_extension_rec_ac97ca702de4f8bf00393ebe2c5ccbc5b}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}!destroy\+Image@{destroy\+Image}}
+\index{destroy\+Image@{destroy\+Image}!\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{destroy\+Image}{destroyImage}}
+{\footnotesize\ttfamily \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec\+::destroy\+Image) (\hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$\hyperlink{gl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image})}
+
+\mbox{\Hypertarget{struct_____d_r_iimage_extension_rec_a084831ab09b3ef978251b3f2af64ac0f}\label{struct_____d_r_iimage_extension_rec_a084831ab09b3ef978251b3f2af64ac0f}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}!dup\+Image@{dup\+Image}}
+\index{dup\+Image@{dup\+Image}!\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{dup\+Image}{dupImage}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage}$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec\+::dup\+Image) (\hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$\hyperlink{gl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)}
+
+The new \+\_\+\+\_\+\+D\+R\+Iimage will share the content with the old one, see dup(2). \mbox{\Hypertarget{struct_____d_r_iimage_extension_rec_a631bc6c918b65f625fbb919765b886a2}\label{struct_____d_r_iimage_extension_rec_a631bc6c918b65f625fbb919765b886a2}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}!from\+Planar@{from\+Planar}}
+\index{from\+Planar@{from\+Planar}!\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{from\+Planar}{fromPlanar}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage}$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec\+::from\+Planar) (\hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$\hyperlink{gl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}, int plane, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)}
+
+Create an image out of a sub-\/region of a parent image. This entry point lets us create individual \+\_\+\+\_\+\+D\+R\+Iimages for different planes in a planar buffer (typically yuv), for example. While a sub-\/image shares the underlying buffer object with the parent image and other sibling sub-\/images, the life times of parent and sub-\/images are not dependent. Destroying the parent or a sub-\/image doesn\textquotesingle{}t affect other images. The underlying buffer object is free when no \+\_\+\+\_\+\+D\+R\+Iimage remains that references it.
+
+Sub-\/images may overlap, but rendering to overlapping sub-\/images is undefined.
+
+\begin{DoxySince}{Since}
+5 
+\end{DoxySince}
+\mbox{\Hypertarget{struct_____d_r_iimage_extension_rec_a1d7762afe105f4a0e0dd1af9a69dde24}\label{struct_____d_r_iimage_extension_rec_a1d7762afe105f4a0e0dd1af9a69dde24}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}!get\+Capabilities@{get\+Capabilities}}
+\index{get\+Capabilities@{get\+Capabilities}!\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{get\+Capabilities}{getCapabilities}}
+{\footnotesize\ttfamily int($\ast$ \+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec\+::get\+Capabilities) (\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen})}
+
+Query for general capabilities of the driver that concern buffer sharing and image importing.
+
+\begin{DoxySince}{Since}
+10 
+\end{DoxySince}
+\mbox{\Hypertarget{struct_____d_r_iimage_extension_rec_abdb0fc20bc51e7b9d7b651cf89f922e5}\label{struct_____d_r_iimage_extension_rec_abdb0fc20bc51e7b9d7b651cf89f922e5}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}!map\+Image@{map\+Image}}
+\index{map\+Image@{map\+Image}!\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{map\+Image}{mapImage}}
+{\footnotesize\ttfamily \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec\+::map\+Image) (\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$context, \hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$\hyperlink{gl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}, int \hyperlink{glext_8h_a98ac434677655cc8438bb72de2719f39}{x0}, int \hyperlink{glext_8h_ae7f97ed6c9c8e502fcbc44c7cb8a8312}{y0}, int \hyperlink{gl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}, int \hyperlink{gl_8h_aa352f2804b9902ac30769c00dde75d5f}{height}, unsigned int \hyperlink{glcorearb_8h_ac7ba7d3cce3d19ca020e056b37231289}{flags}, int $\ast$\hyperlink{glcorearb_8h_a743715bb319dd426e85b9774559cc0ea}{stride}, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$$\ast$\hyperlink{gl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data})}
+
+Returns a map of the specified region of a \+\_\+\+\_\+\+D\+R\+Iimage for the specified usage.
+
+flags may include \+\_\+\+\_\+\+D\+R\+I\+\_\+\+I\+M\+A\+G\+E\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+R\+E\+AD, which will populate the mapping with the current buffer content. If \+\_\+\+\_\+\+D\+R\+I\+\_\+\+I\+M\+A\+G\+E\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+R\+E\+AD is not included in the flags, the buffer content at map time is undefined. Users wanting to modify the mapping must include \+\_\+\+\_\+\+D\+R\+I\+\_\+\+I\+M\+A\+G\+E\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+W\+R\+I\+TE; if \+\_\+\+\_\+\+D\+R\+I\+\_\+\+I\+M\+A\+G\+E\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+W\+R\+I\+TE is not included, behaviour when writing the mapping is undefined.
+
+Returns the byte stride in $\ast$stride, and an opaque pointer to data tracking the mapping in $\ast$$\ast$data, which must be passed to \hyperlink{struct_____d_r_iimage_extension_rec_abd0d8c26cfced376ff7b8c31699570cf}{unmap\+Image()}.
+
+\begin{DoxySince}{Since}
+12 
+\end{DoxySince}
+\mbox{\Hypertarget{struct_____d_r_iimage_extension_rec_a9954149cb12055c40fb7cc9b3a36b47d}\label{struct_____d_r_iimage_extension_rec_a9954149cb12055c40fb7cc9b3a36b47d}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}!query\+Image@{query\+Image}}
+\index{query\+Image@{query\+Image}!\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{query\+Image}{queryImage}}
+{\footnotesize\ttfamily \hyperlink{gl_8h_aea1419aa8aec5854bd9807b45171029d}{G\+Lboolean}($\ast$ \+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec\+::query\+Image) (\hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$\hyperlink{gl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}, int attrib, int $\ast$\hyperlink{glcorearb_8h_a8ad81492d410ff2ac11f754f4042150f}{value})}
+
+\mbox{\Hypertarget{struct_____d_r_iimage_extension_rec_abd0d8c26cfced376ff7b8c31699570cf}\label{struct_____d_r_iimage_extension_rec_abd0d8c26cfced376ff7b8c31699570cf}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}!unmap\+Image@{unmap\+Image}}
+\index{unmap\+Image@{unmap\+Image}!\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{unmap\+Image}{unmapImage}}
+{\footnotesize\ttfamily \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec\+::unmap\+Image) (\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$context, \hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$\hyperlink{gl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$\hyperlink{gl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data})}
+
+Unmap a previously mapped \+\_\+\+\_\+\+D\+R\+Iimage
+
+\begin{DoxySince}{Since}
+12 
+\end{DoxySince}
+\mbox{\Hypertarget{struct_____d_r_iimage_extension_rec_ac010719587d0c91d02627ae77a0fe6e1}\label{struct_____d_r_iimage_extension_rec_ac010719587d0c91d02627ae77a0fe6e1}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}!validate\+Usage@{validate\+Usage}}
+\index{validate\+Usage@{validate\+Usage}!\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{validate\+Usage}{validateUsage}}
+{\footnotesize\ttfamily \hyperlink{gl_8h_aea1419aa8aec5854bd9807b45171029d}{G\+Lboolean}($\ast$ \+\_\+\+\_\+\+D\+R\+Iimage\+Extension\+Rec\+::validate\+Usage) (\hyperlink{dri__interface_8h_a37e0407153595dc88fe5d25127645cf1}{\+\_\+\+\_\+\+D\+R\+Iimage} $\ast$\hyperlink{gl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}, unsigned int use)}
+
+Validate that a \+\_\+\+\_\+\+D\+R\+Iimage can be used a certain way.
+
+\begin{DoxySince}{Since}
+2 
+\end{DoxySince}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+L/internal/\hyperlink{dri__interface_8h}{dri\+\_\+interface.\+h}\end{DoxyCompactItemize}

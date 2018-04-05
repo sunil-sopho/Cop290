@@ -1,5 +1,6 @@
 #include <messNet.h>
 #include <header.h>
+
 void messinit(std::vector<node> v)
 {
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);

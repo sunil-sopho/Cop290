@@ -13,15 +13,6 @@ GLboolean checkKeys(unsigned char const* keys,std::vector<node> &v)
 
  	if(keys[SDL_SCANCODE_ESCAPE])
  	{
- 		// cout << numScreen <<'\n';
- 		// if(numScreen == 0)
- 		// return true;
- 		// else
- 		// {
- 		// 	closeWindow();
- 		// 	numScreen = 0;
- 		// 	return false;
- 		// }
  	}
  	if(keys[SDL_SCANCODE_LEFT])
  	{

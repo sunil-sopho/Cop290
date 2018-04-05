@@ -1,0 +1,73 @@
+\hypertarget{struct_____d_r_iimage_loader_extension_rec}{}\section{\+\_\+\+\_\+\+D\+R\+Iimage\+Loader\+Extension\+Rec Struct Reference}
+\label{struct_____d_r_iimage_loader_extension_rec}\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Loader\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Loader\+Extension\+Rec}}
+
+
+{\ttfamily \#include $<$dri\+\_\+interface.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\+\_\+\+\_\+\+D\+R\+Iextension} \hyperlink{struct_____d_r_iimage_loader_extension_rec_aaeebc3b568703fc170c8108519f6ef5b}{base}
+\item 
+int($\ast$ \hyperlink{struct_____d_r_iimage_loader_extension_rec_a854cbf79a37003f2ea34134f9ce64c6d}{get\+Buffers} )(\hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\+\_\+\+\_\+\+D\+R\+Idrawable} $\ast$dri\+Drawable, unsigned int \hyperlink{gl_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}, uint32\+\_\+t $\ast$stamp, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private, uint32\+\_\+t buffer\+\_\+mask, struct \hyperlink{struct_____d_r_iimage_list}{\+\_\+\+\_\+\+D\+R\+Iimage\+List} $\ast$\hyperlink{glcorearb_8h_acaf3212fc88caa23745613e709a3e869}{buffers})
+\item 
+\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \hyperlink{struct_____d_r_iimage_loader_extension_rec_a76ae5c894a5d4f0f201b14166b9c6a34}{flush\+Front\+Buffer} )(\hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\+\_\+\+\_\+\+D\+R\+Idrawable} $\ast$dri\+Drawable, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_____d_r_iimage_loader_extension_rec_aaeebc3b568703fc170c8108519f6ef5b}\label{struct_____d_r_iimage_loader_extension_rec_aaeebc3b568703fc170c8108519f6ef5b}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Loader\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Loader\+Extension\+Rec}!base@{base}}
+\index{base@{base}!\+\_\+\+\_\+\+D\+R\+Iimage\+Loader\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Loader\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{base}{base}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\+\_\+\+\_\+\+D\+R\+Iextension} \+\_\+\+\_\+\+D\+R\+Iimage\+Loader\+Extension\+Rec\+::base}
+
+\mbox{\Hypertarget{struct_____d_r_iimage_loader_extension_rec_a76ae5c894a5d4f0f201b14166b9c6a34}\label{struct_____d_r_iimage_loader_extension_rec_a76ae5c894a5d4f0f201b14166b9c6a34}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Loader\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Loader\+Extension\+Rec}!flush\+Front\+Buffer@{flush\+Front\+Buffer}}
+\index{flush\+Front\+Buffer@{flush\+Front\+Buffer}!\+\_\+\+\_\+\+D\+R\+Iimage\+Loader\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Loader\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{flush\+Front\+Buffer}{flushFrontBuffer}}
+{\footnotesize\ttfamily \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \+\_\+\+\_\+\+D\+R\+Iimage\+Loader\+Extension\+Rec\+::flush\+Front\+Buffer) (\hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\+\_\+\+\_\+\+D\+R\+Idrawable} $\ast$dri\+Drawable, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private)}
+
+Flush pending front-\/buffer rendering
+
+Any rendering that has been performed to the fake front will be flushed to the front
+
+
+\begin{DoxyParams}{Parameters}
+{\em dri\+Drawable} & Drawable whose front-\/buffer is to be flushed \\
+\hline
+{\em loader\+Private} & Loader\textquotesingle{}s private data that was previously passed into \hyperlink{struct_____d_r_idri2_extension_rec_a8ab2424cbe4598219f503e9e7dad2d04}{\+\_\+\+\_\+\+D\+R\+Idri2\+Extension\+Rec\+::create\+New\+Drawable} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_____d_r_iimage_loader_extension_rec_a854cbf79a37003f2ea34134f9ce64c6d}\label{struct_____d_r_iimage_loader_extension_rec_a854cbf79a37003f2ea34134f9ce64c6d}} 
+\index{\+\_\+\+\_\+\+D\+R\+Iimage\+Loader\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Loader\+Extension\+Rec}!get\+Buffers@{get\+Buffers}}
+\index{get\+Buffers@{get\+Buffers}!\+\_\+\+\_\+\+D\+R\+Iimage\+Loader\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+Iimage\+Loader\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{get\+Buffers}{getBuffers}}
+{\footnotesize\ttfamily int($\ast$ \+\_\+\+\_\+\+D\+R\+Iimage\+Loader\+Extension\+Rec\+::get\+Buffers) (\hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\+\_\+\+\_\+\+D\+R\+Idrawable} $\ast$dri\+Drawable, unsigned int \hyperlink{gl_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}, uint32\+\_\+t $\ast$stamp, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$loader\+Private, uint32\+\_\+t buffer\+\_\+mask, struct \hyperlink{struct_____d_r_iimage_list}{\+\_\+\+\_\+\+D\+R\+Iimage\+List} $\ast$\hyperlink{glcorearb_8h_acaf3212fc88caa23745613e709a3e869}{buffers})}
+
+Allocate color buffers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dri\+Drawable} & \\
+\hline
+{\em width} & Width of allocated buffers \\
+\hline
+{\em height} & Height of allocated buffers \\
+\hline
+{\em format} & one of \+\_\+\+\_\+\+D\+R\+I\+\_\+\+I\+M\+A\+G\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+$\ast$ \\
+\hline
+{\em stamp} & Address of variable to be updated when get\+Buffers must be called again \\
+\hline
+{\em loader\+Private} & The loader\+Private for dri\+Drawable \\
+\hline
+{\em buffer\+\_\+mask} & Set of buffers to allocate \\
+\hline
+{\em buffers} & Returned buffers \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+L/internal/\hyperlink{dri__interface_8h}{dri\+\_\+interface.\+h}\end{DoxyCompactItemize}

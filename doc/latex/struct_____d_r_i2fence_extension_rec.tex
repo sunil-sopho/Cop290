@@ -1,0 +1,144 @@
+\hypertarget{struct_____d_r_i2fence_extension_rec}{}\section{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec Struct Reference}
+\label{struct_____d_r_i2fence_extension_rec}\index{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec}}
+
+
+{\ttfamily \#include $<$dri\+\_\+interface.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\+\_\+\+\_\+\+D\+R\+Iextension} \hyperlink{struct_____d_r_i2fence_extension_rec_a887144d176907da6cc6f255baa6b142c}{base}
+\item 
+\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$($\ast$ \hyperlink{struct_____d_r_i2fence_extension_rec_ad75a0042594520674e333b2105f72e91}{create\+\_\+fence} )(\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$ctx)
+\item 
+\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$($\ast$ \hyperlink{struct_____d_r_i2fence_extension_rec_aab159b47cdc19dbd3e3e05e1e2a8b783}{get\+\_\+fence\+\_\+from\+\_\+cl\+\_\+event} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, intptr\+\_\+t cl\+\_\+event)
+\item 
+\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \hyperlink{struct_____d_r_i2fence_extension_rec_a482020bd8edb9b4d4851d3ac40336da6}{destroy\+\_\+fence} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$fence)
+\item 
+\hyperlink{gl_8h_aea1419aa8aec5854bd9807b45171029d}{G\+Lboolean}($\ast$ \hyperlink{struct_____d_r_i2fence_extension_rec_ab8888221e5e53dc147dae85578148cca}{client\+\_\+wait\+\_\+sync} )(\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$ctx, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$fence, unsigned \hyperlink{glcorearb_8h_ac7ba7d3cce3d19ca020e056b37231289}{flags}, uint64\+\_\+t \hyperlink{glcorearb_8h_ad29bb0d8468b264a4e3d9204366cfaab}{timeout})
+\item 
+\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \hyperlink{struct_____d_r_i2fence_extension_rec_af8c4b0fbe199095f333dc026284189b4}{server\+\_\+wait\+\_\+sync} )(\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$ctx, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$fence, unsigned \hyperlink{glcorearb_8h_ac7ba7d3cce3d19ca020e056b37231289}{flags})
+\item 
+unsigned($\ast$ \hyperlink{struct_____d_r_i2fence_extension_rec_a21aaf599d663afa0f833c9e6221943fc}{get\+\_\+capabilities} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen})
+\item 
+\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$($\ast$ \hyperlink{struct_____d_r_i2fence_extension_rec_af5d2a292e552237d4a4378807002013b}{create\+\_\+fence\+\_\+fd} )(\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$ctx, int fd)
+\item 
+int($\ast$ \hyperlink{struct_____d_r_i2fence_extension_rec_aeb23e98d96257fcc5e8b4aa67c49a14b}{get\+\_\+fence\+\_\+fd} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$fence)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_____d_r_i2fence_extension_rec_a887144d176907da6cc6f255baa6b142c}\label{struct_____d_r_i2fence_extension_rec_a887144d176907da6cc6f255baa6b142c}} 
+\index{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec}!base@{base}}
+\index{base@{base}!\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{base}{base}}
+{\footnotesize\ttfamily \hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\+\_\+\+\_\+\+D\+R\+Iextension} \+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec\+::base}
+
+\mbox{\Hypertarget{struct_____d_r_i2fence_extension_rec_ab8888221e5e53dc147dae85578148cca}\label{struct_____d_r_i2fence_extension_rec_ab8888221e5e53dc147dae85578148cca}} 
+\index{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec}!client\+\_\+wait\+\_\+sync@{client\+\_\+wait\+\_\+sync}}
+\index{client\+\_\+wait\+\_\+sync@{client\+\_\+wait\+\_\+sync}!\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{client\+\_\+wait\+\_\+sync}{client\_wait\_sync}}
+{\footnotesize\ttfamily \hyperlink{gl_8h_aea1419aa8aec5854bd9807b45171029d}{G\+Lboolean}($\ast$ \+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec\+::client\+\_\+wait\+\_\+sync) (\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$ctx, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$fence, unsigned \hyperlink{glcorearb_8h_ac7ba7d3cce3d19ca020e056b37231289}{flags}, uint64\+\_\+t \hyperlink{glcorearb_8h_ad29bb0d8468b264a4e3d9204366cfaab}{timeout})}
+
+This function waits and doesn\textquotesingle{}t return until the fence is signalled or the timeout expires. It returns true if the fence has been signaled.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the context where commands are flushed \\
+\hline
+{\em fence} & the fence \\
+\hline
+{\em flags} & a combination of \+\_\+\+\_\+\+D\+R\+I2\+\_\+\+F\+E\+N\+C\+E\+\_\+\+F\+L\+A\+G\+\_\+xxx flags \\
+\hline
+{\em timeout} & the timeout in ns or \+\_\+\+\_\+\+D\+R\+I2\+\_\+\+F\+E\+N\+C\+E\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+I\+N\+F\+I\+N\+I\+TE \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_____d_r_i2fence_extension_rec_ad75a0042594520674e333b2105f72e91}\label{struct_____d_r_i2fence_extension_rec_ad75a0042594520674e333b2105f72e91}} 
+\index{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec}!create\+\_\+fence@{create\+\_\+fence}}
+\index{create\+\_\+fence@{create\+\_\+fence}!\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{create\+\_\+fence}{create\_fence}}
+{\footnotesize\ttfamily \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec\+::create\+\_\+fence) (\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$ctx)}
+
+Create and insert a fence into the command stream of the context. \mbox{\Hypertarget{struct_____d_r_i2fence_extension_rec_af5d2a292e552237d4a4378807002013b}\label{struct_____d_r_i2fence_extension_rec_af5d2a292e552237d4a4378807002013b}} 
+\index{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec}!create\+\_\+fence\+\_\+fd@{create\+\_\+fence\+\_\+fd}}
+\index{create\+\_\+fence\+\_\+fd@{create\+\_\+fence\+\_\+fd}!\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{create\+\_\+fence\+\_\+fd}{create\_fence\_fd}}
+{\footnotesize\ttfamily \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec\+::create\+\_\+fence\+\_\+fd) (\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$ctx, int fd)}
+
+Create an fd (file descriptor) associated fence. If the fence fd is -\/1, this behaves similarly to \hyperlink{struct_____d_r_i2fence_extension_rec_ad75a0042594520674e333b2105f72e91}{create\+\_\+fence()} except that when rendering is flushed the driver creates a fence fd. Otherwise, the driver wraps an existing fence fd.
+
+This is used to implement the E\+G\+L\+\_\+\+A\+N\+D\+R\+O\+I\+D\+\_\+native\+\_\+fence\+\_\+sync extension.
+
+\begin{DoxySince}{Since}
+2
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the context associated with the fence \\
+\hline
+{\em fd} & the fence fd or -\/1 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_____d_r_i2fence_extension_rec_a482020bd8edb9b4d4851d3ac40336da6}\label{struct_____d_r_i2fence_extension_rec_a482020bd8edb9b4d4851d3ac40336da6}} 
+\index{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec}!destroy\+\_\+fence@{destroy\+\_\+fence}}
+\index{destroy\+\_\+fence@{destroy\+\_\+fence}!\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{destroy\+\_\+fence}{destroy\_fence}}
+{\footnotesize\ttfamily \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec\+::destroy\+\_\+fence) (\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$fence)}
+
+Destroy a fence. \mbox{\Hypertarget{struct_____d_r_i2fence_extension_rec_a21aaf599d663afa0f833c9e6221943fc}\label{struct_____d_r_i2fence_extension_rec_a21aaf599d663afa0f833c9e6221943fc}} 
+\index{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec}!get\+\_\+capabilities@{get\+\_\+capabilities}}
+\index{get\+\_\+capabilities@{get\+\_\+capabilities}!\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{get\+\_\+capabilities}{get\_capabilities}}
+{\footnotesize\ttfamily unsigned($\ast$ \+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec\+::get\+\_\+capabilities) (\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen})}
+
+Query for general capabilities of the driver that concern fences. Returns a bitmask of \+\_\+\+\_\+\+D\+R\+I\+\_\+\+F\+E\+N\+C\+E\+\_\+\+C\+A\+P\+\_\+x
+
+\begin{DoxySince}{Since}
+2 
+\end{DoxySince}
+\mbox{\Hypertarget{struct_____d_r_i2fence_extension_rec_aeb23e98d96257fcc5e8b4aa67c49a14b}\label{struct_____d_r_i2fence_extension_rec_aeb23e98d96257fcc5e8b4aa67c49a14b}} 
+\index{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec}!get\+\_\+fence\+\_\+fd@{get\+\_\+fence\+\_\+fd}}
+\index{get\+\_\+fence\+\_\+fd@{get\+\_\+fence\+\_\+fd}!\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{get\+\_\+fence\+\_\+fd}{get\_fence\_fd}}
+{\footnotesize\ttfamily int($\ast$ \+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec\+::get\+\_\+fence\+\_\+fd) (\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$fence)}
+
+For fences created with \hyperlink{struct_____d_r_i2fence_extension_rec_af5d2a292e552237d4a4378807002013b}{create\+\_\+fence\+\_\+fd()}, after rendering is flushed, this retrieves the native fence fd. Caller takes ownership of the fd and will close() it when it is no longer needed.
+
+\begin{DoxySince}{Since}
+2
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & the screen associated with the fence \\
+\hline
+{\em fence} & the fence \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_____d_r_i2fence_extension_rec_aab159b47cdc19dbd3e3e05e1e2a8b783}\label{struct_____d_r_i2fence_extension_rec_aab159b47cdc19dbd3e3e05e1e2a8b783}} 
+\index{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec}!get\+\_\+fence\+\_\+from\+\_\+cl\+\_\+event@{get\+\_\+fence\+\_\+from\+\_\+cl\+\_\+event}}
+\index{get\+\_\+fence\+\_\+from\+\_\+cl\+\_\+event@{get\+\_\+fence\+\_\+from\+\_\+cl\+\_\+event}!\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{get\+\_\+fence\+\_\+from\+\_\+cl\+\_\+event}{get\_fence\_from\_cl\_event}}
+{\footnotesize\ttfamily \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}$\ast$($\ast$ \+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec\+::get\+\_\+fence\+\_\+from\+\_\+cl\+\_\+event) (\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\+\_\+\+\_\+\+D\+R\+Iscreen} $\ast$\hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen}, intptr\+\_\+t cl\+\_\+event)}
+
+Get a fence associated with the Open\+CL event object. This can be N\+U\+LL, meaning that Open\+CL interoperability is not supported. \mbox{\Hypertarget{struct_____d_r_i2fence_extension_rec_af8c4b0fbe199095f333dc026284189b4}\label{struct_____d_r_i2fence_extension_rec_af8c4b0fbe199095f333dc026284189b4}} 
+\index{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec}!server\+\_\+wait\+\_\+sync@{server\+\_\+wait\+\_\+sync}}
+\index{server\+\_\+wait\+\_\+sync@{server\+\_\+wait\+\_\+sync}!\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec@{\+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec}}
+\subsubsection{\texorpdfstring{server\+\_\+wait\+\_\+sync}{server\_wait\_sync}}
+{\footnotesize\ttfamily \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}($\ast$ \+\_\+\+\_\+\+D\+R\+I2fence\+Extension\+Rec\+::server\+\_\+wait\+\_\+sync) (\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\+\_\+\+\_\+\+D\+R\+Icontext} $\ast$ctx, \hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void} $\ast$fence, unsigned \hyperlink{glcorearb_8h_ac7ba7d3cce3d19ca020e056b37231289}{flags})}
+
+This function enqueues a wait command into the command stream of the context and then returns. When the execution reaches the wait command, no further execution will be done in the context until the fence is signaled. This is a no-\/op if the device doesn\textquotesingle{}t support parallel execution of contexts.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the context where the waiting is done \\
+\hline
+{\em fence} & the fence \\
+\hline
+{\em flags} & a combination of \+\_\+\+\_\+\+D\+R\+I2\+\_\+\+F\+E\+N\+C\+E\+\_\+\+F\+L\+A\+G\+\_\+xxx flags that make sense with this function (right now there are none) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+L/internal/\hyperlink{dri__interface_8h}{dri\+\_\+interface.\+h}\end{DoxyCompactItemize}

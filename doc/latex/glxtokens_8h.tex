@@ -1,0 +1,1376 @@
+\hypertarget{glxtokens_8h}{}\section{G\+L/glxtokens.h File Reference}
+\label{glxtokens_8h}\index{G\+L/glxtokens.\+h@{G\+L/glxtokens.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{glxtokens_8h_ae7906b57aba77ab452bfcbdd49d4aad1}{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+1}~1
+\item 
+\#define \hyperlink{glxtokens_8h_a32f398ad62037e638b6b2e6216f7c4b3}{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+2}~1
+\item 
+\#define \hyperlink{glxtokens_8h_a60bbf06a30a6be4428fecd140ec50ced}{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+3}~1
+\item 
+\#define \hyperlink{glxtokens_8h_a13af8478caf16ac74140dd83510d020e}{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+4}~1
+\item 
+\#define \hyperlink{glxtokens_8h_a4b04101e315c782306d9847dac4bd81e}{G\+L\+X\+\_\+\+U\+S\+E\+\_\+\+GL}~1	/$\ast$ support G\+LX rendering $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a3b6f1996a7ec5c0e4b474bd847f8cc01}{G\+L\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}~2	/$\ast$ \hyperlink{gl_8h_aa8bd8cf1eef34712fdb6ad58b540a2ee}{depth} of the \hyperlink{glcorearb_8h_a3ea846f998d64f079b86052b6c4193a8}{color} \hyperlink{glcorearb_8h_a76461e97a098d2c9ae20ac193d3825ae}{buffer} $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a22738f49c53260af4c09bf9a9f21de4b}{G\+L\+X\+\_\+\+L\+E\+V\+EL}~3	/$\ast$ \hyperlink{gl_8h_a2b536fca24f51d6a849aed325793e661}{level} \hyperlink{glext_8h_a83ad0ee7f1e06b59c90271716e689080}{in} plane stacking $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a99b65d5ae76a30533a0a6a9d6c91835e}{G\+L\+X\+\_\+\+R\+G\+BA}~4	/$\ast$ true if R\+G\+BA \hyperlink{glcorearb_8h_a1e71d9c196e4683cc06c4b54d53f7ef5}{mode} $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a3bf7844b05aa4a7ae5c56924eac41c35}{G\+L\+X\+\_\+\+D\+O\+U\+B\+L\+E\+B\+U\+F\+F\+ER}~5	/$\ast$ double buffering supported $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_ad907898a759575e9fb3ba8bbb4bd70f2}{G\+L\+X\+\_\+\+S\+T\+E\+R\+EO}~6	/$\ast$ stereo buffering supported $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a90405ce40d727d02a35ab7267c0d071c}{G\+L\+X\+\_\+\+A\+U\+X\+\_\+\+B\+U\+F\+F\+E\+RS}~7	/$\ast$ number of aux \hyperlink{glcorearb_8h_acaf3212fc88caa23745613e709a3e869}{buffers} $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a7fe726c0860e8ab1ca8aee4e041b4fd7}{G\+L\+X\+\_\+\+R\+E\+D\+\_\+\+S\+I\+ZE}~8	/$\ast$ number of red component \hyperlink{glext_8h_a8dc2cc80c52413d48ac45732e90d3a66}{bits} $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_af4f4b564881ee8ef2f3ccd0a315e42b4}{G\+L\+X\+\_\+\+G\+R\+E\+E\+N\+\_\+\+S\+I\+ZE}~9	/$\ast$ number of \hyperlink{glcorearb_8h_ac14cda87cf6c751d53b65a3cd41c35a1}{green} component \hyperlink{glext_8h_a8dc2cc80c52413d48ac45732e90d3a66}{bits} $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a6a628fdbdc83def58f76c4231cedad82}{G\+L\+X\+\_\+\+B\+L\+U\+E\+\_\+\+S\+I\+ZE}~10	/$\ast$ number of \hyperlink{glcorearb_8h_a1853b32584a90fa75432925f3e26d0e8}{blue} component \hyperlink{glext_8h_a8dc2cc80c52413d48ac45732e90d3a66}{bits} $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_aa08eb17ba68eb9f66b50667ff8768803}{G\+L\+X\+\_\+\+A\+L\+P\+H\+A\+\_\+\+S\+I\+ZE}~11	/$\ast$ number of \hyperlink{glcorearb_8h_ac03904b1f7e359bb2acf10a755e97c5a}{alpha} component \hyperlink{glext_8h_a8dc2cc80c52413d48ac45732e90d3a66}{bits} $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_ab3bc9f4a23a2626f3d3c487e57af4cd3}{G\+L\+X\+\_\+\+D\+E\+P\+T\+H\+\_\+\+S\+I\+ZE}~12	/$\ast$ number of \hyperlink{gl_8h_aa8bd8cf1eef34712fdb6ad58b540a2ee}{depth} \hyperlink{glext_8h_a8dc2cc80c52413d48ac45732e90d3a66}{bits} $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_adfcdddf7b66469af3a29e5f52d43054b}{G\+L\+X\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+S\+I\+ZE}~13	/$\ast$ number of \hyperlink{glcorearb_8h_ac490b2f418f3a459d0bd28ec4d6b71c2}{stencil} \hyperlink{glext_8h_a8dc2cc80c52413d48ac45732e90d3a66}{bits} $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_aebfea4047e9f5effb0bc9206d439031b}{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+R\+E\+D\+\_\+\+S\+I\+ZE}~14	/$\ast$ number of red accum \hyperlink{glext_8h_a8dc2cc80c52413d48ac45732e90d3a66}{bits} $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_abfc1f958ab3dc1094340ab97d4e7c11a}{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+G\+R\+E\+E\+N\+\_\+\+S\+I\+ZE}~15	/$\ast$ number of \hyperlink{glcorearb_8h_ac14cda87cf6c751d53b65a3cd41c35a1}{green} accum \hyperlink{glext_8h_a8dc2cc80c52413d48ac45732e90d3a66}{bits} $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a2d03116f2dcb3393a7fcab5c62300c56}{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+B\+L\+U\+E\+\_\+\+S\+I\+ZE}~16	/$\ast$ number of \hyperlink{glcorearb_8h_a1853b32584a90fa75432925f3e26d0e8}{blue} accum \hyperlink{glext_8h_a8dc2cc80c52413d48ac45732e90d3a66}{bits} $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a7d4321cb0900caeb61047d3d8619c0b4}{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+A\+L\+P\+H\+A\+\_\+\+S\+I\+ZE}~17	/$\ast$ number of \hyperlink{glcorearb_8h_ac03904b1f7e359bb2acf10a755e97c5a}{alpha} accum \hyperlink{glext_8h_a8dc2cc80c52413d48ac45732e90d3a66}{bits} $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_aef59bbc4fbbf455493d317bc7287c2e6}{G\+L\+X\+\_\+\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+T\+Y\+PE}~0x22
+\item 
+\#define \hyperlink{glxtokens_8h_a58d27359c7214348a8107d0550ba59fa}{G\+L\+X\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+C\+A\+V\+E\+AT}~0x20	/$\ast$ Like visual\+\_\+info V\+I\+S\+U\+A\+L\+\_\+\+C\+A\+V\+E\+A\+T\+\_\+\+E\+X\+T $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_aee4d64e71ecaca236c8057292ac0851d}{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+T\+Y\+PE}~0x23
+\item 
+\#define \hyperlink{glxtokens_8h_a44e3c21ff8fecdd57e66e727d1398662}{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+V\+A\+L\+UE}~0x24
+\item 
+\#define \hyperlink{glxtokens_8h_adfe1ceb7569af890e93a4714c2d192c5}{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+E\+D\+\_\+\+V\+A\+L\+UE}~0x25
+\item 
+\#define \hyperlink{glxtokens_8h_a02e636f028bdab6aca452102d422ea53}{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+G\+R\+E\+E\+N\+\_\+\+V\+A\+L\+UE}~0x26
+\item 
+\#define \hyperlink{glxtokens_8h_a0e3231ad93d61956c258f92043ba5583}{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+B\+L\+U\+E\+\_\+\+V\+A\+L\+UE}~0x27
+\item 
+\#define \hyperlink{glxtokens_8h_a174b5da54ffeddfb135207e122bd174d}{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+V\+A\+L\+UE}~0x28
+\item 
+\#define \hyperlink{glxtokens_8h_a0eae3a00b9d4abf47ae7238e55e03905}{G\+L\+X\+\_\+\+D\+R\+A\+W\+A\+B\+L\+E\+\_\+\+T\+Y\+PE}~0x8010
+\item 
+\#define \hyperlink{glxtokens_8h_a5f84122254df2d5a84aa6e44d074c24a}{G\+L\+X\+\_\+\+R\+E\+N\+D\+E\+R\+\_\+\+T\+Y\+PE}~0x8011
+\item 
+\#define \hyperlink{glxtokens_8h_aab3c57256b851c4a790422dfbbbcff4a}{G\+L\+X\+\_\+\+X\+\_\+\+R\+E\+N\+D\+E\+R\+A\+B\+LE}~0x8012
+\item 
+\#define \hyperlink{glxtokens_8h_ac27348d36dd5c4a0de9c3ca633caf33e}{G\+L\+X\+\_\+\+F\+B\+C\+O\+N\+F\+I\+G\+\_\+\+ID}~0x8013
+\item 
+\#define \hyperlink{glxtokens_8h_a0cc1956b35f17412802be44df902477c}{G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+TH}~0x8016
+\item 
+\#define \hyperlink{glxtokens_8h_a6d670a2668878cb74fdda26a24755641}{G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+HT}~0x8017
+\item 
+\#define \hyperlink{glxtokens_8h_a147bd4363a3a75aab344112ba4896799}{G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+P\+I\+X\+E\+LS}~0x8018
+\item 
+\#define \hyperlink{glxtokens_8h_ac2aa66d52771f5cdfb6edd2f3d916788}{G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+ID}~0x800B
+\item 
+\#define \hyperlink{glxtokens_8h_af84eb3d46ff2909d6e301f487763be7e}{G\+L\+X\+\_\+\+O\+P\+T\+I\+M\+A\+L\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+T\+H\+\_\+\+S\+G\+IX}~0x8019
+\item 
+\#define \hyperlink{glxtokens_8h_a17335f9628e50159db1da0a63008582f}{G\+L\+X\+\_\+\+O\+P\+T\+I\+M\+A\+L\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+H\+T\+\_\+\+S\+G\+IX}~0x801A
+\item 
+\#define \hyperlink{glxtokens_8h_ad221a127f56672d5c5971debb45748a3}{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+S\+C\+R\+E\+EN}~1	/$\ast$ \hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen} \# is bad $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a3b7c0632c81e87fa7baf16564c5148f4}{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}~2	/$\ast$ attribute to get is bad $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a4e98ca2d441de1524b8482d777e7c8ad}{G\+L\+X\+\_\+\+N\+O\+\_\+\+E\+X\+T\+E\+N\+S\+I\+ON}~3	/$\ast$ no glx extension on server $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_af4ae600ecb5878dff4c9a4efe7bdfcdb}{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+V\+I\+S\+U\+AL}~4	/$\ast$ visual \# not known \hyperlink{glext_8h_aee54e9aab2837a54be2ff5fb1c073bd2}{by} G\+LX $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a2e4c4633e534d0360f6bbf5954aeac21}{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT}~5	/$\ast$ returned only \hyperlink{glext_8h_aee54e9aab2837a54be2ff5fb1c073bd2}{by} import\+\_\+context E\+XT? $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_aed136f586d80922d80d203cf2ad6991c}{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+V\+A\+L\+UE}~6	/$\ast$ returned only \hyperlink{glext_8h_aee54e9aab2837a54be2ff5fb1c073bd2}{by} gl\+X\+Swap\+Interval\+S\+GI? $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a089318891f39aedabe0e901a97e1dbd8}{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+E\+N\+UM}~7	/$\ast$ unused? $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a139db61d3057b17b2f058ba5d4f57606}{G\+L\+X\+\_\+\+D\+O\+N\+T\+\_\+\+C\+A\+RE}~0x\+F\+F\+F\+F\+F\+F\+FF
+\item 
+\#define \hyperlink{glxtokens_8h_a6ac91c2ef1293de23e782773c065d309}{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+B\+IT}~0x00000001
+\item 
+\#define \hyperlink{glxtokens_8h_a1a7c1c861fa561e43cf9315c92fedc36}{G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+B\+IT}~0x00000002
+\item 
+\#define \hyperlink{glxtokens_8h_af58a27417947c0585cf35e0b4e3f25c2}{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+F\+L\+O\+A\+T\+\_\+\+B\+I\+T\+\_\+\+A\+RB}~0x00000004
+\item 
+\#define \hyperlink{glxtokens_8h_ab5124f1d701dbb554ee9ac90c90a63a4}{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+\_\+\+F\+L\+O\+A\+T\+\_\+\+B\+I\+T\+\_\+\+E\+XT}~0x00000008
+\item 
+\#define \hyperlink{glxtokens_8h_aea4137405780d52ab6a7af2839d8e41d}{G\+L\+X\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+B\+IT}~0x00000001
+\item 
+\#define \hyperlink{glxtokens_8h_a8b043ca42cf3151855f5bb1415fa8ab8}{G\+L\+X\+\_\+\+P\+I\+X\+M\+A\+P\+\_\+\+B\+IT}~0x00000002
+\item 
+\#define \hyperlink{glxtokens_8h_a40747561b132c6268a17c152248ff1c3}{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}~0x00000004
+\item 
+\#define \hyperlink{glxtokens_8h_a469be69ad75b8720ad5f00160bd671b7}{G\+L\+X\+\_\+\+N\+O\+NE}~0x8000
+\item 
+\#define \hyperlink{glxtokens_8h_aeb1d4b6b85fb53f9958aaf63dfc697aa}{G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+C\+O\+N\+F\+IG}~0x8001
+\item 
+\#define \hyperlink{glxtokens_8h_adadd435abcc247be896391d019ebfbea}{G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+C\+O\+N\+F\+IG}~0x800D
+\item 
+\#define \hyperlink{glxtokens_8h_abe725d7d3c640b7c698114ef27b2b2df}{G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+OR}~0x8002
+\item 
+\#define \hyperlink{glxtokens_8h_adb3f2ceaa1fba3b0c97bb0880ff6cce2}{G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+OR}~0x8003
+\item 
+\#define \hyperlink{glxtokens_8h_a8fea3c0abfe2929ee257ecf1a137c259}{G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+OR}~0x8004
+\item 
+\#define \hyperlink{glxtokens_8h_a0b8e43514dcd363ad0c3ad8938c2b836}{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+OR}~0x8005
+\item 
+\#define \hyperlink{glxtokens_8h_a9928d6f51bedefef8538e2ce3a631fb0}{G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+LE}~0x8006
+\item 
+\#define \hyperlink{glxtokens_8h_ac2755eb66996189e7554da1f380d98fa}{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+AY}~0x8007
+\item 
+\#define \hyperlink{glxtokens_8h_a752fccf1e81a8cb94773fc5192662623}{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+GB}~0x8008
+\item 
+\#define \hyperlink{glxtokens_8h_a71e88eac4edd6b4b55287b4467893075}{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+EX}~0x8009
+\item 
+\#define \hyperlink{glxtokens_8h_ae4a52076cdb82aa8bd12b1b55c6cd6e5}{G\+L\+X\+\_\+\+P\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+C\+O\+N\+T\+E\+N\+TS}~0x801B
+\item 
+\#define \hyperlink{glxtokens_8h_a336366e9afe258a080025fb27635b89f}{G\+L\+X\+\_\+\+L\+A\+R\+G\+E\+S\+T\+\_\+\+P\+B\+U\+F\+F\+ER}~0x801C
+\item 
+\#define \hyperlink{glxtokens_8h_aebe1451505d127574b016dffd195178c}{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+HT}~0x8040	/$\ast$ New for G\+L\+X 1.\+3 $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a45bffd673ef79f2eaf92ac2e12f092af}{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+TH}~0x8041	/$\ast$ New for G\+L\+X 1.\+3 $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_ad4f8fb4c08c6e2ff35845f4df250b1ab}{G\+L\+X\+\_\+\+W\+I\+D\+TH}~0x801D
+\item 
+\#define \hyperlink{glxtokens_8h_a291203c744ad54765644ca1126d5ce06}{G\+L\+X\+\_\+\+H\+E\+I\+G\+HT}~0x801E
+\item 
+\#define \hyperlink{glxtokens_8h_a841537cb352bb4b5da32abcae363c6b8}{G\+L\+X\+\_\+\+E\+V\+E\+N\+T\+\_\+\+M\+A\+SK}~0x801F
+\item 
+\#define \hyperlink{glxtokens_8h_a1853a9117176b461cc21583332f14734}{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+T\+Y\+PE}~0x8014
+\item 
+\#define \hyperlink{glxtokens_8h_a1aea3930b21fb0d6fa2925f02564a8f8}{G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE}~0x8015
+\item 
+\#define \hyperlink{glxtokens_8h_a62f7ac8950a947df31cba3d7d24f6c8c}{G\+L\+X\+\_\+\+S\+C\+R\+E\+EN}~0x800C
+\item 
+\#define \hyperlink{glxtokens_8h_a35b037dde69dd0405c1218f196bcf2cc}{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+C\+L\+O\+B\+B\+E\+R\+\_\+\+M\+A\+SK}~0x08000000
+\item 
+\#define \hyperlink{glxtokens_8h_af6dde555c77262c71bec3fcd298baf87}{G\+L\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+E\+L\+\_\+\+M\+A\+SK}~0x04000000
+\item 
+\#define \hyperlink{glxtokens_8h_a1066c7c318a5bc0744bd891a31b3279f}{G\+L\+X\+\_\+\+D\+A\+M\+A\+G\+ED}~0x8020
+\item 
+\#define \hyperlink{glxtokens_8h_a37765e3d603b11680f677f43f0d84a9f}{G\+L\+X\+\_\+\+S\+A\+V\+ED}~0x8021
+\item 
+\#define \hyperlink{glxtokens_8h_a6c42410eca794832774938441761d35a}{G\+L\+X\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL}~0x8180
+\item 
+\#define \hyperlink{glxtokens_8h_a858905bd0857972727210a72cbd1bdbe}{G\+L\+X\+\_\+\+B\+L\+I\+T\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL}~0x8181
+\item 
+\#define \hyperlink{glxtokens_8h_acbaa9fe160654db82e87671ebaff7ff7}{G\+L\+X\+\_\+\+F\+L\+I\+P\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL}~0x8182
+\item 
+\#define \hyperlink{glxtokens_8h_a1a8b24e54162728da459297a6fc9ade4}{G\+L\+X\+\_\+\+W\+I\+N\+D\+OW}~0x8022
+\item 
+\#define \hyperlink{glxtokens_8h_a522907a44d32ff8d315c67141775c6bb}{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+ER}~0x8023
+\item 
+\#define \hyperlink{glxtokens_8h_a6b7cea42e7878a2992959e705444ba33}{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}~0x00000001
+\item 
+\#define \hyperlink{glxtokens_8h_a9ff65cdb3d80ffe3414dfa39f4efcfe0}{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}~0x00000002
+\item 
+\#define \hyperlink{glxtokens_8h_a643d6da57a434132456af5413bc2a10b}{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+L\+E\+F\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}~0x00000004
+\item 
+\#define \hyperlink{glxtokens_8h_ae3ad7b22e7d2aba779de5eca0d0792e1}{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}~0x00000008
+\item 
+\#define \hyperlink{glxtokens_8h_a04f4c25fd706968488a0980d523cdf16}{G\+L\+X\+\_\+\+A\+U\+X\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+B\+IT}~0x00000010
+\item 
+\#define \hyperlink{glxtokens_8h_a7adcbb19f1bb44c0583f03ee60eb6011}{G\+L\+X\+\_\+\+D\+E\+P\+T\+H\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}~0x00000020
+\item 
+\#define \hyperlink{glxtokens_8h_af6cf6b3886b2f2552e4f9b4191543e5d}{G\+L\+X\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}~0x00000040
+\item 
+\#define \hyperlink{glxtokens_8h_a5fd8727d1cea644d19e16466547b872c}{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}~0x00000080
+\item 
+\#define \hyperlink{glxtokens_8h_a42a1f3a9e5a9fb8b40f215190224a03b}{G\+L\+X\+\_\+\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+XT}~0x22	/$\ast$ visual\+\_\+info extension type $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a774951813c3685476805b58d6ab39ad1}{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+XT}~0x23	/$\ast$ visual\+\_\+info extension $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a7889555b32e9861b84a52e890a5c71b6}{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT}~0x24	/$\ast$ visual\+\_\+info extension $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a3134a2362f62bf802c1471646a5ebde7}{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+E\+D\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT}~0x25	/$\ast$ visual\+\_\+info extension $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a7ba8b374f60505e52bf836236cf64fb9}{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+G\+R\+E\+E\+N\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT}~0x26	/$\ast$ visual\+\_\+info extension $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a38d97a1028930fe63a0bea02961f779e}{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+B\+L\+U\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT}~0x27	/$\ast$ visual\+\_\+info extension $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a27d88067b5a23d3cd78f7cce9f8a48c7}{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT}~0x28	/$\ast$ visual\+\_\+info extension $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_aee7a2961b5aa91c8b32c233e47b04942}{G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT}~0x8002
+\item 
+\#define \hyperlink{glxtokens_8h_ae2904791fa5b715ebe48752853a11b7a}{G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT}~0x8003
+\item 
+\#define \hyperlink{glxtokens_8h_a08bb8d30ee51e953d187feefa14bbe55}{G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT}~0x8004
+\item 
+\#define \hyperlink{glxtokens_8h_a90439a8fb042d92eab2e7a99e6a34615}{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT}~0x8005
+\item 
+\#define \hyperlink{glxtokens_8h_add382ceac40add6d06dd23b56fa0f021}{G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+L\+E\+\_\+\+E\+XT}~0x8006
+\item 
+\#define \hyperlink{glxtokens_8h_aa67c2891b1488fc6df6b14c1d01d45a7}{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+A\+Y\+\_\+\+E\+XT}~0x8007
+\item 
+\#define \hyperlink{glxtokens_8h_acc387c3f87a7436c15436b74d8ef2151}{G\+L\+X\+\_\+\+N\+O\+N\+E\+\_\+\+E\+XT}~0x8000
+\item 
+\#define \hyperlink{glxtokens_8h_a2a935b6674a1244a46820bf534a28ec9}{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+G\+B\+\_\+\+E\+XT}~0x8008
+\item 
+\#define \hyperlink{glxtokens_8h_a19dc6699b9a6313097d4df706590695b}{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+E\+XT}~0x8009
+\item 
+\#define \hyperlink{glxtokens_8h_a7e945ded8cce9f3ae2d14fa636255a02}{G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+C\+A\+V\+E\+A\+T\+\_\+\+E\+XT}~0x20  /$\ast$ visual\+\_\+rating extension type $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a12893b09da879f370016f66c19bd178b}{G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+E\+XT}~0x8001
+\item 
+\#define \hyperlink{glxtokens_8h_a3059b0a1f99ae628568c5c7f09465fb5}{G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+E\+XT}~0x800D
+\item 
+\#define \hyperlink{glxtokens_8h_af6a69eae3a32e84e31fe8fd4a96007b2}{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+O\+ML}~0x8060
+\item 
+\#define \hyperlink{glxtokens_8h_ab23ced13cd5a60a93a8531d16a413fb5}{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+O\+ML}~0x8061
+\item 
+\#define \hyperlink{glxtokens_8h_a2468bfb6a251c336e6396f5aca2c9674}{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+P\+Y\+\_\+\+O\+ML}~0x8062
+\item 
+\#define \hyperlink{glxtokens_8h_a4fe2af57efb0ec3acb654db3824fc91c}{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D\+\_\+\+O\+ML}~0x8063
+\item 
+\#define \hyperlink{glxtokens_8h_a6afe7c968dd13e8d589c065b8197acd5}{G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+G\+R\+O\+U\+P\+\_\+\+S\+G\+IX}~0x8028	/$\ast$ visuals grouped by select priority $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a1d58049e601eef392d3d582d14c60893}{G\+L\+X\+\_\+\+V\+E\+N\+D\+OR}~0x1
+\item 
+\#define \hyperlink{glxtokens_8h_ac8fe8653c4826fb3a370b1f76678f181}{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+ON}~0x2
+\item 
+\#define \hyperlink{glxtokens_8h_a5aaab2c7372549a54b856e8438215db8}{G\+L\+X\+\_\+\+E\+X\+T\+E\+N\+S\+I\+O\+NS}~0x3
+\item 
+\#define \hyperlink{glxtokens_8h_a54a7337e14fa9e3ab7d1b528f8cf418c}{G\+L\+X\+\_\+\+S\+H\+A\+R\+E\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+XT}~0x800\+A	/$\ast$ id of share context $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a86534c9bd922da8df862f492c9203134}{G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+I\+D\+\_\+\+E\+XT}~0x800\+B	/$\ast$ id of context\textquotesingle{}s visual $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a9652c3c17c79f8f9a8a0ff1c6f5d1187}{G\+L\+X\+\_\+\+S\+C\+R\+E\+E\+N\+\_\+\+E\+XT}~0x800\+C	/$\ast$ screen number $\ast$/
+\item 
+\#define \hyperlink{glxtokens_8h_a06c1a1a7fa90cf0e27eeda2e74bfdca8}{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+\_\+\+E\+XT}~0x20\+D0
+\item 
+\#define \hyperlink{glxtokens_8h_a9adffe85376e091b1b54fd8b358f1018}{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT}~0x20\+D1
+\item 
+\#define \hyperlink{glxtokens_8h_abc4f5184b4db99c8d96c4cb3730581be}{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT}~0x20\+D2
+\item 
+\#define \hyperlink{glxtokens_8h_aa9ed7186e9c9a6b499416206fc12c4d2}{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+S\+\_\+\+E\+XT}~0x20\+D3
+\item 
+\#define \hyperlink{glxtokens_8h_a5da97b982e5ccafaab84235cb8738022}{G\+L\+X\+\_\+\+Y\+\_\+\+I\+N\+V\+E\+R\+T\+E\+D\+\_\+\+E\+XT}~0x20\+D4
+\item 
+\#define \hyperlink{glxtokens_8h_a35adbd9e682633c71b4dcebf410dae57}{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+E\+XT}~0x20\+D5
+\item 
+\#define \hyperlink{glxtokens_8h_a03fa266976102e1140b8418b0a55b203}{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+E\+XT}~0x20\+D6
+\item 
+\#define \hyperlink{glxtokens_8h_add0d6c6d2ea8eba9881330bdb1ccef5f}{G\+L\+X\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT}~0x20\+D7
+\item 
+\#define \hyperlink{glxtokens_8h_a18d72873a80967d104346e649148d3c5}{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+N\+O\+N\+E\+\_\+\+E\+XT}~0x20\+D8
+\item 
+\#define \hyperlink{glxtokens_8h_a38d1bff0d14c7dcba8beb050f2df0822}{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+R\+G\+B\+\_\+\+E\+XT}~0x20\+D9
+\item 
+\#define \hyperlink{glxtokens_8h_ada18a6bd621c8eb62069fda76b5126bd}{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT}~0x20\+DA
+\item 
+\#define \hyperlink{glxtokens_8h_a871d7feebca00547af00864fbb398013}{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT}~0x00000001
+\item 
+\#define \hyperlink{glxtokens_8h_ad00c49da5233261e8e384b88863020a2}{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT}~0x00000002
+\item 
+\#define \hyperlink{glxtokens_8h_a0efa804082f8579292118e4e92f756cd}{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT}~0x00000004
+\item 
+\#define \hyperlink{glxtokens_8h_aa167bc6e71106518f0aac9aef1536856}{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+E\+XT}~0x20\+DB
+\item 
+\#define \hyperlink{glxtokens_8h_a188aa9fadf5b067106a1e36fea6556f7}{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+E\+XT}~0x20\+DC
+\item 
+\#define \hyperlink{glxtokens_8h_aa615e70d6a1644369249d53dc17b3cc0}{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+E\+XT}~0x20\+DD
+\item 
+\#define \hyperlink{glxtokens_8h_a07cddbabead9bf4f2f2e6e2eb02db1f4}{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+E\+XT}~0x20\+DE
+\item 
+\#define \hyperlink{glxtokens_8h_a7e4579cc2597459fbd1cd5a04612b8cd}{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+E\+XT}~0x20\+DF
+\item 
+\#define \hyperlink{glxtokens_8h_a66e1dc7b5ab409282902a73045f42e00}{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+L\+E\+F\+T\+\_\+\+E\+XT}~0x20\+E0
+\item 
+\#define \hyperlink{glxtokens_8h_ae1900a94d426c8e8f04410c72c7a7338}{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+R\+I\+G\+H\+T\+\_\+\+E\+XT}~0x20\+E1
+\item 
+\#define \hyperlink{glxtokens_8h_a8532c79e818568481fe5c61a6238f6e3}{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+E\+XT}~\hyperlink{glxtokens_8h_a07cddbabead9bf4f2f2e6e2eb02db1f4}{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+E\+XT}
+\item 
+\#define \hyperlink{glxtokens_8h_afff8e37dff54d975300fdeff261030a1}{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+E\+XT}~\hyperlink{glxtokens_8h_a66e1dc7b5ab409282902a73045f42e00}{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+L\+E\+F\+T\+\_\+\+E\+XT}
+\item 
+\#define \hyperlink{glxtokens_8h_a17242237ff084b6204bfe11a5d59b329}{G\+L\+X\+\_\+\+A\+U\+X0\+\_\+\+E\+XT}~0x20\+E2
+\item 
+\#define \hyperlink{glxtokens_8h_adcd619a8fa601645251cd62542ee1ab8}{G\+L\+X\+\_\+\+A\+U\+X1\+\_\+\+E\+XT}~0x20\+E3
+\item 
+\#define \hyperlink{glxtokens_8h_a3328cb0020596921cf1c662658dc7c46}{G\+L\+X\+\_\+\+A\+U\+X2\+\_\+\+E\+XT}~0x20\+E4
+\item 
+\#define \hyperlink{glxtokens_8h_a561759ef2e037e5c0fc690c1317199d0}{G\+L\+X\+\_\+\+A\+U\+X3\+\_\+\+E\+XT}~0x20\+E5
+\item 
+\#define \hyperlink{glxtokens_8h_a4583b587413ecd8c2c8012665b06de0b}{G\+L\+X\+\_\+\+A\+U\+X4\+\_\+\+E\+XT}~0x20\+E6
+\item 
+\#define \hyperlink{glxtokens_8h_ad7308243a764034c3c1f14737d3579ca}{G\+L\+X\+\_\+\+A\+U\+X5\+\_\+\+E\+XT}~0x20\+E7
+\item 
+\#define \hyperlink{glxtokens_8h_aad31918c2bb62967550d54f34321b95c}{G\+L\+X\+\_\+\+A\+U\+X6\+\_\+\+E\+XT}~0x20\+E8
+\item 
+\#define \hyperlink{glxtokens_8h_ad966e66657e22de7ce2d7cc12497b096}{G\+L\+X\+\_\+\+A\+U\+X7\+\_\+\+E\+XT}~0x20\+E9
+\item 
+\#define \hyperlink{glxtokens_8h_a59f3b2cea25519fcb29e9afea37cbe59}{G\+L\+X\+\_\+\+A\+U\+X8\+\_\+\+E\+XT}~0x20\+EA
+\item 
+\#define \hyperlink{glxtokens_8h_a8c38b7e38ab452a394657523081dcbbb}{G\+L\+X\+\_\+\+A\+U\+X9\+\_\+\+E\+XT}~0x20\+EB
+\item 
+\#define \hyperlink{glxtokens_8h_a9982de9c99b7711bfa697f73af805598}{G\+L\+X\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+S\+G\+IS}~100000
+\item 
+\#define \hyperlink{glxtokens_8h_acf146da3d7cb0171c58c1ef16defb34d}{G\+L\+X\+\_\+\+S\+A\+M\+P\+L\+E\+S\+\_\+\+S\+G\+IS}~100001
+\item 
+\#define \hyperlink{glxtokens_8h_a21d956bb959815a78efc518e7d1552a5}{G\+L\+X\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+E\+R\+\_\+\+S\+R\+G\+B\+\_\+\+C\+A\+P\+A\+B\+L\+E\+\_\+\+E\+XT}~0x20\+B2
+\item 
+\#define \hyperlink{glxtokens_8h_ac44e7b00d5bc2af9f87b752093e96fcd}{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+RB}~0x2091
+\item 
+\#define \hyperlink{glxtokens_8h_a60923ecde3d05e9be4ec4688af4a186c}{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+RB}~0x2092
+\item 
+\#define \hyperlink{glxtokens_8h_a9fbf65742f759adfe86f8dd3ad9fb175}{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+A\+RB}~0x2094
+\item 
+\#define \hyperlink{glxtokens_8h_ab41280edf02867e5169cb776785e6e59}{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+M\+A\+S\+K\+\_\+\+A\+RB}~0x9126
+\item 
+\#define \hyperlink{glxtokens_8h_a0cf90dff9121a185ae2a6aa992fe0bb9}{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+D\+E\+B\+U\+G\+\_\+\+B\+I\+T\+\_\+\+A\+RB}~0x0001
+\item 
+\#define \hyperlink{glxtokens_8h_a1d17031e0942bb0babeabef74cf320c9}{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+C\+O\+M\+P\+A\+T\+I\+B\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB}~0x0002
+\item 
+\#define \hyperlink{glxtokens_8h_aefd242a232e2acbd909a211afd867807}{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+O\+R\+E\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB}~0x0001
+\item 
+\#define \hyperlink{glxtokens_8h_a1748fca6f96fd5483e950db3e6e3cc36}{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+O\+M\+P\+A\+T\+I\+B\+I\+L\+I\+T\+Y\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB}~0x0002
+\item 
+\#define \hyperlink{glxtokens_8h_af709c65a95e42fd42b8873b626d99367}{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+S2\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT}~0x0004
+\item 
+\#define \hyperlink{glxtokens_8h_a83b9074cbbdfd34a1dbcee0ef61bc67b}{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+O\+B\+U\+S\+T\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+B\+I\+T\+\_\+\+A\+RB}~0x0004
+\item 
+\#define \hyperlink{glxtokens_8h_ade49d3de67b904fcdfc8bc5025e2b171}{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+E\+S\+E\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+S\+T\+R\+A\+T\+E\+G\+Y\+\_\+\+A\+RB}~0x8256
+\item 
+\#define \hyperlink{glxtokens_8h_a013a043a0fb1e9227eeb2df2272956a5}{G\+L\+X\+\_\+\+N\+O\+\_\+\+R\+E\+S\+E\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+A\+RB}~0x8261
+\item 
+\#define \hyperlink{glxtokens_8h_af878914ae535aa0044c89e56ad9b5dc6}{G\+L\+X\+\_\+\+L\+O\+S\+E\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+O\+N\+\_\+\+R\+E\+S\+E\+T\+\_\+\+A\+RB}~0x8252
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{glxtokens_8h_a7d4321cb0900caeb61047d3d8619c0b4}\label{glxtokens_8h_a7d4321cb0900caeb61047d3d8619c0b4}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+A\+L\+P\+H\+A\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+A\+L\+P\+H\+A\+\_\+\+S\+I\+ZE}}
+\index{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+A\+L\+P\+H\+A\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+A\+L\+P\+H\+A\+\_\+\+S\+I\+ZE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+A\+L\+P\+H\+A\+\_\+\+S\+I\+ZE}{GLX\_ACCUM\_ALPHA\_SIZE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+A\+L\+P\+H\+A\+\_\+\+S\+I\+ZE~17	/$\ast$ number of \hyperlink{glcorearb_8h_ac03904b1f7e359bb2acf10a755e97c5a}{alpha} accum \hyperlink{glext_8h_a8dc2cc80c52413d48ac45732e90d3a66}{bits} $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a2d03116f2dcb3393a7fcab5c62300c56}\label{glxtokens_8h_a2d03116f2dcb3393a7fcab5c62300c56}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+B\+L\+U\+E\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+B\+L\+U\+E\+\_\+\+S\+I\+ZE}}
+\index{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+B\+L\+U\+E\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+B\+L\+U\+E\+\_\+\+S\+I\+ZE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+B\+L\+U\+E\+\_\+\+S\+I\+ZE}{GLX\_ACCUM\_BLUE\_SIZE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+B\+L\+U\+E\+\_\+\+S\+I\+ZE~16	/$\ast$ number of \hyperlink{glcorearb_8h_a1853b32584a90fa75432925f3e26d0e8}{blue} accum \hyperlink{glext_8h_a8dc2cc80c52413d48ac45732e90d3a66}{bits} $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a5fd8727d1cea644d19e16466547b872c}\label{glxtokens_8h_a5fd8727d1cea644d19e16466547b872c}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}}
+\index{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}{GLX\_ACCUM\_BUFFER\_BIT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT~0x00000080}
+
+\mbox{\Hypertarget{glxtokens_8h_abfc1f958ab3dc1094340ab97d4e7c11a}\label{glxtokens_8h_abfc1f958ab3dc1094340ab97d4e7c11a}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+G\+R\+E\+E\+N\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+G\+R\+E\+E\+N\+\_\+\+S\+I\+ZE}}
+\index{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+G\+R\+E\+E\+N\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+G\+R\+E\+E\+N\+\_\+\+S\+I\+ZE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+G\+R\+E\+E\+N\+\_\+\+S\+I\+ZE}{GLX\_ACCUM\_GREEN\_SIZE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+G\+R\+E\+E\+N\+\_\+\+S\+I\+ZE~15	/$\ast$ number of \hyperlink{glcorearb_8h_ac14cda87cf6c751d53b65a3cd41c35a1}{green} accum \hyperlink{glext_8h_a8dc2cc80c52413d48ac45732e90d3a66}{bits} $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_aebfea4047e9f5effb0bc9206d439031b}\label{glxtokens_8h_aebfea4047e9f5effb0bc9206d439031b}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+R\+E\+D\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+R\+E\+D\+\_\+\+S\+I\+ZE}}
+\index{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+R\+E\+D\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+R\+E\+D\+\_\+\+S\+I\+ZE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+R\+E\+D\+\_\+\+S\+I\+ZE}{GLX\_ACCUM\_RED\_SIZE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+A\+C\+C\+U\+M\+\_\+\+R\+E\+D\+\_\+\+S\+I\+ZE~14	/$\ast$ number of red accum \hyperlink{glext_8h_a8dc2cc80c52413d48ac45732e90d3a66}{bits} $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_aa08eb17ba68eb9f66b50667ff8768803}\label{glxtokens_8h_aa08eb17ba68eb9f66b50667ff8768803}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+A\+L\+P\+H\+A\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+A\+L\+P\+H\+A\+\_\+\+S\+I\+ZE}}
+\index{G\+L\+X\+\_\+\+A\+L\+P\+H\+A\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+A\+L\+P\+H\+A\+\_\+\+S\+I\+ZE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+A\+L\+P\+H\+A\+\_\+\+S\+I\+ZE}{GLX\_ALPHA\_SIZE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+A\+L\+P\+H\+A\+\_\+\+S\+I\+ZE~11	/$\ast$ number of \hyperlink{glcorearb_8h_ac03904b1f7e359bb2acf10a755e97c5a}{alpha} component \hyperlink{glext_8h_a8dc2cc80c52413d48ac45732e90d3a66}{bits} $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a17242237ff084b6204bfe11a5d59b329}\label{glxtokens_8h_a17242237ff084b6204bfe11a5d59b329}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+A\+U\+X0\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+A\+U\+X0\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+A\+U\+X0\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+A\+U\+X0\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+A\+U\+X0\+\_\+\+E\+XT}{GLX\_AUX0\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+A\+U\+X0\+\_\+\+E\+XT~0x20\+E2}
+
+\mbox{\Hypertarget{glxtokens_8h_adcd619a8fa601645251cd62542ee1ab8}\label{glxtokens_8h_adcd619a8fa601645251cd62542ee1ab8}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+A\+U\+X1\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+A\+U\+X1\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+A\+U\+X1\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+A\+U\+X1\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+A\+U\+X1\+\_\+\+E\+XT}{GLX\_AUX1\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+A\+U\+X1\+\_\+\+E\+XT~0x20\+E3}
+
+\mbox{\Hypertarget{glxtokens_8h_a3328cb0020596921cf1c662658dc7c46}\label{glxtokens_8h_a3328cb0020596921cf1c662658dc7c46}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+A\+U\+X2\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+A\+U\+X2\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+A\+U\+X2\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+A\+U\+X2\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+A\+U\+X2\+\_\+\+E\+XT}{GLX\_AUX2\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+A\+U\+X2\+\_\+\+E\+XT~0x20\+E4}
+
+\mbox{\Hypertarget{glxtokens_8h_a561759ef2e037e5c0fc690c1317199d0}\label{glxtokens_8h_a561759ef2e037e5c0fc690c1317199d0}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+A\+U\+X3\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+A\+U\+X3\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+A\+U\+X3\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+A\+U\+X3\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+A\+U\+X3\+\_\+\+E\+XT}{GLX\_AUX3\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+A\+U\+X3\+\_\+\+E\+XT~0x20\+E5}
+
+\mbox{\Hypertarget{glxtokens_8h_a4583b587413ecd8c2c8012665b06de0b}\label{glxtokens_8h_a4583b587413ecd8c2c8012665b06de0b}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+A\+U\+X4\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+A\+U\+X4\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+A\+U\+X4\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+A\+U\+X4\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+A\+U\+X4\+\_\+\+E\+XT}{GLX\_AUX4\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+A\+U\+X4\+\_\+\+E\+XT~0x20\+E6}
+
+\mbox{\Hypertarget{glxtokens_8h_ad7308243a764034c3c1f14737d3579ca}\label{glxtokens_8h_ad7308243a764034c3c1f14737d3579ca}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+A\+U\+X5\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+A\+U\+X5\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+A\+U\+X5\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+A\+U\+X5\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+A\+U\+X5\+\_\+\+E\+XT}{GLX\_AUX5\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+A\+U\+X5\+\_\+\+E\+XT~0x20\+E7}
+
+\mbox{\Hypertarget{glxtokens_8h_aad31918c2bb62967550d54f34321b95c}\label{glxtokens_8h_aad31918c2bb62967550d54f34321b95c}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+A\+U\+X6\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+A\+U\+X6\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+A\+U\+X6\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+A\+U\+X6\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+A\+U\+X6\+\_\+\+E\+XT}{GLX\_AUX6\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+A\+U\+X6\+\_\+\+E\+XT~0x20\+E8}
+
+\mbox{\Hypertarget{glxtokens_8h_ad966e66657e22de7ce2d7cc12497b096}\label{glxtokens_8h_ad966e66657e22de7ce2d7cc12497b096}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+A\+U\+X7\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+A\+U\+X7\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+A\+U\+X7\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+A\+U\+X7\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+A\+U\+X7\+\_\+\+E\+XT}{GLX\_AUX7\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+A\+U\+X7\+\_\+\+E\+XT~0x20\+E9}
+
+\mbox{\Hypertarget{glxtokens_8h_a59f3b2cea25519fcb29e9afea37cbe59}\label{glxtokens_8h_a59f3b2cea25519fcb29e9afea37cbe59}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+A\+U\+X8\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+A\+U\+X8\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+A\+U\+X8\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+A\+U\+X8\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+A\+U\+X8\+\_\+\+E\+XT}{GLX\_AUX8\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+A\+U\+X8\+\_\+\+E\+XT~0x20\+EA}
+
+\mbox{\Hypertarget{glxtokens_8h_a8c38b7e38ab452a394657523081dcbbb}\label{glxtokens_8h_a8c38b7e38ab452a394657523081dcbbb}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+A\+U\+X9\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+A\+U\+X9\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+A\+U\+X9\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+A\+U\+X9\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+A\+U\+X9\+\_\+\+E\+XT}{GLX\_AUX9\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+A\+U\+X9\+\_\+\+E\+XT~0x20\+EB}
+
+\mbox{\Hypertarget{glxtokens_8h_a90405ce40d727d02a35ab7267c0d071c}\label{glxtokens_8h_a90405ce40d727d02a35ab7267c0d071c}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+A\+U\+X\+\_\+\+B\+U\+F\+F\+E\+RS@{G\+L\+X\+\_\+\+A\+U\+X\+\_\+\+B\+U\+F\+F\+E\+RS}}
+\index{G\+L\+X\+\_\+\+A\+U\+X\+\_\+\+B\+U\+F\+F\+E\+RS@{G\+L\+X\+\_\+\+A\+U\+X\+\_\+\+B\+U\+F\+F\+E\+RS}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+A\+U\+X\+\_\+\+B\+U\+F\+F\+E\+RS}{GLX\_AUX\_BUFFERS}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+A\+U\+X\+\_\+\+B\+U\+F\+F\+E\+RS~7	/$\ast$ number of aux \hyperlink{glcorearb_8h_acaf3212fc88caa23745613e709a3e869}{buffers} $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a04f4c25fd706968488a0980d523cdf16}\label{glxtokens_8h_a04f4c25fd706968488a0980d523cdf16}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+A\+U\+X\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+A\+U\+X\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+B\+IT}}
+\index{G\+L\+X\+\_\+\+A\+U\+X\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+A\+U\+X\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+B\+IT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+A\+U\+X\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+B\+IT}{GLX\_AUX\_BUFFERS\_BIT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+A\+U\+X\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+B\+IT~0x00000010}
+
+\mbox{\Hypertarget{glxtokens_8h_afff8e37dff54d975300fdeff261030a1}\label{glxtokens_8h_afff8e37dff54d975300fdeff261030a1}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+E\+XT}{GLX\_BACK\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+E\+XT~\hyperlink{glxtokens_8h_a66e1dc7b5ab409282902a73045f42e00}{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+L\+E\+F\+T\+\_\+\+E\+XT}}
+
+\mbox{\Hypertarget{glxtokens_8h_a643d6da57a434132456af5413bc2a10b}\label{glxtokens_8h_a643d6da57a434132456af5413bc2a10b}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+L\+E\+F\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+L\+E\+F\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}}
+\index{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+L\+E\+F\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+L\+E\+F\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+L\+E\+F\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}{GLX\_BACK\_LEFT\_BUFFER\_BIT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+L\+E\+F\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT~0x00000004}
+
+\mbox{\Hypertarget{glxtokens_8h_a66e1dc7b5ab409282902a73045f42e00}\label{glxtokens_8h_a66e1dc7b5ab409282902a73045f42e00}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+L\+E\+F\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+L\+E\+F\+T\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+L\+E\+F\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+L\+E\+F\+T\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+L\+E\+F\+T\+\_\+\+E\+XT}{GLX\_BACK\_LEFT\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+L\+E\+F\+T\+\_\+\+E\+XT~0x20\+E0}
+
+\mbox{\Hypertarget{glxtokens_8h_ae3ad7b22e7d2aba779de5eca0d0792e1}\label{glxtokens_8h_ae3ad7b22e7d2aba779de5eca0d0792e1}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}}
+\index{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}{GLX\_BACK\_RIGHT\_BUFFER\_BIT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT~0x00000008}
+
+\mbox{\Hypertarget{glxtokens_8h_ae1900a94d426c8e8f04410c72c7a7338}\label{glxtokens_8h_ae1900a94d426c8e8f04410c72c7a7338}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+R\+I\+G\+H\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+R\+I\+G\+H\+T\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+R\+I\+G\+H\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+R\+I\+G\+H\+T\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+R\+I\+G\+H\+T\+\_\+\+E\+XT}{GLX\_BACK\_RIGHT\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+A\+C\+K\+\_\+\+R\+I\+G\+H\+T\+\_\+\+E\+XT~0x20\+E1}
+
+\mbox{\Hypertarget{glxtokens_8h_a3b7c0632c81e87fa7baf16564c5148f4}\label{glxtokens_8h_a3b7c0632c81e87fa7baf16564c5148f4}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE@{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}}
+\index{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE@{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}{GLX\_BAD\_ATTRIBUTE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE~2	/$\ast$ attribute to get is bad $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a2e4c4633e534d0360f6bbf5954aeac21}\label{glxtokens_8h_a2e4c4633e534d0360f6bbf5954aeac21}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT@{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT}}
+\index{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT@{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT}{GLX\_BAD\_CONTEXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT~5	/$\ast$ returned only \hyperlink{glext_8h_aee54e9aab2837a54be2ff5fb1c073bd2}{by} import\+\_\+context E\+XT? $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a089318891f39aedabe0e901a97e1dbd8}\label{glxtokens_8h_a089318891f39aedabe0e901a97e1dbd8}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+E\+N\+UM@{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+E\+N\+UM}}
+\index{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+E\+N\+UM@{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+E\+N\+UM}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+E\+N\+UM}{GLX\_BAD\_ENUM}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+E\+N\+UM~7	/$\ast$ unused? $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_ad221a127f56672d5c5971debb45748a3}\label{glxtokens_8h_ad221a127f56672d5c5971debb45748a3}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+S\+C\+R\+E\+EN@{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+S\+C\+R\+E\+EN}}
+\index{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+S\+C\+R\+E\+EN@{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+S\+C\+R\+E\+EN}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+S\+C\+R\+E\+EN}{GLX\_BAD\_SCREEN}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+S\+C\+R\+E\+EN~1	/$\ast$ \hyperlink{cad_8h_ae04e09e4e3831bfc1632c509ae37dcec}{screen} \# is bad $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_aed136f586d80922d80d203cf2ad6991c}\label{glxtokens_8h_aed136f586d80922d80d203cf2ad6991c}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+V\+A\+L\+UE@{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+V\+A\+L\+UE}}
+\index{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+V\+A\+L\+UE@{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+V\+A\+L\+UE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+V\+A\+L\+UE}{GLX\_BAD\_VALUE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+V\+A\+L\+UE~6	/$\ast$ returned only \hyperlink{glext_8h_aee54e9aab2837a54be2ff5fb1c073bd2}{by} gl\+X\+Swap\+Interval\+S\+GI? $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_af4ae600ecb5878dff4c9a4efe7bdfcdb}\label{glxtokens_8h_af4ae600ecb5878dff4c9a4efe7bdfcdb}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+V\+I\+S\+U\+AL@{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+V\+I\+S\+U\+AL}}
+\index{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+V\+I\+S\+U\+AL@{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+V\+I\+S\+U\+AL}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+V\+I\+S\+U\+AL}{GLX\_BAD\_VISUAL}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+A\+D\+\_\+\+V\+I\+S\+U\+AL~4	/$\ast$ visual \# not known \hyperlink{glext_8h_aee54e9aab2837a54be2ff5fb1c073bd2}{by} G\+LX $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_abc4f5184b4db99c8d96c4cb3730581be}\label{glxtokens_8h_abc4f5184b4db99c8d96c4cb3730581be}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT}{GLX\_BIND\_TO\_MIPMAP\_TEXTURE\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT~0x20\+D2}
+
+\mbox{\Hypertarget{glxtokens_8h_a06c1a1a7fa90cf0e27eeda2e74bfdca8}\label{glxtokens_8h_a06c1a1a7fa90cf0e27eeda2e74bfdca8}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+\_\+\+E\+XT}{GLX\_BIND\_TO\_TEXTURE\_RGB\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+\_\+\+E\+XT~0x20\+D0}
+
+\mbox{\Hypertarget{glxtokens_8h_a9adffe85376e091b1b54fd8b358f1018}\label{glxtokens_8h_a9adffe85376e091b1b54fd8b358f1018}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT}{GLX\_BIND\_TO\_TEXTURE\_RGBA\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT~0x20\+D1}
+
+\mbox{\Hypertarget{glxtokens_8h_aa9ed7186e9c9a6b499416206fc12c4d2}\label{glxtokens_8h_aa9ed7186e9c9a6b499416206fc12c4d2}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+S\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+S\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+S\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+S\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+S\+\_\+\+E\+XT}{GLX\_BIND\_TO\_TEXTURE\_TARGETS\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+I\+N\+D\+\_\+\+T\+O\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+S\+\_\+\+E\+XT~0x20\+D3}
+
+\mbox{\Hypertarget{glxtokens_8h_a858905bd0857972727210a72cbd1bdbe}\label{glxtokens_8h_a858905bd0857972727210a72cbd1bdbe}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+B\+L\+I\+T\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL@{G\+L\+X\+\_\+\+B\+L\+I\+T\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL}}
+\index{G\+L\+X\+\_\+\+B\+L\+I\+T\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL@{G\+L\+X\+\_\+\+B\+L\+I\+T\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+L\+I\+T\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL}{GLX\_BLIT\_COMPLETE\_INTEL}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+L\+I\+T\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL~0x8181}
+
+\mbox{\Hypertarget{glxtokens_8h_a6a628fdbdc83def58f76c4231cedad82}\label{glxtokens_8h_a6a628fdbdc83def58f76c4231cedad82}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+B\+L\+U\+E\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+B\+L\+U\+E\+\_\+\+S\+I\+ZE}}
+\index{G\+L\+X\+\_\+\+B\+L\+U\+E\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+B\+L\+U\+E\+\_\+\+S\+I\+ZE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+L\+U\+E\+\_\+\+S\+I\+ZE}{GLX\_BLUE\_SIZE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+L\+U\+E\+\_\+\+S\+I\+ZE~10	/$\ast$ number of \hyperlink{glcorearb_8h_a1853b32584a90fa75432925f3e26d0e8}{blue} component \hyperlink{glext_8h_a8dc2cc80c52413d48ac45732e90d3a66}{bits} $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a3b6f1996a7ec5c0e4b474bd847f8cc01}\label{glxtokens_8h_a3b6f1996a7ec5c0e4b474bd847f8cc01}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}
+\index{G\+L\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}{GLX\_BUFFER\_SIZE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE~2	/$\ast$ \hyperlink{gl_8h_aa8bd8cf1eef34712fdb6ad58b540a2ee}{depth} of the \hyperlink{glcorearb_8h_a3ea846f998d64f079b86052b6c4193a8}{color} \hyperlink{glcorearb_8h_a76461e97a098d2c9ae20ac193d3825ae}{buffer} $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_af6dde555c77262c71bec3fcd298baf87}\label{glxtokens_8h_af6dde555c77262c71bec3fcd298baf87}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+E\+L\+\_\+\+M\+A\+SK@{G\+L\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+E\+L\+\_\+\+M\+A\+SK}}
+\index{G\+L\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+E\+L\+\_\+\+M\+A\+SK@{G\+L\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+E\+L\+\_\+\+M\+A\+SK}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+E\+L\+\_\+\+M\+A\+SK}{GLX\_BUFFER\_SWAP\_COMPLETE\_INTEL\_MASK}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+E\+L\+\_\+\+M\+A\+SK~0x04000000}
+
+\mbox{\Hypertarget{glxtokens_8h_a1a7c1c861fa561e43cf9315c92fedc36}\label{glxtokens_8h_a1a7c1c861fa561e43cf9315c92fedc36}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+B\+IT}}
+\index{G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+B\+IT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+B\+IT}{GLX\_COLOR\_INDEX\_BIT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+B\+IT~0x00000002}
+
+\mbox{\Hypertarget{glxtokens_8h_a1aea3930b21fb0d6fa2925f02564a8f8}\label{glxtokens_8h_a1aea3930b21fb0d6fa2925f02564a8f8}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE@{G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE}}
+\index{G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE@{G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE}{GLX\_COLOR\_INDEX\_TYPE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE~0x8015}
+
+\mbox{\Hypertarget{glxtokens_8h_a58d27359c7214348a8107d0550ba59fa}\label{glxtokens_8h_a58d27359c7214348a8107d0550ba59fa}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+C\+A\+V\+E\+AT@{G\+L\+X\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+C\+A\+V\+E\+AT}}
+\index{G\+L\+X\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+C\+A\+V\+E\+AT@{G\+L\+X\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+C\+A\+V\+E\+AT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+C\+A\+V\+E\+AT}{GLX\_CONFIG\_CAVEAT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+C\+A\+V\+E\+AT~0x20	/$\ast$ Like visual\+\_\+info V\+I\+S\+U\+A\+L\+\_\+\+C\+A\+V\+E\+A\+T\+\_\+\+E\+X\+T $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a1748fca6f96fd5483e950db3e6e3cc36}\label{glxtokens_8h_a1748fca6f96fd5483e950db3e6e3cc36}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+O\+M\+P\+A\+T\+I\+B\+I\+L\+I\+T\+Y\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+O\+M\+P\+A\+T\+I\+B\+I\+L\+I\+T\+Y\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB}}
+\index{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+O\+M\+P\+A\+T\+I\+B\+I\+L\+I\+T\+Y\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+O\+M\+P\+A\+T\+I\+B\+I\+L\+I\+T\+Y\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+O\+M\+P\+A\+T\+I\+B\+I\+L\+I\+T\+Y\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB}{GLX\_CONTEXT\_COMPATIBILITY\_PROFILE\_BIT\_ARB}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+O\+M\+P\+A\+T\+I\+B\+I\+L\+I\+T\+Y\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB~0x0002}
+
+\mbox{\Hypertarget{glxtokens_8h_aefd242a232e2acbd909a211afd867807}\label{glxtokens_8h_aefd242a232e2acbd909a211afd867807}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+O\+R\+E\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+O\+R\+E\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB}}
+\index{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+O\+R\+E\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+O\+R\+E\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+O\+R\+E\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB}{GLX\_CONTEXT\_CORE\_PROFILE\_BIT\_ARB}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+O\+R\+E\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB~0x0001}
+
+\mbox{\Hypertarget{glxtokens_8h_a0cf90dff9121a185ae2a6aa992fe0bb9}\label{glxtokens_8h_a0cf90dff9121a185ae2a6aa992fe0bb9}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+D\+E\+B\+U\+G\+\_\+\+B\+I\+T\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+D\+E\+B\+U\+G\+\_\+\+B\+I\+T\+\_\+\+A\+RB}}
+\index{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+D\+E\+B\+U\+G\+\_\+\+B\+I\+T\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+D\+E\+B\+U\+G\+\_\+\+B\+I\+T\+\_\+\+A\+RB}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+D\+E\+B\+U\+G\+\_\+\+B\+I\+T\+\_\+\+A\+RB}{GLX\_CONTEXT\_DEBUG\_BIT\_ARB}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+D\+E\+B\+U\+G\+\_\+\+B\+I\+T\+\_\+\+A\+RB~0x0001}
+
+\mbox{\Hypertarget{glxtokens_8h_af709c65a95e42fd42b8873b626d99367}\label{glxtokens_8h_af709c65a95e42fd42b8873b626d99367}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+S2\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+S2\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+S2\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+S2\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+S2\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT}{GLX\_CONTEXT\_ES2\_PROFILE\_BIT\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+S2\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT~0x0004}
+
+\mbox{\Hypertarget{glxtokens_8h_a9fbf65742f759adfe86f8dd3ad9fb175}\label{glxtokens_8h_a9fbf65742f759adfe86f8dd3ad9fb175}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+A\+RB}}
+\index{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+A\+RB}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+A\+RB}{GLX\_CONTEXT\_FLAGS\_ARB}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+A\+RB~0x2094}
+
+\mbox{\Hypertarget{glxtokens_8h_a1d17031e0942bb0babeabef74cf320c9}\label{glxtokens_8h_a1d17031e0942bb0babeabef74cf320c9}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+C\+O\+M\+P\+A\+T\+I\+B\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+C\+O\+M\+P\+A\+T\+I\+B\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB}}
+\index{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+C\+O\+M\+P\+A\+T\+I\+B\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+C\+O\+M\+P\+A\+T\+I\+B\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+C\+O\+M\+P\+A\+T\+I\+B\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB}{GLX\_CONTEXT\_FORWARD\_COMPATIBLE\_BIT\_ARB}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+C\+O\+M\+P\+A\+T\+I\+B\+L\+E\+\_\+\+B\+I\+T\+\_\+\+A\+RB~0x0002}
+
+\mbox{\Hypertarget{glxtokens_8h_ac44e7b00d5bc2af9f87b752093e96fcd}\label{glxtokens_8h_ac44e7b00d5bc2af9f87b752093e96fcd}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+RB}}
+\index{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+RB}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+RB}{GLX\_CONTEXT\_MAJOR\_VERSION\_ARB}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+RB~0x2091}
+
+\mbox{\Hypertarget{glxtokens_8h_a60923ecde3d05e9be4ec4688af4a186c}\label{glxtokens_8h_a60923ecde3d05e9be4ec4688af4a186c}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+RB}}
+\index{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+RB}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+RB}{GLX\_CONTEXT\_MINOR\_VERSION\_ARB}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+RB~0x2092}
+
+\mbox{\Hypertarget{glxtokens_8h_ab41280edf02867e5169cb776785e6e59}\label{glxtokens_8h_ab41280edf02867e5169cb776785e6e59}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+M\+A\+S\+K\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+M\+A\+S\+K\+\_\+\+A\+RB}}
+\index{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+M\+A\+S\+K\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+M\+A\+S\+K\+\_\+\+A\+RB}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+M\+A\+S\+K\+\_\+\+A\+RB}{GLX\_CONTEXT\_PROFILE\_MASK\_ARB}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+M\+A\+S\+K\+\_\+\+A\+RB~0x9126}
+
+\mbox{\Hypertarget{glxtokens_8h_ade49d3de67b904fcdfc8bc5025e2b171}\label{glxtokens_8h_ade49d3de67b904fcdfc8bc5025e2b171}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+E\+S\+E\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+S\+T\+R\+A\+T\+E\+G\+Y\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+E\+S\+E\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+S\+T\+R\+A\+T\+E\+G\+Y\+\_\+\+A\+RB}}
+\index{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+E\+S\+E\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+S\+T\+R\+A\+T\+E\+G\+Y\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+E\+S\+E\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+S\+T\+R\+A\+T\+E\+G\+Y\+\_\+\+A\+RB}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+E\+S\+E\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+S\+T\+R\+A\+T\+E\+G\+Y\+\_\+\+A\+RB}{GLX\_CONTEXT\_RESET\_NOTIFICATION\_STRATEGY\_ARB}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+E\+S\+E\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+S\+T\+R\+A\+T\+E\+G\+Y\+\_\+\+A\+RB~0x8256}
+
+\mbox{\Hypertarget{glxtokens_8h_a83b9074cbbdfd34a1dbcee0ef61bc67b}\label{glxtokens_8h_a83b9074cbbdfd34a1dbcee0ef61bc67b}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+O\+B\+U\+S\+T\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+B\+I\+T\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+O\+B\+U\+S\+T\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+B\+I\+T\+\_\+\+A\+RB}}
+\index{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+O\+B\+U\+S\+T\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+B\+I\+T\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+O\+B\+U\+S\+T\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+B\+I\+T\+\_\+\+A\+RB}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+O\+B\+U\+S\+T\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+B\+I\+T\+\_\+\+A\+RB}{GLX\_CONTEXT\_ROBUST\_ACCESS\_BIT\_ARB}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+O\+B\+U\+S\+T\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+B\+I\+T\+\_\+\+A\+RB~0x0004}
+
+\mbox{\Hypertarget{glxtokens_8h_a1066c7c318a5bc0744bd891a31b3279f}\label{glxtokens_8h_a1066c7c318a5bc0744bd891a31b3279f}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+D\+A\+M\+A\+G\+ED@{G\+L\+X\+\_\+\+D\+A\+M\+A\+G\+ED}}
+\index{G\+L\+X\+\_\+\+D\+A\+M\+A\+G\+ED@{G\+L\+X\+\_\+\+D\+A\+M\+A\+G\+ED}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+D\+A\+M\+A\+G\+ED}{GLX\_DAMAGED}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+D\+A\+M\+A\+G\+ED~0x8020}
+
+\mbox{\Hypertarget{glxtokens_8h_a7adcbb19f1bb44c0583f03ee60eb6011}\label{glxtokens_8h_a7adcbb19f1bb44c0583f03ee60eb6011}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+D\+E\+P\+T\+H\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+D\+E\+P\+T\+H\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}}
+\index{G\+L\+X\+\_\+\+D\+E\+P\+T\+H\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+D\+E\+P\+T\+H\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+D\+E\+P\+T\+H\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}{GLX\_DEPTH\_BUFFER\_BIT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+D\+E\+P\+T\+H\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT~0x00000020}
+
+\mbox{\Hypertarget{glxtokens_8h_ab3bc9f4a23a2626f3d3c487e57af4cd3}\label{glxtokens_8h_ab3bc9f4a23a2626f3d3c487e57af4cd3}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+D\+E\+P\+T\+H\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+D\+E\+P\+T\+H\+\_\+\+S\+I\+ZE}}
+\index{G\+L\+X\+\_\+\+D\+E\+P\+T\+H\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+D\+E\+P\+T\+H\+\_\+\+S\+I\+ZE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+D\+E\+P\+T\+H\+\_\+\+S\+I\+ZE}{GLX\_DEPTH\_SIZE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+D\+E\+P\+T\+H\+\_\+\+S\+I\+ZE~12	/$\ast$ number of \hyperlink{gl_8h_aa8bd8cf1eef34712fdb6ad58b540a2ee}{depth} \hyperlink{glext_8h_a8dc2cc80c52413d48ac45732e90d3a66}{bits} $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_adb3f2ceaa1fba3b0c97bb0880ff6cce2}\label{glxtokens_8h_adb3f2ceaa1fba3b0c97bb0880ff6cce2}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+OR@{G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+OR}}
+\index{G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+OR@{G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+OR}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+OR}{GLX\_DIRECT\_COLOR}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+OR~0x8003}
+
+\mbox{\Hypertarget{glxtokens_8h_ae2904791fa5b715ebe48752853a11b7a}\label{glxtokens_8h_ae2904791fa5b715ebe48752853a11b7a}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT}{GLX\_DIRECT\_COLOR\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT~0x8003}
+
+\mbox{\Hypertarget{glxtokens_8h_a139db61d3057b17b2f058ba5d4f57606}\label{glxtokens_8h_a139db61d3057b17b2f058ba5d4f57606}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+D\+O\+N\+T\+\_\+\+C\+A\+RE@{G\+L\+X\+\_\+\+D\+O\+N\+T\+\_\+\+C\+A\+RE}}
+\index{G\+L\+X\+\_\+\+D\+O\+N\+T\+\_\+\+C\+A\+RE@{G\+L\+X\+\_\+\+D\+O\+N\+T\+\_\+\+C\+A\+RE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+D\+O\+N\+T\+\_\+\+C\+A\+RE}{GLX\_DONT\_CARE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+D\+O\+N\+T\+\_\+\+C\+A\+RE~0x\+F\+F\+F\+F\+F\+F\+FF}
+
+\mbox{\Hypertarget{glxtokens_8h_a3bf7844b05aa4a7ae5c56924eac41c35}\label{glxtokens_8h_a3bf7844b05aa4a7ae5c56924eac41c35}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+D\+O\+U\+B\+L\+E\+B\+U\+F\+F\+ER@{G\+L\+X\+\_\+\+D\+O\+U\+B\+L\+E\+B\+U\+F\+F\+ER}}
+\index{G\+L\+X\+\_\+\+D\+O\+U\+B\+L\+E\+B\+U\+F\+F\+ER@{G\+L\+X\+\_\+\+D\+O\+U\+B\+L\+E\+B\+U\+F\+F\+ER}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+D\+O\+U\+B\+L\+E\+B\+U\+F\+F\+ER}{GLX\_DOUBLEBUFFER}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+D\+O\+U\+B\+L\+E\+B\+U\+F\+F\+ER~5	/$\ast$ double buffering supported $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a0eae3a00b9d4abf47ae7238e55e03905}\label{glxtokens_8h_a0eae3a00b9d4abf47ae7238e55e03905}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+D\+R\+A\+W\+A\+B\+L\+E\+\_\+\+T\+Y\+PE@{G\+L\+X\+\_\+\+D\+R\+A\+W\+A\+B\+L\+E\+\_\+\+T\+Y\+PE}}
+\index{G\+L\+X\+\_\+\+D\+R\+A\+W\+A\+B\+L\+E\+\_\+\+T\+Y\+PE@{G\+L\+X\+\_\+\+D\+R\+A\+W\+A\+B\+L\+E\+\_\+\+T\+Y\+PE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+D\+R\+A\+W\+A\+B\+L\+E\+\_\+\+T\+Y\+PE}{GLX\_DRAWABLE\_TYPE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+D\+R\+A\+W\+A\+B\+L\+E\+\_\+\+T\+Y\+PE~0x8010}
+
+\mbox{\Hypertarget{glxtokens_8h_a841537cb352bb4b5da32abcae363c6b8}\label{glxtokens_8h_a841537cb352bb4b5da32abcae363c6b8}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+E\+V\+E\+N\+T\+\_\+\+M\+A\+SK@{G\+L\+X\+\_\+\+E\+V\+E\+N\+T\+\_\+\+M\+A\+SK}}
+\index{G\+L\+X\+\_\+\+E\+V\+E\+N\+T\+\_\+\+M\+A\+SK@{G\+L\+X\+\_\+\+E\+V\+E\+N\+T\+\_\+\+M\+A\+SK}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+E\+V\+E\+N\+T\+\_\+\+M\+A\+SK}{GLX\_EVENT\_MASK}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+E\+V\+E\+N\+T\+\_\+\+M\+A\+SK~0x801F}
+
+\mbox{\Hypertarget{glxtokens_8h_a6c42410eca794832774938441761d35a}\label{glxtokens_8h_a6c42410eca794832774938441761d35a}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL@{G\+L\+X\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL}}
+\index{G\+L\+X\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL@{G\+L\+X\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL}{GLX\_EXCHANGE\_COMPLETE\_INTEL}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL~0x8180}
+
+\mbox{\Hypertarget{glxtokens_8h_a5aaab2c7372549a54b856e8438215db8}\label{glxtokens_8h_a5aaab2c7372549a54b856e8438215db8}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+E\+X\+T\+E\+N\+S\+I\+O\+NS@{G\+L\+X\+\_\+\+E\+X\+T\+E\+N\+S\+I\+O\+NS}}
+\index{G\+L\+X\+\_\+\+E\+X\+T\+E\+N\+S\+I\+O\+NS@{G\+L\+X\+\_\+\+E\+X\+T\+E\+N\+S\+I\+O\+NS}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+E\+X\+T\+E\+N\+S\+I\+O\+NS}{GLX\_EXTENSIONS}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+E\+X\+T\+E\+N\+S\+I\+O\+NS~0x3}
+
+\mbox{\Hypertarget{glxtokens_8h_ac27348d36dd5c4a0de9c3ca633caf33e}\label{glxtokens_8h_ac27348d36dd5c4a0de9c3ca633caf33e}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+F\+B\+C\+O\+N\+F\+I\+G\+\_\+\+ID@{G\+L\+X\+\_\+\+F\+B\+C\+O\+N\+F\+I\+G\+\_\+\+ID}}
+\index{G\+L\+X\+\_\+\+F\+B\+C\+O\+N\+F\+I\+G\+\_\+\+ID@{G\+L\+X\+\_\+\+F\+B\+C\+O\+N\+F\+I\+G\+\_\+\+ID}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+F\+B\+C\+O\+N\+F\+I\+G\+\_\+\+ID}{GLX\_FBCONFIG\_ID}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+F\+B\+C\+O\+N\+F\+I\+G\+\_\+\+ID~0x8013}
+
+\mbox{\Hypertarget{glxtokens_8h_acbaa9fe160654db82e87671ebaff7ff7}\label{glxtokens_8h_acbaa9fe160654db82e87671ebaff7ff7}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+F\+L\+I\+P\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL@{G\+L\+X\+\_\+\+F\+L\+I\+P\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL}}
+\index{G\+L\+X\+\_\+\+F\+L\+I\+P\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL@{G\+L\+X\+\_\+\+F\+L\+I\+P\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+F\+L\+I\+P\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL}{GLX\_FLIP\_COMPLETE\_INTEL}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+F\+L\+I\+P\+\_\+\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+I\+N\+T\+EL~0x8182}
+
+\mbox{\Hypertarget{glxtokens_8h_a21d956bb959815a78efc518e7d1552a5}\label{glxtokens_8h_a21d956bb959815a78efc518e7d1552a5}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+E\+R\+\_\+\+S\+R\+G\+B\+\_\+\+C\+A\+P\+A\+B\+L\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+E\+R\+\_\+\+S\+R\+G\+B\+\_\+\+C\+A\+P\+A\+B\+L\+E\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+E\+R\+\_\+\+S\+R\+G\+B\+\_\+\+C\+A\+P\+A\+B\+L\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+E\+R\+\_\+\+S\+R\+G\+B\+\_\+\+C\+A\+P\+A\+B\+L\+E\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+E\+R\+\_\+\+S\+R\+G\+B\+\_\+\+C\+A\+P\+A\+B\+L\+E\+\_\+\+E\+XT}{GLX\_FRAMEBUFFER\_SRGB\_CAPABLE\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+E\+R\+\_\+\+S\+R\+G\+B\+\_\+\+C\+A\+P\+A\+B\+L\+E\+\_\+\+E\+XT~0x20\+B2}
+
+\mbox{\Hypertarget{glxtokens_8h_a8532c79e818568481fe5c61a6238f6e3}\label{glxtokens_8h_a8532c79e818568481fe5c61a6238f6e3}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+E\+XT}{GLX\_FRONT\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+E\+XT~\hyperlink{glxtokens_8h_a07cddbabead9bf4f2f2e6e2eb02db1f4}{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+E\+XT}}
+
+\mbox{\Hypertarget{glxtokens_8h_a6b7cea42e7878a2992959e705444ba33}\label{glxtokens_8h_a6b7cea42e7878a2992959e705444ba33}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}}
+\index{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}{GLX\_FRONT\_LEFT\_BUFFER\_BIT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT~0x00000001}
+
+\mbox{\Hypertarget{glxtokens_8h_a07cddbabead9bf4f2f2e6e2eb02db1f4}\label{glxtokens_8h_a07cddbabead9bf4f2f2e6e2eb02db1f4}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+E\+XT}{GLX\_FRONT\_LEFT\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+E\+XT~0x20\+DE}
+
+\mbox{\Hypertarget{glxtokens_8h_a9ff65cdb3d80ffe3414dfa39f4efcfe0}\label{glxtokens_8h_a9ff65cdb3d80ffe3414dfa39f4efcfe0}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}}
+\index{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}{GLX\_FRONT\_RIGHT\_BUFFER\_BIT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT~0x00000002}
+
+\mbox{\Hypertarget{glxtokens_8h_a7e4579cc2597459fbd1cd5a04612b8cd}\label{glxtokens_8h_a7e4579cc2597459fbd1cd5a04612b8cd}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+E\+XT}{GLX\_FRONT\_RIGHT\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+F\+R\+O\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+E\+XT~0x20\+DF}
+
+\mbox{\Hypertarget{glxtokens_8h_a9928d6f51bedefef8538e2ce3a631fb0}\label{glxtokens_8h_a9928d6f51bedefef8538e2ce3a631fb0}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+LE@{G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+LE}}
+\index{G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+LE@{G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+LE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+LE}{GLX\_GRAY\_SCALE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+LE~0x8006}
+
+\mbox{\Hypertarget{glxtokens_8h_add382ceac40add6d06dd23b56fa0f021}\label{glxtokens_8h_add382ceac40add6d06dd23b56fa0f021}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+L\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+L\+E\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+L\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+L\+E\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+L\+E\+\_\+\+E\+XT}{GLX\_GRAY\_SCALE\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+G\+R\+A\+Y\+\_\+\+S\+C\+A\+L\+E\+\_\+\+E\+XT~0x8006}
+
+\mbox{\Hypertarget{glxtokens_8h_af4f4b564881ee8ef2f3ccd0a315e42b4}\label{glxtokens_8h_af4f4b564881ee8ef2f3ccd0a315e42b4}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+G\+R\+E\+E\+N\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+G\+R\+E\+E\+N\+\_\+\+S\+I\+ZE}}
+\index{G\+L\+X\+\_\+\+G\+R\+E\+E\+N\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+G\+R\+E\+E\+N\+\_\+\+S\+I\+ZE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+G\+R\+E\+E\+N\+\_\+\+S\+I\+ZE}{GLX\_GREEN\_SIZE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+G\+R\+E\+E\+N\+\_\+\+S\+I\+ZE~9	/$\ast$ number of \hyperlink{glcorearb_8h_ac14cda87cf6c751d53b65a3cd41c35a1}{green} component \hyperlink{glext_8h_a8dc2cc80c52413d48ac45732e90d3a66}{bits} $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a291203c744ad54765644ca1126d5ce06}\label{glxtokens_8h_a291203c744ad54765644ca1126d5ce06}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+H\+E\+I\+G\+HT@{G\+L\+X\+\_\+\+H\+E\+I\+G\+HT}}
+\index{G\+L\+X\+\_\+\+H\+E\+I\+G\+HT@{G\+L\+X\+\_\+\+H\+E\+I\+G\+HT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+H\+E\+I\+G\+HT}{GLX\_HEIGHT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+H\+E\+I\+G\+HT~0x801E}
+
+\mbox{\Hypertarget{glxtokens_8h_a336366e9afe258a080025fb27635b89f}\label{glxtokens_8h_a336366e9afe258a080025fb27635b89f}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+L\+A\+R\+G\+E\+S\+T\+\_\+\+P\+B\+U\+F\+F\+ER@{G\+L\+X\+\_\+\+L\+A\+R\+G\+E\+S\+T\+\_\+\+P\+B\+U\+F\+F\+ER}}
+\index{G\+L\+X\+\_\+\+L\+A\+R\+G\+E\+S\+T\+\_\+\+P\+B\+U\+F\+F\+ER@{G\+L\+X\+\_\+\+L\+A\+R\+G\+E\+S\+T\+\_\+\+P\+B\+U\+F\+F\+ER}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+L\+A\+R\+G\+E\+S\+T\+\_\+\+P\+B\+U\+F\+F\+ER}{GLX\_LARGEST\_PBUFFER}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+L\+A\+R\+G\+E\+S\+T\+\_\+\+P\+B\+U\+F\+F\+ER~0x801C}
+
+\mbox{\Hypertarget{glxtokens_8h_a22738f49c53260af4c09bf9a9f21de4b}\label{glxtokens_8h_a22738f49c53260af4c09bf9a9f21de4b}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+L\+E\+V\+EL@{G\+L\+X\+\_\+\+L\+E\+V\+EL}}
+\index{G\+L\+X\+\_\+\+L\+E\+V\+EL@{G\+L\+X\+\_\+\+L\+E\+V\+EL}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+L\+E\+V\+EL}{GLX\_LEVEL}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+L\+E\+V\+EL~3	/$\ast$ \hyperlink{gl_8h_a2b536fca24f51d6a849aed325793e661}{level} \hyperlink{glext_8h_a83ad0ee7f1e06b59c90271716e689080}{in} plane stacking $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_af878914ae535aa0044c89e56ad9b5dc6}\label{glxtokens_8h_af878914ae535aa0044c89e56ad9b5dc6}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+L\+O\+S\+E\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+O\+N\+\_\+\+R\+E\+S\+E\+T\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+L\+O\+S\+E\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+O\+N\+\_\+\+R\+E\+S\+E\+T\+\_\+\+A\+RB}}
+\index{G\+L\+X\+\_\+\+L\+O\+S\+E\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+O\+N\+\_\+\+R\+E\+S\+E\+T\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+L\+O\+S\+E\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+O\+N\+\_\+\+R\+E\+S\+E\+T\+\_\+\+A\+RB}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+L\+O\+S\+E\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+O\+N\+\_\+\+R\+E\+S\+E\+T\+\_\+\+A\+RB}{GLX\_LOSE\_CONTEXT\_ON\_RESET\_ARB}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+L\+O\+S\+E\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+O\+N\+\_\+\+R\+E\+S\+E\+T\+\_\+\+A\+RB~0x8252}
+
+\mbox{\Hypertarget{glxtokens_8h_a6d670a2668878cb74fdda26a24755641}\label{glxtokens_8h_a6d670a2668878cb74fdda26a24755641}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+HT@{G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+HT}}
+\index{G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+HT@{G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+HT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+HT}{GLX\_MAX\_PBUFFER\_HEIGHT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+HT~0x8017}
+
+\mbox{\Hypertarget{glxtokens_8h_a147bd4363a3a75aab344112ba4896799}\label{glxtokens_8h_a147bd4363a3a75aab344112ba4896799}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+P\+I\+X\+E\+LS@{G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+P\+I\+X\+E\+LS}}
+\index{G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+P\+I\+X\+E\+LS@{G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+P\+I\+X\+E\+LS}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+P\+I\+X\+E\+LS}{GLX\_MAX\_PBUFFER\_PIXELS}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+P\+I\+X\+E\+LS~0x8018}
+
+\mbox{\Hypertarget{glxtokens_8h_a0cc1956b35f17412802be44df902477c}\label{glxtokens_8h_a0cc1956b35f17412802be44df902477c}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+TH@{G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+TH}}
+\index{G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+TH@{G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+TH}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+TH}{GLX\_MAX\_PBUFFER\_WIDTH}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+M\+A\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+TH~0x8016}
+
+\mbox{\Hypertarget{glxtokens_8h_add0d6c6d2ea8eba9881330bdb1ccef5f}\label{glxtokens_8h_add0d6c6d2ea8eba9881330bdb1ccef5f}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT}{GLX\_MIPMAP\_TEXTURE\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+E\+XT~0x20\+D7}
+
+\mbox{\Hypertarget{glxtokens_8h_a4e98ca2d441de1524b8482d777e7c8ad}\label{glxtokens_8h_a4e98ca2d441de1524b8482d777e7c8ad}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+N\+O\+\_\+\+E\+X\+T\+E\+N\+S\+I\+ON@{G\+L\+X\+\_\+\+N\+O\+\_\+\+E\+X\+T\+E\+N\+S\+I\+ON}}
+\index{G\+L\+X\+\_\+\+N\+O\+\_\+\+E\+X\+T\+E\+N\+S\+I\+ON@{G\+L\+X\+\_\+\+N\+O\+\_\+\+E\+X\+T\+E\+N\+S\+I\+ON}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+N\+O\+\_\+\+E\+X\+T\+E\+N\+S\+I\+ON}{GLX\_NO\_EXTENSION}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+N\+O\+\_\+\+E\+X\+T\+E\+N\+S\+I\+ON~3	/$\ast$ no glx extension on server $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a013a043a0fb1e9227eeb2df2272956a5}\label{glxtokens_8h_a013a043a0fb1e9227eeb2df2272956a5}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+N\+O\+\_\+\+R\+E\+S\+E\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+N\+O\+\_\+\+R\+E\+S\+E\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+A\+RB}}
+\index{G\+L\+X\+\_\+\+N\+O\+\_\+\+R\+E\+S\+E\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+N\+O\+\_\+\+R\+E\+S\+E\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+A\+RB}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+N\+O\+\_\+\+R\+E\+S\+E\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+A\+RB}{GLX\_NO\_RESET\_NOTIFICATION\_ARB}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+N\+O\+\_\+\+R\+E\+S\+E\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+A\+RB~0x8261}
+
+\mbox{\Hypertarget{glxtokens_8h_adadd435abcc247be896391d019ebfbea}\label{glxtokens_8h_adadd435abcc247be896391d019ebfbea}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+C\+O\+N\+F\+IG@{G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+C\+O\+N\+F\+IG}}
+\index{G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+C\+O\+N\+F\+IG@{G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+C\+O\+N\+F\+IG}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+C\+O\+N\+F\+IG}{GLX\_NON\_CONFORMANT\_CONFIG}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+C\+O\+N\+F\+IG~0x800D}
+
+\mbox{\Hypertarget{glxtokens_8h_a3059b0a1f99ae628568c5c7f09465fb5}\label{glxtokens_8h_a3059b0a1f99ae628568c5c7f09465fb5}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+E\+XT}{GLX\_NON\_CONFORMANT\_VISUAL\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+N\+O\+N\+\_\+\+C\+O\+N\+F\+O\+R\+M\+A\+N\+T\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+E\+XT~0x800D}
+
+\mbox{\Hypertarget{glxtokens_8h_a469be69ad75b8720ad5f00160bd671b7}\label{glxtokens_8h_a469be69ad75b8720ad5f00160bd671b7}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+N\+O\+NE@{G\+L\+X\+\_\+\+N\+O\+NE}}
+\index{G\+L\+X\+\_\+\+N\+O\+NE@{G\+L\+X\+\_\+\+N\+O\+NE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+N\+O\+NE}{GLX\_NONE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+N\+O\+NE~0x8000}
+
+\mbox{\Hypertarget{glxtokens_8h_acc387c3f87a7436c15436b74d8ef2151}\label{glxtokens_8h_acc387c3f87a7436c15436b74d8ef2151}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+N\+O\+N\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+N\+O\+N\+E\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+N\+O\+N\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+N\+O\+N\+E\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+N\+O\+N\+E\+\_\+\+E\+XT}{GLX\_NONE\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+N\+O\+N\+E\+\_\+\+E\+XT~0x8000}
+
+\mbox{\Hypertarget{glxtokens_8h_a17335f9628e50159db1da0a63008582f}\label{glxtokens_8h_a17335f9628e50159db1da0a63008582f}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+O\+P\+T\+I\+M\+A\+L\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+H\+T\+\_\+\+S\+G\+IX@{G\+L\+X\+\_\+\+O\+P\+T\+I\+M\+A\+L\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+H\+T\+\_\+\+S\+G\+IX}}
+\index{G\+L\+X\+\_\+\+O\+P\+T\+I\+M\+A\+L\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+H\+T\+\_\+\+S\+G\+IX@{G\+L\+X\+\_\+\+O\+P\+T\+I\+M\+A\+L\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+H\+T\+\_\+\+S\+G\+IX}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+O\+P\+T\+I\+M\+A\+L\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+H\+T\+\_\+\+S\+G\+IX}{GLX\_OPTIMAL\_PBUFFER\_HEIGHT\_SGIX}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+O\+P\+T\+I\+M\+A\+L\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+H\+T\+\_\+\+S\+G\+IX~0x801A}
+
+\mbox{\Hypertarget{glxtokens_8h_af84eb3d46ff2909d6e301f487763be7e}\label{glxtokens_8h_af84eb3d46ff2909d6e301f487763be7e}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+O\+P\+T\+I\+M\+A\+L\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+T\+H\+\_\+\+S\+G\+IX@{G\+L\+X\+\_\+\+O\+P\+T\+I\+M\+A\+L\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+T\+H\+\_\+\+S\+G\+IX}}
+\index{G\+L\+X\+\_\+\+O\+P\+T\+I\+M\+A\+L\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+T\+H\+\_\+\+S\+G\+IX@{G\+L\+X\+\_\+\+O\+P\+T\+I\+M\+A\+L\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+T\+H\+\_\+\+S\+G\+IX}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+O\+P\+T\+I\+M\+A\+L\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+T\+H\+\_\+\+S\+G\+IX}{GLX\_OPTIMAL\_PBUFFER\_WIDTH\_SGIX}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+O\+P\+T\+I\+M\+A\+L\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+T\+H\+\_\+\+S\+G\+IX~0x8019}
+
+\mbox{\Hypertarget{glxtokens_8h_a522907a44d32ff8d315c67141775c6bb}\label{glxtokens_8h_a522907a44d32ff8d315c67141775c6bb}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+ER@{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+ER}}
+\index{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+ER@{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+ER}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+ER}{GLX\_PBUFFER}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+ER~0x8023}
+
+\mbox{\Hypertarget{glxtokens_8h_a40747561b132c6268a17c152248ff1c3}\label{glxtokens_8h_a40747561b132c6268a17c152248ff1c3}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}}
+\index{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}{GLX\_PBUFFER\_BIT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT~0x00000004}
+
+\mbox{\Hypertarget{glxtokens_8h_a35b037dde69dd0405c1218f196bcf2cc}\label{glxtokens_8h_a35b037dde69dd0405c1218f196bcf2cc}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+C\+L\+O\+B\+B\+E\+R\+\_\+\+M\+A\+SK@{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+C\+L\+O\+B\+B\+E\+R\+\_\+\+M\+A\+SK}}
+\index{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+C\+L\+O\+B\+B\+E\+R\+\_\+\+M\+A\+SK@{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+C\+L\+O\+B\+B\+E\+R\+\_\+\+M\+A\+SK}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+C\+L\+O\+B\+B\+E\+R\+\_\+\+M\+A\+SK}{GLX\_PBUFFER\_CLOBBER\_MASK}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+C\+L\+O\+B\+B\+E\+R\+\_\+\+M\+A\+SK~0x08000000}
+
+\mbox{\Hypertarget{glxtokens_8h_aebe1451505d127574b016dffd195178c}\label{glxtokens_8h_aebe1451505d127574b016dffd195178c}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+HT@{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+HT}}
+\index{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+HT@{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+HT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+HT}{GLX\_PBUFFER\_HEIGHT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+H\+E\+I\+G\+HT~0x8040	/$\ast$ New for G\+L\+X 1.\+3 $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a45bffd673ef79f2eaf92ac2e12f092af}\label{glxtokens_8h_a45bffd673ef79f2eaf92ac2e12f092af}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+TH@{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+TH}}
+\index{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+TH@{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+TH}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+TH}{GLX\_PBUFFER\_WIDTH}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+P\+B\+U\+F\+F\+E\+R\+\_\+\+W\+I\+D\+TH~0x8041	/$\ast$ New for G\+L\+X 1.\+3 $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a8b043ca42cf3151855f5bb1415fa8ab8}\label{glxtokens_8h_a8b043ca42cf3151855f5bb1415fa8ab8}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+P\+I\+X\+M\+A\+P\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+P\+I\+X\+M\+A\+P\+\_\+\+B\+IT}}
+\index{G\+L\+X\+\_\+\+P\+I\+X\+M\+A\+P\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+P\+I\+X\+M\+A\+P\+\_\+\+B\+IT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+P\+I\+X\+M\+A\+P\+\_\+\+B\+IT}{GLX\_PIXMAP\_BIT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+P\+I\+X\+M\+A\+P\+\_\+\+B\+IT~0x00000002}
+
+\mbox{\Hypertarget{glxtokens_8h_ae4a52076cdb82aa8bd12b1b55c6cd6e5}\label{glxtokens_8h_ae4a52076cdb82aa8bd12b1b55c6cd6e5}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+P\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+C\+O\+N\+T\+E\+N\+TS@{G\+L\+X\+\_\+\+P\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+C\+O\+N\+T\+E\+N\+TS}}
+\index{G\+L\+X\+\_\+\+P\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+C\+O\+N\+T\+E\+N\+TS@{G\+L\+X\+\_\+\+P\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+C\+O\+N\+T\+E\+N\+TS}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+P\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+C\+O\+N\+T\+E\+N\+TS}{GLX\_PRESERVED\_CONTENTS}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+P\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+C\+O\+N\+T\+E\+N\+TS~0x801B}
+
+\mbox{\Hypertarget{glxtokens_8h_a8fea3c0abfe2929ee257ecf1a137c259}\label{glxtokens_8h_a8fea3c0abfe2929ee257ecf1a137c259}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+OR@{G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+OR}}
+\index{G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+OR@{G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+OR}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+OR}{GLX\_PSEUDO\_COLOR}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+OR~0x8004}
+
+\mbox{\Hypertarget{glxtokens_8h_a08bb8d30ee51e953d187feefa14bbe55}\label{glxtokens_8h_a08bb8d30ee51e953d187feefa14bbe55}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT}{GLX\_PSEUDO\_COLOR\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT~0x8004}
+
+\mbox{\Hypertarget{glxtokens_8h_a7fe726c0860e8ab1ca8aee4e041b4fd7}\label{glxtokens_8h_a7fe726c0860e8ab1ca8aee4e041b4fd7}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+R\+E\+D\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+R\+E\+D\+\_\+\+S\+I\+ZE}}
+\index{G\+L\+X\+\_\+\+R\+E\+D\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+R\+E\+D\+\_\+\+S\+I\+ZE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+R\+E\+D\+\_\+\+S\+I\+ZE}{GLX\_RED\_SIZE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+R\+E\+D\+\_\+\+S\+I\+ZE~8	/$\ast$ number of red component \hyperlink{glext_8h_a8dc2cc80c52413d48ac45732e90d3a66}{bits} $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a5f84122254df2d5a84aa6e44d074c24a}\label{glxtokens_8h_a5f84122254df2d5a84aa6e44d074c24a}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+R\+E\+N\+D\+E\+R\+\_\+\+T\+Y\+PE@{G\+L\+X\+\_\+\+R\+E\+N\+D\+E\+R\+\_\+\+T\+Y\+PE}}
+\index{G\+L\+X\+\_\+\+R\+E\+N\+D\+E\+R\+\_\+\+T\+Y\+PE@{G\+L\+X\+\_\+\+R\+E\+N\+D\+E\+R\+\_\+\+T\+Y\+PE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+R\+E\+N\+D\+E\+R\+\_\+\+T\+Y\+PE}{GLX\_RENDER\_TYPE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+R\+E\+N\+D\+E\+R\+\_\+\+T\+Y\+PE~0x8011}
+
+\mbox{\Hypertarget{glxtokens_8h_a99b65d5ae76a30533a0a6a9d6c91835e}\label{glxtokens_8h_a99b65d5ae76a30533a0a6a9d6c91835e}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+R\+G\+BA@{G\+L\+X\+\_\+\+R\+G\+BA}}
+\index{G\+L\+X\+\_\+\+R\+G\+BA@{G\+L\+X\+\_\+\+R\+G\+BA}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+R\+G\+BA}{GLX\_RGBA}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+R\+G\+BA~4	/$\ast$ true if R\+G\+BA \hyperlink{glcorearb_8h_a1e71d9c196e4683cc06c4b54d53f7ef5}{mode} $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a6ac91c2ef1293de23e782773c065d309}\label{glxtokens_8h_a6ac91c2ef1293de23e782773c065d309}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+B\+IT}}
+\index{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+B\+IT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+B\+IT}{GLX\_RGBA\_BIT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+B\+IT~0x00000001}
+
+\mbox{\Hypertarget{glxtokens_8h_af58a27417947c0585cf35e0b4e3f25c2}\label{glxtokens_8h_af58a27417947c0585cf35e0b4e3f25c2}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+F\+L\+O\+A\+T\+\_\+\+B\+I\+T\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+F\+L\+O\+A\+T\+\_\+\+B\+I\+T\+\_\+\+A\+RB}}
+\index{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+F\+L\+O\+A\+T\+\_\+\+B\+I\+T\+\_\+\+A\+RB@{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+F\+L\+O\+A\+T\+\_\+\+B\+I\+T\+\_\+\+A\+RB}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+F\+L\+O\+A\+T\+\_\+\+B\+I\+T\+\_\+\+A\+RB}{GLX\_RGBA\_FLOAT\_BIT\_ARB}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+F\+L\+O\+A\+T\+\_\+\+B\+I\+T\+\_\+\+A\+RB~0x00000004}
+
+\mbox{\Hypertarget{glxtokens_8h_a1853a9117176b461cc21583332f14734}\label{glxtokens_8h_a1853a9117176b461cc21583332f14734}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+T\+Y\+PE@{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+T\+Y\+PE}}
+\index{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+T\+Y\+PE@{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+T\+Y\+PE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+T\+Y\+PE}{GLX\_RGBA\_TYPE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+T\+Y\+PE~0x8014}
+
+\mbox{\Hypertarget{glxtokens_8h_ab5124f1d701dbb554ee9ac90c90a63a4}\label{glxtokens_8h_ab5124f1d701dbb554ee9ac90c90a63a4}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+\_\+\+F\+L\+O\+A\+T\+\_\+\+B\+I\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+\_\+\+F\+L\+O\+A\+T\+\_\+\+B\+I\+T\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+\_\+\+F\+L\+O\+A\+T\+\_\+\+B\+I\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+\_\+\+F\+L\+O\+A\+T\+\_\+\+B\+I\+T\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+\_\+\+F\+L\+O\+A\+T\+\_\+\+B\+I\+T\+\_\+\+E\+XT}{GLX\_RGBA\_UNSIGNED\_FLOAT\_BIT\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+R\+G\+B\+A\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+\_\+\+F\+L\+O\+A\+T\+\_\+\+B\+I\+T\+\_\+\+E\+XT~0x00000008}
+
+\mbox{\Hypertarget{glxtokens_8h_a9982de9c99b7711bfa697f73af805598}\label{glxtokens_8h_a9982de9c99b7711bfa697f73af805598}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+S\+G\+IS@{G\+L\+X\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+S\+G\+IS}}
+\index{G\+L\+X\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+S\+G\+IS@{G\+L\+X\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+S\+G\+IS}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+S\+G\+IS}{GLX\_SAMPLE\_BUFFERS\_SGIS}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+B\+U\+F\+F\+E\+R\+S\+\_\+\+S\+G\+IS~100000}
+
+\mbox{\Hypertarget{glxtokens_8h_acf146da3d7cb0171c58c1ef16defb34d}\label{glxtokens_8h_acf146da3d7cb0171c58c1ef16defb34d}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+S\+A\+M\+P\+L\+E\+S\+\_\+\+S\+G\+IS@{G\+L\+X\+\_\+\+S\+A\+M\+P\+L\+E\+S\+\_\+\+S\+G\+IS}}
+\index{G\+L\+X\+\_\+\+S\+A\+M\+P\+L\+E\+S\+\_\+\+S\+G\+IS@{G\+L\+X\+\_\+\+S\+A\+M\+P\+L\+E\+S\+\_\+\+S\+G\+IS}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+A\+M\+P\+L\+E\+S\+\_\+\+S\+G\+IS}{GLX\_SAMPLES\_SGIS}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+A\+M\+P\+L\+E\+S\+\_\+\+S\+G\+IS~100001}
+
+\mbox{\Hypertarget{glxtokens_8h_a37765e3d603b11680f677f43f0d84a9f}\label{glxtokens_8h_a37765e3d603b11680f677f43f0d84a9f}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+S\+A\+V\+ED@{G\+L\+X\+\_\+\+S\+A\+V\+ED}}
+\index{G\+L\+X\+\_\+\+S\+A\+V\+ED@{G\+L\+X\+\_\+\+S\+A\+V\+ED}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+A\+V\+ED}{GLX\_SAVED}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+A\+V\+ED~0x8021}
+
+\mbox{\Hypertarget{glxtokens_8h_a62f7ac8950a947df31cba3d7d24f6c8c}\label{glxtokens_8h_a62f7ac8950a947df31cba3d7d24f6c8c}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+S\+C\+R\+E\+EN@{G\+L\+X\+\_\+\+S\+C\+R\+E\+EN}}
+\index{G\+L\+X\+\_\+\+S\+C\+R\+E\+EN@{G\+L\+X\+\_\+\+S\+C\+R\+E\+EN}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+C\+R\+E\+EN}{GLX\_SCREEN}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+C\+R\+E\+EN~0x800C}
+
+\mbox{\Hypertarget{glxtokens_8h_a9652c3c17c79f8f9a8a0ff1c6f5d1187}\label{glxtokens_8h_a9652c3c17c79f8f9a8a0ff1c6f5d1187}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+S\+C\+R\+E\+E\+N\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+S\+C\+R\+E\+E\+N\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+S\+C\+R\+E\+E\+N\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+S\+C\+R\+E\+E\+N\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+C\+R\+E\+E\+N\+\_\+\+E\+XT}{GLX\_SCREEN\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+C\+R\+E\+E\+N\+\_\+\+E\+XT~0x800\+C	/$\ast$ screen number $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a54a7337e14fa9e3ab7d1b528f8cf418c}\label{glxtokens_8h_a54a7337e14fa9e3ab7d1b528f8cf418c}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+S\+H\+A\+R\+E\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+S\+H\+A\+R\+E\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+S\+H\+A\+R\+E\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+S\+H\+A\+R\+E\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+H\+A\+R\+E\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+XT}{GLX\_SHARE\_CONTEXT\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+H\+A\+R\+E\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+XT~0x800\+A	/$\ast$ id of share context $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_aeb1d4b6b85fb53f9958aaf63dfc697aa}\label{glxtokens_8h_aeb1d4b6b85fb53f9958aaf63dfc697aa}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+C\+O\+N\+F\+IG@{G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+C\+O\+N\+F\+IG}}
+\index{G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+C\+O\+N\+F\+IG@{G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+C\+O\+N\+F\+IG}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+C\+O\+N\+F\+IG}{GLX\_SLOW\_CONFIG}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+C\+O\+N\+F\+IG~0x8001}
+
+\mbox{\Hypertarget{glxtokens_8h_a12893b09da879f370016f66c19bd178b}\label{glxtokens_8h_a12893b09da879f370016f66c19bd178b}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+E\+XT}{GLX\_SLOW\_VISUAL\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+L\+O\+W\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+E\+XT~0x8001}
+
+\mbox{\Hypertarget{glxtokens_8h_a0b8e43514dcd363ad0c3ad8938c2b836}\label{glxtokens_8h_a0b8e43514dcd363ad0c3ad8938c2b836}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+OR@{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+OR}}
+\index{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+OR@{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+OR}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+OR}{GLX\_STATIC\_COLOR}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+OR~0x8005}
+
+\mbox{\Hypertarget{glxtokens_8h_a90439a8fb042d92eab2e7a99e6a34615}\label{glxtokens_8h_a90439a8fb042d92eab2e7a99e6a34615}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT}{GLX\_STATIC\_COLOR\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT~0x8005}
+
+\mbox{\Hypertarget{glxtokens_8h_ac2755eb66996189e7554da1f380d98fa}\label{glxtokens_8h_ac2755eb66996189e7554da1f380d98fa}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+AY@{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+AY}}
+\index{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+AY@{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+AY}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+AY}{GLX\_STATIC\_GRAY}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+AY~0x8007}
+
+\mbox{\Hypertarget{glxtokens_8h_aa67c2891b1488fc6df6b14c1d01d45a7}\label{glxtokens_8h_aa67c2891b1488fc6df6b14c1d01d45a7}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+A\+Y\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+A\+Y\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+A\+Y\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+A\+Y\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+A\+Y\+\_\+\+E\+XT}{GLX\_STATIC\_GRAY\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+G\+R\+A\+Y\+\_\+\+E\+XT~0x8007}
+
+\mbox{\Hypertarget{glxtokens_8h_af6cf6b3886b2f2552e4f9b4191543e5d}\label{glxtokens_8h_af6cf6b3886b2f2552e4f9b4191543e5d}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}}
+\index{G\+L\+X\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT}{GLX\_STENCIL\_BUFFER\_BIT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+B\+IT~0x00000040}
+
+\mbox{\Hypertarget{glxtokens_8h_adfcdddf7b66469af3a29e5f52d43054b}\label{glxtokens_8h_adfcdddf7b66469af3a29e5f52d43054b}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+S\+I\+ZE}}
+\index{G\+L\+X\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+S\+I\+ZE@{G\+L\+X\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+S\+I\+ZE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+S\+I\+ZE}{GLX\_STENCIL\_SIZE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+T\+E\+N\+C\+I\+L\+\_\+\+S\+I\+ZE~13	/$\ast$ number of \hyperlink{glcorearb_8h_ac490b2f418f3a459d0bd28ec4d6b71c2}{stencil} \hyperlink{glext_8h_a8dc2cc80c52413d48ac45732e90d3a66}{bits} $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_ad907898a759575e9fb3ba8bbb4bd70f2}\label{glxtokens_8h_ad907898a759575e9fb3ba8bbb4bd70f2}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+S\+T\+E\+R\+EO@{G\+L\+X\+\_\+\+S\+T\+E\+R\+EO}}
+\index{G\+L\+X\+\_\+\+S\+T\+E\+R\+EO@{G\+L\+X\+\_\+\+S\+T\+E\+R\+EO}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+T\+E\+R\+EO}{GLX\_STEREO}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+T\+E\+R\+EO~6	/$\ast$ stereo buffering supported $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a2468bfb6a251c336e6396f5aca2c9674}\label{glxtokens_8h_a2468bfb6a251c336e6396f5aca2c9674}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+P\+Y\+\_\+\+O\+ML@{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+P\+Y\+\_\+\+O\+ML}}
+\index{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+P\+Y\+\_\+\+O\+ML@{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+P\+Y\+\_\+\+O\+ML}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+P\+Y\+\_\+\+O\+ML}{GLX\_SWAP\_COPY\_OML}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+C\+O\+P\+Y\+\_\+\+O\+ML~0x8062}
+
+\mbox{\Hypertarget{glxtokens_8h_ab23ced13cd5a60a93a8531d16a413fb5}\label{glxtokens_8h_ab23ced13cd5a60a93a8531d16a413fb5}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+O\+ML@{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+O\+ML}}
+\index{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+O\+ML@{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+O\+ML}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+O\+ML}{GLX\_SWAP\_EXCHANGE\_OML}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+E\+X\+C\+H\+A\+N\+G\+E\+\_\+\+O\+ML~0x8061}
+
+\mbox{\Hypertarget{glxtokens_8h_af6a69eae3a32e84e31fe8fd4a96007b2}\label{glxtokens_8h_af6a69eae3a32e84e31fe8fd4a96007b2}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+O\+ML@{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+O\+ML}}
+\index{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+O\+ML@{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+O\+ML}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+O\+ML}{GLX\_SWAP\_METHOD\_OML}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+O\+ML~0x8060}
+
+\mbox{\Hypertarget{glxtokens_8h_a4fe2af57efb0ec3acb654db3824fc91c}\label{glxtokens_8h_a4fe2af57efb0ec3acb654db3824fc91c}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D\+\_\+\+O\+ML@{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D\+\_\+\+O\+ML}}
+\index{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D\+\_\+\+O\+ML@{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D\+\_\+\+O\+ML}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D\+\_\+\+O\+ML}{GLX\_SWAP\_UNDEFINED\_OML}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+S\+W\+A\+P\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D\+\_\+\+O\+ML~0x8063}
+
+\mbox{\Hypertarget{glxtokens_8h_a871d7feebca00547af00864fbb398013}\label{glxtokens_8h_a871d7feebca00547af00864fbb398013}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT}{GLX\_TEXTURE\_1D\_BIT\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT~0x00000001}
+
+\mbox{\Hypertarget{glxtokens_8h_aa167bc6e71106518f0aac9aef1536856}\label{glxtokens_8h_aa167bc6e71106518f0aac9aef1536856}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+E\+XT}{GLX\_TEXTURE\_1D\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+1\+D\+\_\+\+E\+XT~0x20\+DB}
+
+\mbox{\Hypertarget{glxtokens_8h_ad00c49da5233261e8e384b88863020a2}\label{glxtokens_8h_ad00c49da5233261e8e384b88863020a2}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT}{GLX\_TEXTURE\_2D\_BIT\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+B\+I\+T\+\_\+\+E\+XT~0x00000002}
+
+\mbox{\Hypertarget{glxtokens_8h_a188aa9fadf5b067106a1e36fea6556f7}\label{glxtokens_8h_a188aa9fadf5b067106a1e36fea6556f7}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+E\+XT}{GLX\_TEXTURE\_2D\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+E\+XT~0x20\+DC}
+
+\mbox{\Hypertarget{glxtokens_8h_a35adbd9e682633c71b4dcebf410dae57}\label{glxtokens_8h_a35adbd9e682633c71b4dcebf410dae57}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+E\+XT}{GLX\_TEXTURE\_FORMAT\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+E\+XT~0x20\+D5}
+
+\mbox{\Hypertarget{glxtokens_8h_a18d72873a80967d104346e649148d3c5}\label{glxtokens_8h_a18d72873a80967d104346e649148d3c5}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+N\+O\+N\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+N\+O\+N\+E\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+N\+O\+N\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+N\+O\+N\+E\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+N\+O\+N\+E\+\_\+\+E\+XT}{GLX\_TEXTURE\_FORMAT\_NONE\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+N\+O\+N\+E\+\_\+\+E\+XT~0x20\+D8}
+
+\mbox{\Hypertarget{glxtokens_8h_a38d1bff0d14c7dcba8beb050f2df0822}\label{glxtokens_8h_a38d1bff0d14c7dcba8beb050f2df0822}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+R\+G\+B\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+R\+G\+B\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+R\+G\+B\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+R\+G\+B\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+R\+G\+B\+\_\+\+E\+XT}{GLX\_TEXTURE\_FORMAT\_RGB\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+R\+G\+B\+\_\+\+E\+XT~0x20\+D9}
+
+\mbox{\Hypertarget{glxtokens_8h_ada18a6bd621c8eb62069fda76b5126bd}\label{glxtokens_8h_ada18a6bd621c8eb62069fda76b5126bd}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT}{GLX\_TEXTURE\_FORMAT\_RGBA\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+R\+G\+B\+A\+\_\+\+E\+XT~0x20\+DA}
+
+\mbox{\Hypertarget{glxtokens_8h_a0efa804082f8579292118e4e92f756cd}\label{glxtokens_8h_a0efa804082f8579292118e4e92f756cd}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT}{GLX\_TEXTURE\_RECTANGLE\_BIT\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+B\+I\+T\+\_\+\+E\+XT~0x00000004}
+
+\mbox{\Hypertarget{glxtokens_8h_aa615e70d6a1644369249d53dc17b3cc0}\label{glxtokens_8h_aa615e70d6a1644369249d53dc17b3cc0}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+E\+XT}{GLX\_TEXTURE\_RECTANGLE\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+R\+E\+C\+T\+A\+N\+G\+L\+E\+\_\+\+E\+XT~0x20\+DD}
+
+\mbox{\Hypertarget{glxtokens_8h_a03fa266976102e1140b8418b0a55b203}\label{glxtokens_8h_a03fa266976102e1140b8418b0a55b203}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+E\+XT}{GLX\_TEXTURE\_TARGET\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+E\+XT~0x20\+D6}
+
+\mbox{\Hypertarget{glxtokens_8h_a174b5da54ffeddfb135207e122bd174d}\label{glxtokens_8h_a174b5da54ffeddfb135207e122bd174d}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+V\+A\+L\+UE@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+V\+A\+L\+UE}}
+\index{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+V\+A\+L\+UE@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+V\+A\+L\+UE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+V\+A\+L\+UE}{GLX\_TRANSPARENT\_ALPHA\_VALUE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+V\+A\+L\+UE~0x28}
+
+\mbox{\Hypertarget{glxtokens_8h_a27d88067b5a23d3cd78f7cce9f8a48c7}\label{glxtokens_8h_a27d88067b5a23d3cd78f7cce9f8a48c7}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT}{GLX\_TRANSPARENT\_ALPHA\_VALUE\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT~0x28	/$\ast$ visual\+\_\+info extension $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a0e3231ad93d61956c258f92043ba5583}\label{glxtokens_8h_a0e3231ad93d61956c258f92043ba5583}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+B\+L\+U\+E\+\_\+\+V\+A\+L\+UE@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+B\+L\+U\+E\+\_\+\+V\+A\+L\+UE}}
+\index{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+B\+L\+U\+E\+\_\+\+V\+A\+L\+UE@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+B\+L\+U\+E\+\_\+\+V\+A\+L\+UE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+B\+L\+U\+E\+\_\+\+V\+A\+L\+UE}{GLX\_TRANSPARENT\_BLUE\_VALUE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+B\+L\+U\+E\+\_\+\+V\+A\+L\+UE~0x27}
+
+\mbox{\Hypertarget{glxtokens_8h_a38d97a1028930fe63a0bea02961f779e}\label{glxtokens_8h_a38d97a1028930fe63a0bea02961f779e}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+B\+L\+U\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+B\+L\+U\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+B\+L\+U\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+B\+L\+U\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+B\+L\+U\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT}{GLX\_TRANSPARENT\_BLUE\_VALUE\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+B\+L\+U\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT~0x27	/$\ast$ visual\+\_\+info extension $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a02e636f028bdab6aca452102d422ea53}\label{glxtokens_8h_a02e636f028bdab6aca452102d422ea53}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+G\+R\+E\+E\+N\+\_\+\+V\+A\+L\+UE@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+G\+R\+E\+E\+N\+\_\+\+V\+A\+L\+UE}}
+\index{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+G\+R\+E\+E\+N\+\_\+\+V\+A\+L\+UE@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+G\+R\+E\+E\+N\+\_\+\+V\+A\+L\+UE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+G\+R\+E\+E\+N\+\_\+\+V\+A\+L\+UE}{GLX\_TRANSPARENT\_GREEN\_VALUE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+G\+R\+E\+E\+N\+\_\+\+V\+A\+L\+UE~0x26}
+
+\mbox{\Hypertarget{glxtokens_8h_a7ba8b374f60505e52bf836236cf64fb9}\label{glxtokens_8h_a7ba8b374f60505e52bf836236cf64fb9}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+G\+R\+E\+E\+N\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+G\+R\+E\+E\+N\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+G\+R\+E\+E\+N\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+G\+R\+E\+E\+N\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+G\+R\+E\+E\+N\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT}{GLX\_TRANSPARENT\_GREEN\_VALUE\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+G\+R\+E\+E\+N\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT~0x26	/$\ast$ visual\+\_\+info extension $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a71e88eac4edd6b4b55287b4467893075}\label{glxtokens_8h_a71e88eac4edd6b4b55287b4467893075}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+EX@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+EX}}
+\index{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+EX@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+EX}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+EX}{GLX\_TRANSPARENT\_INDEX}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+EX~0x8009}
+
+\mbox{\Hypertarget{glxtokens_8h_a19dc6699b9a6313097d4df706590695b}\label{glxtokens_8h_a19dc6699b9a6313097d4df706590695b}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+E\+XT}{GLX\_TRANSPARENT\_INDEX\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+E\+XT~0x8009}
+
+\mbox{\Hypertarget{glxtokens_8h_a44e3c21ff8fecdd57e66e727d1398662}\label{glxtokens_8h_a44e3c21ff8fecdd57e66e727d1398662}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+V\+A\+L\+UE@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+V\+A\+L\+UE}}
+\index{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+V\+A\+L\+UE@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+V\+A\+L\+UE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+V\+A\+L\+UE}{GLX\_TRANSPARENT\_INDEX\_VALUE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+V\+A\+L\+UE~0x24}
+
+\mbox{\Hypertarget{glxtokens_8h_a7889555b32e9861b84a52e890a5c71b6}\label{glxtokens_8h_a7889555b32e9861b84a52e890a5c71b6}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT}{GLX\_TRANSPARENT\_INDEX\_VALUE\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+I\+N\+D\+E\+X\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT~0x24	/$\ast$ visual\+\_\+info extension $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_adfe1ceb7569af890e93a4714c2d192c5}\label{glxtokens_8h_adfe1ceb7569af890e93a4714c2d192c5}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+E\+D\+\_\+\+V\+A\+L\+UE@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+E\+D\+\_\+\+V\+A\+L\+UE}}
+\index{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+E\+D\+\_\+\+V\+A\+L\+UE@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+E\+D\+\_\+\+V\+A\+L\+UE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+E\+D\+\_\+\+V\+A\+L\+UE}{GLX\_TRANSPARENT\_RED\_VALUE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+E\+D\+\_\+\+V\+A\+L\+UE~0x25}
+
+\mbox{\Hypertarget{glxtokens_8h_a3134a2362f62bf802c1471646a5ebde7}\label{glxtokens_8h_a3134a2362f62bf802c1471646a5ebde7}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+E\+D\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+E\+D\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+E\+D\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+E\+D\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+E\+D\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT}{GLX\_TRANSPARENT\_RED\_VALUE\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+E\+D\+\_\+\+V\+A\+L\+U\+E\+\_\+\+E\+XT~0x25	/$\ast$ visual\+\_\+info extension $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a752fccf1e81a8cb94773fc5192662623}\label{glxtokens_8h_a752fccf1e81a8cb94773fc5192662623}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+GB@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+GB}}
+\index{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+GB@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+GB}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+GB}{GLX\_TRANSPARENT\_RGB}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+GB~0x8008}
+
+\mbox{\Hypertarget{glxtokens_8h_a2a935b6674a1244a46820bf534a28ec9}\label{glxtokens_8h_a2a935b6674a1244a46820bf534a28ec9}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+G\+B\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+G\+B\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+G\+B\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+G\+B\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+G\+B\+\_\+\+E\+XT}{GLX\_TRANSPARENT\_RGB\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+R\+G\+B\+\_\+\+E\+XT~0x8008}
+
+\mbox{\Hypertarget{glxtokens_8h_aee4d64e71ecaca236c8057292ac0851d}\label{glxtokens_8h_aee4d64e71ecaca236c8057292ac0851d}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+T\+Y\+PE@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+T\+Y\+PE}}
+\index{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+T\+Y\+PE@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+T\+Y\+PE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+T\+Y\+PE}{GLX\_TRANSPARENT\_TYPE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+T\+Y\+PE~0x23}
+
+\mbox{\Hypertarget{glxtokens_8h_a774951813c3685476805b58d6ab39ad1}\label{glxtokens_8h_a774951813c3685476805b58d6ab39ad1}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+XT}{GLX\_TRANSPARENT\_TYPE\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+XT~0x23	/$\ast$ visual\+\_\+info extension $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_abe725d7d3c640b7c698114ef27b2b2df}\label{glxtokens_8h_abe725d7d3c640b7c698114ef27b2b2df}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+OR@{G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+OR}}
+\index{G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+OR@{G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+OR}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+OR}{GLX\_TRUE\_COLOR}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+OR~0x8002}
+
+\mbox{\Hypertarget{glxtokens_8h_aee7a2961b5aa91c8b32c233e47b04942}\label{glxtokens_8h_aee7a2961b5aa91c8b32c233e47b04942}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT}{GLX\_TRUE\_COLOR\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+T\+R\+U\+E\+\_\+\+C\+O\+L\+O\+R\+\_\+\+E\+XT~0x8002}
+
+\mbox{\Hypertarget{glxtokens_8h_a4b04101e315c782306d9847dac4bd81e}\label{glxtokens_8h_a4b04101e315c782306d9847dac4bd81e}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+U\+S\+E\+\_\+\+GL@{G\+L\+X\+\_\+\+U\+S\+E\+\_\+\+GL}}
+\index{G\+L\+X\+\_\+\+U\+S\+E\+\_\+\+GL@{G\+L\+X\+\_\+\+U\+S\+E\+\_\+\+GL}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+U\+S\+E\+\_\+\+GL}{GLX\_USE\_GL}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+U\+S\+E\+\_\+\+GL~1	/$\ast$ support G\+LX rendering $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a1d58049e601eef392d3d582d14c60893}\label{glxtokens_8h_a1d58049e601eef392d3d582d14c60893}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+V\+E\+N\+D\+OR@{G\+L\+X\+\_\+\+V\+E\+N\+D\+OR}}
+\index{G\+L\+X\+\_\+\+V\+E\+N\+D\+OR@{G\+L\+X\+\_\+\+V\+E\+N\+D\+OR}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+V\+E\+N\+D\+OR}{GLX\_VENDOR}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+V\+E\+N\+D\+OR~0x1}
+
+\mbox{\Hypertarget{glxtokens_8h_ac8fe8653c4826fb3a370b1f76678f181}\label{glxtokens_8h_ac8fe8653c4826fb3a370b1f76678f181}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+ON@{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+ON@{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+ON}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+ON}{GLX\_VERSION}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+ON~0x2}
+
+\mbox{\Hypertarget{glxtokens_8h_ae7906b57aba77ab452bfcbdd49d4aad1}\label{glxtokens_8h_ae7906b57aba77ab452bfcbdd49d4aad1}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+1@{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+1}}
+\index{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+1@{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+1}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+1}{GLX\_VERSION\_1\_1}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+1~1}
+
+\mbox{\Hypertarget{glxtokens_8h_a32f398ad62037e638b6b2e6216f7c4b3}\label{glxtokens_8h_a32f398ad62037e638b6b2e6216f7c4b3}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+2@{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+2}}
+\index{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+2@{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+2}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+2}{GLX\_VERSION\_1\_2}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+2~1}
+
+\mbox{\Hypertarget{glxtokens_8h_a60bbf06a30a6be4428fecd140ec50ced}\label{glxtokens_8h_a60bbf06a30a6be4428fecd140ec50ced}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+3@{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+3}}
+\index{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+3@{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+3}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+3}{GLX\_VERSION\_1\_3}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+3~1}
+
+\mbox{\Hypertarget{glxtokens_8h_a13af8478caf16ac74140dd83510d020e}\label{glxtokens_8h_a13af8478caf16ac74140dd83510d020e}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+4@{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+4}}
+\index{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+4@{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+4}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+4}{GLX\_VERSION\_1\_4}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+4~1}
+
+\mbox{\Hypertarget{glxtokens_8h_a7e945ded8cce9f3ae2d14fa636255a02}\label{glxtokens_8h_a7e945ded8cce9f3ae2d14fa636255a02}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+C\+A\+V\+E\+A\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+C\+A\+V\+E\+A\+T\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+C\+A\+V\+E\+A\+T\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+C\+A\+V\+E\+A\+T\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+C\+A\+V\+E\+A\+T\+\_\+\+E\+XT}{GLX\_VISUAL\_CAVEAT\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+C\+A\+V\+E\+A\+T\+\_\+\+E\+XT~0x20  /$\ast$ visual\+\_\+rating extension type $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_ac2aa66d52771f5cdfb6edd2f3d916788}\label{glxtokens_8h_ac2aa66d52771f5cdfb6edd2f3d916788}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+ID@{G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+ID}}
+\index{G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+ID@{G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+ID}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+ID}{GLX\_VISUAL\_ID}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+ID~0x800B}
+
+\mbox{\Hypertarget{glxtokens_8h_a86534c9bd922da8df862f492c9203134}\label{glxtokens_8h_a86534c9bd922da8df862f492c9203134}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+I\+D\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+I\+D\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+I\+D\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+I\+D\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+I\+D\+\_\+\+E\+XT}{GLX\_VISUAL\_ID\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+I\+D\+\_\+\+E\+XT~0x800\+B	/$\ast$ id of context\textquotesingle{}s visual $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a6afe7c968dd13e8d589c065b8197acd5}\label{glxtokens_8h_a6afe7c968dd13e8d589c065b8197acd5}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+G\+R\+O\+U\+P\+\_\+\+S\+G\+IX@{G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+G\+R\+O\+U\+P\+\_\+\+S\+G\+IX}}
+\index{G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+G\+R\+O\+U\+P\+\_\+\+S\+G\+IX@{G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+G\+R\+O\+U\+P\+\_\+\+S\+G\+IX}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+G\+R\+O\+U\+P\+\_\+\+S\+G\+IX}{GLX\_VISUAL\_SELECT\_GROUP\_SGIX}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+G\+R\+O\+U\+P\+\_\+\+S\+G\+IX~0x8028	/$\ast$ visuals grouped by select priority $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_ad4f8fb4c08c6e2ff35845f4df250b1ab}\label{glxtokens_8h_ad4f8fb4c08c6e2ff35845f4df250b1ab}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+W\+I\+D\+TH@{G\+L\+X\+\_\+\+W\+I\+D\+TH}}
+\index{G\+L\+X\+\_\+\+W\+I\+D\+TH@{G\+L\+X\+\_\+\+W\+I\+D\+TH}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+W\+I\+D\+TH}{GLX\_WIDTH}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+W\+I\+D\+TH~0x801D}
+
+\mbox{\Hypertarget{glxtokens_8h_a1a8b24e54162728da459297a6fc9ade4}\label{glxtokens_8h_a1a8b24e54162728da459297a6fc9ade4}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+W\+I\+N\+D\+OW@{G\+L\+X\+\_\+\+W\+I\+N\+D\+OW}}
+\index{G\+L\+X\+\_\+\+W\+I\+N\+D\+OW@{G\+L\+X\+\_\+\+W\+I\+N\+D\+OW}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+W\+I\+N\+D\+OW}{GLX\_WINDOW}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+W\+I\+N\+D\+OW~0x8022}
+
+\mbox{\Hypertarget{glxtokens_8h_aea4137405780d52ab6a7af2839d8e41d}\label{glxtokens_8h_aea4137405780d52ab6a7af2839d8e41d}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+B\+IT}}
+\index{G\+L\+X\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+B\+IT@{G\+L\+X\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+B\+IT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+B\+IT}{GLX\_WINDOW\_BIT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+B\+IT~0x00000001}
+
+\mbox{\Hypertarget{glxtokens_8h_aab3c57256b851c4a790422dfbbbcff4a}\label{glxtokens_8h_aab3c57256b851c4a790422dfbbbcff4a}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+X\+\_\+\+R\+E\+N\+D\+E\+R\+A\+B\+LE@{G\+L\+X\+\_\+\+X\+\_\+\+R\+E\+N\+D\+E\+R\+A\+B\+LE}}
+\index{G\+L\+X\+\_\+\+X\+\_\+\+R\+E\+N\+D\+E\+R\+A\+B\+LE@{G\+L\+X\+\_\+\+X\+\_\+\+R\+E\+N\+D\+E\+R\+A\+B\+LE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+X\+\_\+\+R\+E\+N\+D\+E\+R\+A\+B\+LE}{GLX\_X\_RENDERABLE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+X\+\_\+\+R\+E\+N\+D\+E\+R\+A\+B\+LE~0x8012}
+
+\mbox{\Hypertarget{glxtokens_8h_aef59bbc4fbbf455493d317bc7287c2e6}\label{glxtokens_8h_aef59bbc4fbbf455493d317bc7287c2e6}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+T\+Y\+PE@{G\+L\+X\+\_\+\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+T\+Y\+PE}}
+\index{G\+L\+X\+\_\+\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+T\+Y\+PE@{G\+L\+X\+\_\+\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+T\+Y\+PE}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+T\+Y\+PE}{GLX\_X\_VISUAL\_TYPE}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+T\+Y\+PE~0x22}
+
+\mbox{\Hypertarget{glxtokens_8h_a42a1f3a9e5a9fb8b40f215190224a03b}\label{glxtokens_8h_a42a1f3a9e5a9fb8b40f215190224a03b}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+XT}{GLX\_X\_VISUAL\_TYPE\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+X\+\_\+\+V\+I\+S\+U\+A\+L\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+XT~0x22	/$\ast$ visual\+\_\+info extension type $\ast$/}
+
+\mbox{\Hypertarget{glxtokens_8h_a5da97b982e5ccafaab84235cb8738022}\label{glxtokens_8h_a5da97b982e5ccafaab84235cb8738022}} 
+\index{glxtokens.\+h@{glxtokens.\+h}!G\+L\+X\+\_\+\+Y\+\_\+\+I\+N\+V\+E\+R\+T\+E\+D\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+Y\+\_\+\+I\+N\+V\+E\+R\+T\+E\+D\+\_\+\+E\+XT}}
+\index{G\+L\+X\+\_\+\+Y\+\_\+\+I\+N\+V\+E\+R\+T\+E\+D\+\_\+\+E\+XT@{G\+L\+X\+\_\+\+Y\+\_\+\+I\+N\+V\+E\+R\+T\+E\+D\+\_\+\+E\+XT}!glxtokens.\+h@{glxtokens.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+X\+\_\+\+Y\+\_\+\+I\+N\+V\+E\+R\+T\+E\+D\+\_\+\+E\+XT}{GLX\_Y\_INVERTED\_EXT}}
+{\footnotesize\ttfamily \#define G\+L\+X\+\_\+\+Y\+\_\+\+I\+N\+V\+E\+R\+T\+E\+D\+\_\+\+E\+XT~0x20\+D4}
+

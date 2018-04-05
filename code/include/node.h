@@ -2,30 +2,26 @@
 #define NODE_H
 
 #include "point.h"
-// typedef struct node 
-// {
-// 	int code;
-// 	point::point p1 ;//= new point();
-// 	point::point p2 ;//= new point();
-// 	point::point p3 ;//= new point();
-	
-// };
+/* Wrapper class to store basic shapes (i.e., point,line,triangle and quadrilateral)*/
 class node {
-	int code;
-	point p1;
-	point p2;
-	point p3;
-	point p4;	
+	int code; /*! Represents if the shape is point,line,triangle or quadrilateral*/
+	point p1; /*! First point*/
+	point p2; /*! Second point*/
+	point p3; /*! Third point*/ 
+	point p4; /*! Fourth point*/	
 public:
 		node(){
 			
 		}
+		/*! Constructor to create a shape of given type*/
 		node(int val){
 			this->code = val;
 		}
+		/*! Return the type of shape*/
 		int getCode(){
 			return this->code;
 		}
+		/*! Returns the asked point of the shape*/
 		point getP(int val){
 			if(val == 1)
 				return this->p1;
@@ -36,6 +32,7 @@ public:
 			else if(val == 4)
 				return this->p4;
 		}
+		/*! Sets a point of the shape*/
 		void setP(int val,float x, float y , float z)
 		{
 			if(val == 1)
@@ -71,6 +68,7 @@ public:
 				p4.setC(x,y,z);
 			}
 		}
+		/*! Function to set the type of shape*/
 		void setCode(int val)
 		{
 			this->code = val;
