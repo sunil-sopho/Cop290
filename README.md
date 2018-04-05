@@ -37,7 +37,7 @@ Team Members: Anubhav Palway (2016CS10368), Sunil Kumar (2016CS10314).
         ```
         cd Cop290/codes/src/
         ```
-        </br>
+        
         ```
         make
         ```
