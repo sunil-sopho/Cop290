@@ -20,14 +20,14 @@ Team Members: Anubhav Palway (2016CS10368), Sunil Kumar (2016CS10314).
         - Press 'i' for positive y-axis and 'k' for negative y-axis.</br>
         - Press 'o' for positive z-axis and 'l' for negative z-axis.</br>
 *    Using text file:</br>
-        i) To generate projections from 3d object:</br>
+        - To generate projections from 3d object:</br>
             - First line gives type i.e, zero for 3d to 2d</br>
             - Next line gives n, number of shapes.</br>
             - Next n lines gives the points for basic shapes in the following format:</br>
                 Basic shapes include point(1), line(2), triangle(3) and quadrilateral(4)</br>
                 First the number of points according to the shape and then the x,y,z coordinates.</br>
                 E.g.- 3 (1,1,0) (0,0,0) (0,1,0)     //This is for a triangle</br>
-        ii) To generate 3d object from 2d projections:</br>
+        - To generate 3d object from 2d projections:</br>
             - First line gives type i.e., one for 2d to 3d</br>
             - Next line gives n, number of points for top projections.</br>
             - Next n lines gives the points (x,y,z coordinates with spaces in between them)</br>
@@ -51,9 +51,10 @@ Team Members: Anubhav Palway (2016CS10368), Sunil Kumar (2016CS10314).
         ```
         ./cadmake <input.txt>
         ```
-        </br>
-*       't' to save</br>
-        'w' to zoom out </br>
-        's' to zoom in </br>
-        Arrow keys to rotate.</br>
+        
+*       Additional Commands: </br>
+        't' to save.
+        'w' to zoom out.
+        's' to zoom in. 
+        Arrow keys to rotate.
         'x' and 'y' to reset x and y rotation respectively.
