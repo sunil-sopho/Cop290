@@ -18,32 +18,6 @@ bool standardHandler(SDL_Event& event, std::vector<window> win,std::vector<node>
 		{
 			clicks(x1,y1,v);
 		}
-		// if(event.type == SDL_KEYDOWN)
-		// {cout << "was here keydownesc";
-		// 	if(event.key.keysym.sym == SDLK_ESCAPE){
-		// 		cout << "was here keydownesc";
-		// 		esc = true;
-		// 	}
-		// 	if(event.key.keysym.sym == SDLK_n)
-		// 		n = true;
-		// }
-		// if(event.type = SDL_KEYUP)
-		// {
-		// 	if(event.key.keysym.sym == SDLK_ESCAPE && esc == true)
-		// 	{
-		// 		cout << "was here keyupesc";
-		// 		esc = false;
-		// 		win[numScreen].free();
-		// 		numScreen--;
-		// 	}
-		// 	if(event.key.keysym.sym == SDLK_n && n == true)
-		// 	{
-
-		// 		esc = false;
-		// 		win[numScreen+1].init();
-		// 		numScreen++;
-		// 	}
-		// }
 		if(*save)
 		{
 			int height = 610;

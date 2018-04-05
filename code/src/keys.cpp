@@ -93,18 +93,6 @@ GLboolean checkKeys(unsigned char const* keys,std::vector<node> &v)
 			counter++;
 		}
 
-		// else if(counter == 2){
-		// 	counter++;
-		// 	nod.setP(2,lx,ly,lz);
-		// }
-		// else if(counter == 3){
-		// 	counter++;
-		// 	nod.setP(3,lx,ly,lz);
-		// }
-		// else if(counter == 4){
-		// 	counter++;
-		// 	nod.setP(4,lx,ly,lz);
-		// }
 		if(counter == mode +1){
 			cout << nod.getCode() << " is this right\n";
 			v.push_back(nod);
@@ -176,20 +164,6 @@ GLboolean checkKeys(unsigned char const* keys,std::vector<node> &v)
 
  		cout << "escaped T\n";
  	}
- 	// if(keys[SDL_SCANCODE_N])
- 	// {
- 	// 	if(numScreen == 0){
- 	// 		win[numScreen+1].init();
- 	// 		numScreen++;
- 	// 	}
- 	// 	numScreen += 1;
-
-
- 	// }
- 	// if(keys[SDL_SCANCODE_M])
- 	// {
- 	// 	closeWindow();
- 	// }
  	return false;
 
 }

@@ -81,14 +81,6 @@ void clicks(int x, int y,vector<node> v)
 	}
 	if(x > 325 && x <1000 &&y>0&&y<300)
 	{
-		// point *p = new point();
-		// p.setC(x,y,0.0f);
-		// addPoint(p);
-		// node n ;
-		// n.setCode(2);
-		// n.setP(1,0.0,0.0,0.0);
-		// n.setP(2,5.0,5.0,5.0);
-		// v.push_back(n);
 
 	}
 }

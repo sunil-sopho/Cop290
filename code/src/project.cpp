@@ -21,5 +21,4 @@
 		else
 			addPlane(p,view);
 	}
-	//cout << "out of here\n";
 }

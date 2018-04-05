@@ -13,13 +13,7 @@ void messinit(std::vector<node> v)
 	glRotatef(cubeRotateY,0,1,0);
 	glRotatef(cubeRotateX,1,0,0);
 
-	// glPushMatrix();
-	
-	// glTranslatef(0,0,-10.0f);
-		// cout << v.size()<<'\n';
 		Project(v,0);
-
-	// cout << cubeRotateX <<" : "<<cubeRotateY <<" : "<<ScaleFactor<<'\n';// 12 -41 0.34
 		glBegin(GL_LINES);
 			glColor3f(219.0f,0.0f,0.0f);
 		for(int i=0;i<100;i++)
@@ -90,10 +84,6 @@ void messinit(std::vector<node> v)
 
 	glEnd();
 		
-		// glMatrixMode(GL_MODELVIEW);
-		// glLoadIdentity();
-
-	
 		glPopMatrix();
 	glFlush();
 }
