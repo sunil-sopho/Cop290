@@ -1,5 +1,5 @@
 # Ignore build 
-./code/build
+./code/build/*
 
 # Ignore any executables
 ./code/bin/*
