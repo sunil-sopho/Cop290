@@ -14,12 +14,12 @@ Team Members: Anubhav Palway (2016CS10368), Sunil Kumar (2016CS10314).
      
  ## How to use:
  Input Format:</br>
-*    1. To Draw the 3d object:</br>
+*    To Draw the 3d object:</br>
         - Press n.</br>
         - Press 'u' for positive x-axis and 'j' for negative x-axis.</br>
         - Press 'i' for positive y-axis and 'k' for negative y-axis.</br>
         - Press 'o' for positive z-axis and 'l' for negative z-axis.</br>
-*    2. Using text file:</br>
+*    Using text file:</br>
         i) To generate projections from 3d object:</br>
             - First line gives type i.e, zero for 3d to 2d</br>
             - Next line gives n, number of shapes.</br>
@@ -33,7 +33,7 @@ Team Members: Anubhav Palway (2016CS10368), Sunil Kumar (2016CS10314).
             - Next n lines gives the points (x,y,z coordinates with spaces in between them)</br>
             - Next line contains e, number of the edges in top projection.</br>
             - Next e line should contain 2 integers, i, j, denoting an edge between vertex i and vertex j as per the order of input of vertices (order starting from 0)</br>
- *    3. Executing the code: </br>
+ *    Executing the code: </br>
         ```
         cd Cop290/codes/src/
         ```
@@ -52,7 +52,7 @@ Team Members: Anubhav Palway (2016CS10368), Sunil Kumar (2016CS10314).
         ./cadmake <input.txt>
         ```
         </br>
-*     4. 't' to save</br>
+*       't' to save</br>
         'w' to zoom out </br>
         's' to zoom in </br>
         Arrow keys to rotate.</br>
